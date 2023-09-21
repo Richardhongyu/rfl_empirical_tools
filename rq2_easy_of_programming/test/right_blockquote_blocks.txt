@@ -1,0 +1,792 @@
+> Are Android Binder and the NVMe driver reimplementations of earlier C drivers?  
+ 
+FWICT: yes. 
+ 
+FYI, there was a talk about the NVMerustdriver atLinuxPlumbers '22 - might contain some more info and possible answers to your other question: 
+ 
+slides:  https://lpc.events/event/16/contributions/1180/attachment...  
+ 
+video:  https://www.youtube.com/watch?v=BwywU1MqW38
+------------------------
+User-modeLinux(on x86-64 systems) now supports code written inRust.
+------------------------
+Heiseinterviews
+Miguel Ojedaabout theRust-for-Linuxproject.
+------------------------
+linuxType "help", "copyright", "credits" or "license" for more information.
+>>> import datetime as dt
+>>> epoch = dt.datetime(1970, 1, 1, 0, 0, 0, tzinfo=dt.timezone.utc)
+>>> print(epoch)
+1970-01-01 00:00:00+00:00
+>>> print(epoch + dt.timedelta(microseconds=(2**63 - 1) // 1000))
+2262-04-11 23:47:16.854775+00:00
+>>> print(epoch - dt.timedelta(microseconds=(2**63) // 1000))
+1677-09-21 00:12:43.145225+00:00
+>>> # For comparison:
+>>> print(epoch + dt.timedelta(seconds=(2**31 - 1)))
+2038-01-19 03:14:07+00:00
+>>> print(epoch + dt.timedelta(seconds=(2**32 - 1)))
+2106-02-07 06:28:15+00:00
+>>> print(epoch + dt.timedelta(seconds=(2**63 - 1)))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+OverflowError: Python int too large to convert to C int
+>>> print(dt.datetime.max)
+9999-12-31 23:59:59.999999
+ 
+ Sure, 2262 is a long time in the future. But it's not so absurdly far into the future that you won't eventually have compatibility problems (unlike the Python max datetime, which
+------------------------
+Rustin the   async_iter   submodule. However, a major downside of it is that in its current form it is scheduled to become a carbon-copy of the existing  std::iter  crate, with the only difference being that most functions and closures will be prefixed with the  async  keyword. That's a lot of duplication which needs to be maintained, just because because we wanted an async version of one interface. And it's likely at some point the stdlib will want to provide its own version of async  TcpStream , async  File , etc. - and that would result in an enormous amount of duplicate APIs which would largely be identical to their non-async counterparts. 
+
+ And the problems don't just stop with  async  either. Have you ever wondered why you can't just use the  ?  operator from a closure? Or have you seen theRustforLinux
+------------------------
+Rustand now Ada are using to solve handling of dynamic memory issues) were, initially, invented by mathematicians and adopted by GC-based functional languages. Not to manage memory, but to manage external resources (in that case “they would be freed but we have no idea when, precisely” is bad answer).Rustdiscovery (as with  TMP  it was discovered, not designed into the language from beginning) was surprising and somewhat startling and it's not even mathematical fact, but a social one: if you give people an easy-to-use affine type system then they can solve almost all practical memory handling problems without GC, just with a small amount of  unsafe  code. 
+
+ It's still not clear whether you can  rewrite piecemeal  any old code with similar results (which is whatLinux
+------------------------
+teaching aren't really about the language being used.Rustgetting immense credibility from its use inLinuxis very real though. You'd be able to tell your students "it's used byLinuxnow" and folks in the workforce will be able to tell their managers the same.
+------------------------
+Linuxdistributions provide that. 
+
+ Yes. At the cost of making it unable to use anything up-to-date. Bad for end-users (coz games and most productivity software), bad for developers (coz up-to-date versions of everything are never there). 
+
+ It's not even clear whether that's a win for security (certainly no one inRust
+------------------------
+rust. Then I saw a presentation at thelinuxplumbers conference about how they want to ease maintenence by using the rustc compiler crates for things like the borrow checker (once they can actually compile those). 
+ 
+How independent are two compilers when they share implementation of core parts like the borrow
+------------------------
+Rustfrontend in GCC that can re-use those plugins: 
+ 
+ > As the source of the GCC plugin infrastructure in theLinuxkernel and nearly all of the GCC plugins adapted for inclusion in the upstreamLinuxkernel, we too immediately spotted the importance of this problem and set out to ensure
+------------------------
+I can't help thinking it's got something to do withRustcode popping up in theLinuxkernel. Isn't GCC still the primary C compiler for the kernel? Would be nice if it could be the primaryRustcompiler as well.
+------------------------
+Rustyet" are probably less extensive than you think. For example, a new network QoS, filesystem, or LSM, basically anything new and optional would be fair game. That may not fit your definition of "core", but to many people it does, so it's worth noting thatRustisn't just for drivers. 
+ 
+On the other hand, any rewrite of existing C code will need a very strong justification, and will probably remain "just an alternate implementation" for a long time. 
+ 
+What willRustactually be used for in mainline remains a wait-and-see affair. It's great to see enthusiastic reports like this one, but it'll also be interesting to read some neutral and maybe negative feedback. 
+ 
+It'll be a long time before there's a push forRustin actual core irreplaceableLinux
+------------------------
+Linuxcode inRustso long as the set of architectures considered first class forLinuxisn't a subset of the architectures which at least work in practice (lets say at least Tier 3 support) forRust. 
+ This is one of the big motivations for both gccrustfront
+------------------------
+Linuxcode inRustso long as the set of architectures considered first class forLinuxisn't a subset of the architectures which at least work in practice (lets say at least Tier 3 support) forRust. This is because in effect such core code would mean nowLinux
+------------------------
+Yeah, I am skeptical aboutLinuxdevelopers migrating in flock toRustfor core code, but for drivers it's a slam dunk.
+------------------------
+wrote  in early October thatRustis "not likely to infuseLinuxwith a much-needed boost in its contributor base, becauseLinuxhas no such need" (among other negative comments). 
+ 
+If other developers too find thatRustis so much easier for driver development, its use could explode very rapidly.
+------------------------
+Rustdoesn't have Either in it's  stdlib . There are  either crate  with  really featureful Either , and it's  widely used , but from my understandingLinuxkernel doesn't like to depend on external crates.
+------------------------
+Construction, and I can tell you that this is mostly wrong. There is no obvious relation betweenRustand the Calculus of Construction (which is about dependent types, no linear types), and the subarctic blog you cite is wrong. This also has no relevance to theLinuxkernel or string types whatsoever.
+------------------------
+Rustinfrastructure that has been posted in the past, including complete drivers; it's just not being pushed upstream yet.  I've been fairly deliberately looking closely at the code as it heads toward the mainline just because it breaks the problem down into manageable pieces.  The wholeRust-for-Linux
+------------------------
+string, one can't do some useful patterns like having a single allocated "buffer" used in a loop without allocating/freeing.  The equivalent ofRust's String is really things like https://developer-old.gnome.org/glib/stable/glib-Strings.html 
+(I'd assume there's some variant of this in thelinuxkernel?  But not seeing it offhand)
+------------------------
+As can be seen, these patches are slowly building the in-kernelRustcode
+up so that real functionality can be implemented inRust, but this process
+has some ground to cover yet.  It's not clear whether moreRustcode will
+be proposed for 6.2, or whether this is the full set.  The pace of change
+may seem slow to developers who would like to start doing real work inRust, but it does have the advantage of moving in steps that can be
+understood — and reviewed — by the kernel community.  TheRust-for-Linuxwork has been underway for a few years already; getting up to full
+functionality may well take a while longer yet.
+------------------------
+Rustdevelopment process: when a new version ofRustis released with such new features (which do hopefully make code more readable), is theRustStandard Library simultaneously updated to use these new features? 
+
+ No. It's similar toLinuxKernel process: first some foundational code lands, then things which
+------------------------
+Rustnot because of C deficiency but because kernel developers actively don't want to have it. And if they don't want want to have it then it wouldn't exist. 
+
+ How canRustlanguage properties may affect that? 
+
+ > I expect something like that from this imaginary framework. Driver code is the same for different kernels, framework knows all of kernels, actual binary representation changes wildly accordingly for kernel whims. 
+
+ And what would happen when that magic would, finally, be stretched too far and fail?  That  is what Linus fights against:  
+ Because I  know  that I will eventually make changes that break modules. And I want people to expect them, and I never EVER want to see an email in my mailbox that says "Damn you, Linus, I used this binary module for over two years, and it worked perfectly across 150 kernel releases, andLinux
+------------------------
+Rustcalls such magic a "langitem" as in "language item". If you made your own my::Drop trait with a drop(&mut self) function anybody can implement that on their types if they want, and anybody can call that drop() method on values of those types, yet it won't de-allocate anything, won't happen automatically, it just has a misleading name, like the artwork "An Oak Tree". But the langitem deliberately cannot be called by people explicitly (that's a compile error), and it will get called automatically by the language when items of that type are about to be destroyed. 
+ 
+So logically this code happens because the kernel is destroying this value, ifLinux
+------------------------
+Rustis merged into the kernel  now  is specifically because something like that is just not possible.  Kernel is very explicit and vocal about that : all kernel APIs are unstable and there are no stability guarantees. 
+
+ > If I need to put few bits into GPIO and create few entries for /sys, why should I dive deep into kernel build details? 
+
+ If your needs are so modest then why do you even need kernel driver in the first place?Linux
+------------------------
+Rustsupport will be disabled silently. 
+This behaves the same as when using a config file that has compiler-dependent support enabled which is not supported by your compiler (e.g. UBSAN_TRAP, see `git grep "\$(" -- "*Kconf*"' for more). 
+ 
+I guess that's fair enough for an experimental feature that is not yet supported on all architectures? 
+ 
+Note that personally, I never run "make oldconfig", but always use my "linux
+------------------------
+RustforLinuxcould advise builders to use the stableRustcompiler, but just tell it to pretend it isn't a stableRustcompiler (one environment variable change), so as to take advantage of any QA benefits as presumably your distribution's stableRust1.62 compiler was actually tested
+------------------------
+RustforLinuxneeds some unstable features.RustforLinuxtracks what is needed, since it is their long term goal that this will become unnecessary:  https://github.com/Rust-for-Linux/linux/issues/2  
+ 
+Note that - while this is not a supported configuration - the stableRustcompiler is technically quite capable of compiling code using
+------------------------
+Building theRustsupport requires specific versions of theRustcompiler
+and bindgen utility — specifically,Rust1.62.0 and bindgen 0.56.0.  If the
+target system has newer versions, the configuration process will emit
+warnings but will proceed anyway.  More awkwardly for anybody who is trying
+to do the 
+build with theRusttoolchain provided by their distributor, the build
+process also needs theRuststandard library source so that it can build
+its own version of thecoreandalloccrates.  Until
+distributors start shipping "Rustfor the kernel" packages, getting that code
+into a place where the build process will find it will be a bit awkward.
+------------------------
+Somewhat related news: The developer of rustc_codegen_gcc recently announced that it can now buildRustforLinux:  https://blog.antoyo.xyz/rustc_codegen_gcc-progress-report...
+------------------------
+The first step toward those goals was to create a parser for the language, then to start
+implementingRust's data structures.  Then came traits and generics; those
+features are complex, he said, but they are also at the core of how the language
+works.  Control flow, and especially thematchexpression 
+came next; after that was macro expansion.
+Const generics are in progress now, he said, while work on intrinsics and
+built-ins is just beginning.  No work has been done on borrow checking; it
+is not needed to generate validRustcode, so it can come later.  Work on
+running theRusttest suite is also being done.
+------------------------
+Experimental support for theRustprogramming language has beenpulledinto
+     the mainline.  Following thedecisions
+     madeat the recently concluded
+     kernel maintainers summit, this is a
+     minimal version of the patch set, without 
+     the drivers that have been implemented inRustso far.This documentation
+     commitcontains more information, andsome small sample
+     modulesare available as well.
+------------------------
+Doing great things is part of the kernel community's job description,
+though.  The 6.1 development cycle is about to start as of this writing;
+there are currently just over 10,000 non-merge commits waiting inlinux-next.  That suggests that 6.1 may not be the busiest development
+cycle ever, but that kernel, which will be a long-term-support release,
+will still contain a lot of interesting work, including the expected
+merging of theRust-for-Linuxandmulti-generational LRUpatch sets.
+That release can be expected in 
+mid-December; LWN will, of course, stay on top of what's happening
+throughout that development cycle.
+------------------------
+efforts therustpeople are going to forlinux, and also given Linus' very pragmatic not purist attitude, stuff thatlinuxwants is not likely to suffer too much bikeshedding. Even if it does (quite likely) end up as "this only exists in unsafe code".) 
+ 
+Cheers, 
+Wol
+------------------------
+Linuxto be written inRustsince inRusttypes with zero size are a completely unremarkable idea we use all the time :D 
+ 
+But yes, I think Clang relenting makes the most sense. Zero Size Types are good. Standard C and C++ can't have them without ripping
+------------------------
+How? By the timeRustwill be used for anything other than toy drivers,Rust-GCC should be done, soLinuxwithRustwill compile anywhere thatLinuxwithoutRustcan.
+------------------------
+The next steps forRustin the kernel:
+     the ability to write kernel modules in theRustlanguage may be coming
+     sooner that some people expect.
+------------------------
+Greg Kroah-Hartman asked how subsystem-specificRustbindings will go
+upstream; will they go through theRusttree or via the relevant subsystem
+maintainers?  Ojeda answered that coreRustsupport will go through theRusttree, but the rest should go through maintainers.  Alexei Starovoitov
+worried that subsystem maintainers would not be able to refuseRustpatches
+even if they do not want to seeRustused in their subsystems; James
+Bottomley added thatRustcan be a hard language for longtime C developers
+to understand, and that it would not be good to force it on maintainers.
+Torvalds answered that it should be up to the maintainers; there is no need
+for global rules at this point.
+------------------------
+Rust, such as the original motivating example of Firefox, librsvg, curl, and this work in theLinuxkernel, than I have in Ada. 
+
+ The biggest problem of Ada IMO is that it was always supposed to be about safety, but it never addressed the most common source of bugs: pointer
+------------------------
+Rustexpert).  
+ 
+Fair enough! I'm not an Ada expert either, so I can't necessarily speak to how the approaches compare. 
+ 
+I can say that I've seen a lot more work in the free software world to incrementally port portions of software toRust, such as the original motivating example of Firefox, librsvg, curl, and this work in theLinux
+------------------------
+Rustreference, there's an extensive test suite, there's the entirety of crates.io which is used as an additional test suite, and there's a draft Ferrocene Language Specification  https://spec.ferrocene.dev/  which is intended to provide a set of requirements that can be verified against for safety-critical applications. 
+ 
+ >Rustdoes need to adopt a similar approach where there is no more *the* leading implementation and a few others trying to catch up like clang does with gcc or gnugo does with Go  
+ 
+I'm not sure I follow; as you're saying here, the situation forRustis no different than the situation with C in theLinux
+------------------------
+Rust, and the kernel is far more complicated than that. The one serious attempt to do so failed after months of work because it required writing thousands upon thousands of lines of memory management boilerplate.
+ 
+In fact, the developer of wayland-rs rebutted this  two years ago , and both wayland-rs and smithay (an alternative to wlroots -- not wayland -- inrust) are actively maintained today. Not in wide use (gnome/libweston dominates, kde and wlroots are a distant second/third, not much space for others). But it's there. Perhaps you are thinking of weston-rs. 
+ Many of your other comments -- such as they are, omitting the "yeah right", "anyone notice that..." etc -- have been amply rebutted by others above. 
+ As far as the kernel is concerned, if there was a huge issue withLinux
+------------------------
+Rust: as long as it remains the self-defined input of rustc, it's not exactly a language and it can seriously fail over time. Serious implementations are absolutely required for it to survive. For sureLinuxuses GCC C. But C is used everywhere and runs the whole
+------------------------
+Rustand C? Obviously the fault of C.  
+ 
+The fundamental unique feature ofRustis that it enables you to build safe abstractions around unsafe code (we'll get to what "safe" means in a bit). Whether you are interfacing with C, or defining your own primitives inRust, doing that can be tricky, but once it's done, you have fairly strong guarantees on what can happen in the safe code that uses those abstractions. 
+ 
+So, this isn't "blaming bugs on C", but just an acknowledgement thatRustis not a silver bullet (and has never been intended as such), and that the fundamental work of building safe abstractions over unsafe code still requires care. Since there are a large number of abstractions that already exist in theLinux
+------------------------
+Rustprevents' (if you don't use `unsafe`, which theRustforlinuxcode does all over the place)? When people involved inRust's development realised just before the release of the language that the language was fundamentally unsound, allowing memory leaks, they quietly redefined 'safety' to exclude leak
+------------------------
+Rusthad been achieved; has there been, for example, any fuzz testing of the server? Almeida answered that theRust-based parsing interface makes a lot of mistakes impossible. No fuzz testing has been done — the server has only been working for a couple of weeks — but he will do it. He concluded that he will be interested to see how his server fares in such testing relative to the QEMU implementation.   
+ 
+In other words "no we haven't actually tested it but I'm sure the language prevents bugs, they're totally impossible". Yeah right. This is typical of theRustcommunity: huge promises, no evidence to back them up, all topped off with an "if it compiles it is correct" attitude that totally disregards that there are many more issues other than those theRustpeople have decided count as 'safety'.  
+ 
+Anyone noticed that 'unsafe' as a general concept has suddenly been redefined to mean 'whateverRustprevents' (if you don't use `unsafe`, which theRustforlinux
+------------------------
+Rust's tier support list says armv4t-none-eabi has tier 3. That platform is described as ARMv4 with Thumb and exists particularly to make the Nintendo Gameboy Advance work. 
+ 
+Tier 3 meansRust's CI checks this compiles, but they don't check it works, and it is only supplied with the core library. 
+ 
+Obviously the kernel is comfortable in that world, you can't just TcpStream::connect() from inside the kernel either, although it won't fit on a GBA as I understand it, presumably if you've got a big enough ARMv4 system to runLinux
+------------------------
+Rust's networking related data structures are literally identical to the C structures, and so I can just pointLinuxC code doing low-level networking at theRuststructures and it'll work" and one day that stopped working. That was never guaranteed to work, nobody
+------------------------
+RustSIMD intrinsics have been implemented.   
+ 
+So it appears them are compiling the SIMD themselves, and bypassing LLVM and GCC's SIMD support, both of which were pretty good except for that no languages could really use them (I gave a talk about this at the 2019 LLVM conference, and wrote a patch series for Zig that only about half of it ever got merged, but I would still recommend Zig over C for this, as C's extensions have some problems that cannot be fixed except by starting over from C11.) 
+ 
+ > many developers are concerned by the fact that there is only one compiler available;   
+ 
+I don't think 10 independent C++ compilers would be enough to convince Linus to allow C++ inLinux
+------------------------
+Rustadoption in the Kernel and another two years until the stale distros actually pick up those kernels, I think most of these will be long gone from theLinuxtree by the time this is relevant. Or have LLVM backends. Cadence and Synopsys certainly don't lack the resources
+------------------------
+There is in fact a port ofrustto m68k, but only onlinux.
+------------------------
+which is mostly kept alive for recreational purposes, is already supported upstream. All of these are going to be primitive enough that I don't think the lack ofrustsupport will be relevant for a long long while. Unless it becomes impossible to compileLinuxwithoutrustat all.
+------------------------
+Cohen talked about building theRustforLinuxproject(the
+integration ofRustwith 
+theLinuxkernel) specifically.  That project is currently targetingRust1.62, which is rather more recent than the 1.49 that gccrs is aiming at;
+there is thus a fair amount of ground yet to cover even once gccrs hits
+its target.  There are not many differences in the language itself, he
+said, but there are more in the libraries.  Even with the official
+compiler,RustforLinuxhas to set theRUST_BOOTSTRAPvariable to
+gain access to unstable features; gccrs is trying to implement the ones
+that are needed for the kernel.Generic
+associated typesare also needed.
+Eventually, the goal is for gccrs to be able to compileRustforLinux.
+------------------------
+Version
+1.62.0of theRustlanguage has been released.  Changes include a newcargo addcommand, default enum variants, an improvedLinuxmutex implementation, a number of stabilized APIs, and more.
+------------------------
+being a quicksand of nasty surprises every time the compiler is upgraded. 
+ 
+Otherwise we will soon end up (and quite possibly a lot quicker than people think possible) where the core of theLinuxkernel is written inRust, and the only C left will be legacy drivers. 
+ 
+Cheers, 
+Wol
+------------------------
+Rustdevelopers could do for a C++ maintainer in particular is knock off pain points where there isn't yet a nice way to do what they're used to inRust. 
+ 
+For example,Rustdoesn't yet have explicit Trait specialisation. You can write "For any type T which is Copy and Default, here's an implementation of my Trait Foo" inRust, and we do, but you can't write "Also, for Foo<bool> here's a much faster specialised way to implement it".Rustwill complain that now there are two ways to implement Foo<bool> since bool is Copy and Default. Ideally we could tellRust, "Yes, but the bool specialisation is more specific, so that's fine", but today this requires an unstable feature because it's not necessarily Sound to do this. 
+ 
+[I suspect this specifically is too hard forLinux
+------------------------
+Linux. 
+
+ I understand the temptation to create a specialized language for an OS development, this may even be right thing to do for the academic project, but as fate of  Oberon ,  Singularity  and many other OSes shows this means you OS would be a purely academic/hobbyist world experience. Simply because you wouldn't have a robust compiler for everything-and-anything (which GCC/LLVM provide and whichRust
+------------------------
+> In a future release we're planning to increase the baseline requirements for theLinuxkernel to version 3.2, and for glibc to version 2.17. We'd love your feedback inrust#95026.  
+ 
+Thought you all probably wanted to know that, too.
+------------------------
+case ofRustin the kernel is similar to the problems of vendored code necessary to keep some ecosystems running  
+ 
+Vendored code already exists in theLinuxkernel.  TheRustmechanisms for tracking vendoring is strictly better than the ones we have for vendored C based projects in the kernel.
+------------------------
+Rustdrivers presented for comparison here: 
+ 
+ https://lwn.net/Articles/863459/  
+ 
+... illustrate that ? 
+ 
+Of course almost a year has passed since that was written, soRustandRustforLinuxhas made further improvements, but presumably you don't mean that these things somehow became mandatory in the last 12 months
+------------------------
+Linuxhas a minimum version requirement for gcc (or clang) that gets raised pretty often. I believe it's at 5.1 right now:  https://lore.kernel.org/lkml/20210910234047.1019925-2-nde...  
+ 
+So in practice, the _current_Linuxpolicy is worse thanRust. Instead of a well-defined edition, the kernel depends on an informal
+------------------------
+Here's the (documentation for the)RustforLinuxalloc crate: https://rust-for-linux.github.io/docs/alloc/index.html 
+ 
+As you will notice, inRustforLinuxthe alloc crate's APIs lack functions such as new() which are infallible, and instead only provide the fallible try_new() function, whereas in conventionalRustyou can choose.
+------------------------
+Linuxkernel. Of course they'd still need to be code-reviewed and maybe adapted slightly for the specific environment they're being used in, and there's social questions about who will maintain the code and what their priorities are, but the same applies to new code that's written exclusively forLinux. Starting from an existing well-designed well-tested library should achieve the same quality with less work than starting from scratch.Rust
+------------------------
+Rustcompiler/language going to start retain full backwards compatibility between the so called editions? 
+ 
+I don't see future ofRustin kernel before this happens. In order to reach mainlineLinux,Rustneeds to have major changes to the more "conservative" side on how the language
+------------------------
+Rustproject’s cavalier attitude to language and compiler stability, the absurd compiler bootstrapping and limited platform support makes it throughly unsuitable for theLinuxkernel., and that’s also why I won’t touch it despite the many benefits. Not to mention their belief that “curl something}bash” is acceptable
+------------------------
+RustforLinuxintegratesRustinto the kernel build system, rather than using Cargo.  I think the attraction of using lots of third-party crates would quickly fade if developers had to write Makefiles for any dependency they wanted to add (very fewRustlibraries build without a build.rs file
+------------------------
+The decision to useRustwill be done by actualLinuxdevelopers. 
+ 
+And nobody is forcing you to use the mainlineLinux. If you so dislikeRust, then you are totally free to forkLinuxand maintain your ownRust-less fork.
+------------------------
+Rust's no_std only gets rid of stuff from std itself (much of what you think of asRust's standard library was only re-exported from std and actually lives in core or alloc). 
+ 
+So e.g. suppose you've got a slice (maybe an array, but however you got it, some contiguous memory) of Things and you'd like to sort them. In C without the standard library you're out of luck, code it yourself, but inRustlacking std only means you don't have a nice stable allocating merge sort, you do still get a perfectly usable (albeit not always trivially what you needed) in-place unstable sort. 
+ 
+https://rust-for-linux.github.io/docs/core/primitive.slice.html#method.sort_unstable 
+ 
+When C was invented such things would be too heavy, but todayRust's compiler and linker are certainly smart enough that if you never actually perform sort_unstable the code to implement it is omitted from your binary so the "price" ofRust's more comprehensive library is only that the documentation is a little larger and for that price you avoid the unsettlingly common (even inLinux
+------------------------
+Rust's standard library (not all of which, admittedly, the kernel gets, see other comments about the stack of core -> alloc -> std of which the kernel will receive core and a somewhat custom alloc) has much more than I was used to from the C standard library and in many cases also utility libraries like Glib. 
+ 
+Programs where in C I'd have reached for some third party utility libraries at least, often inRustthe standard library is more than enough. Yet it's still a very hospitable place to do the sort of low-level programmingLinux
+------------------------
+Rustapplications, we do that at work. 
+ 
+I don't see the point inRustforLinuxforbidding the use of crates.io crates. Yes, you'd probably want to enforce that only no_std crates are pulled in (I don't know if that's currently
+------------------------
+Rust" knows nothing about kernel threads or how context switching is done in the kernel, for example. Kernel code must be extremely careful in how it allocates memory, must not use floating-point arithmetic, cannot store large data structures on the stack, and cannot use unbounded recursion,  
+ 
+TheRustresponse to this would probably be "can't we just... solve that?" 
+ 
+Various embeddedRustfolks have been doing work on things like static stack usage analysis. Tight stack requirements are not unique to theLinux
+------------------------
+The latest round ofRustpatches wasposted by
+Miguel Ojedaon March 17.  This time around,Rustsupport has
+moved forward toversion
+1.59.0of theRustlanguage, which has stabilized a 
+couple of important (for the kernel) features.  The patches add a new module
+abstracting access to hardware random-number generators.  ACStringtype has been added for C strings.  The spinlock
+implementation has been improved.  All told, the patch series, which can be
+found in thelinux-next repository, adds over 35,000 lines of code and
+documentation; it is a considerable body of work.
+------------------------
+Rustmight well be ideal for writing modules in the L4 world. I'm not sure how it makes sense inLinux, although if the primary kernel developers say it does then there's an excellent chance it does even if I can't see it. 
+ 
+There
+------------------------
+LinuxKernel developers to do that or to set simple standards for code they will accept in mainline. All we are talking about is using RAII and data encapsulation to enable safer more reliable coding. As a comment above says, the aspects ofRustthat are being promoted to the Kernel
+------------------------
+RustforLinuxgets a library it can ship inLinux. 
+ 
+It's future proofed in that the assumption is some dayRustwill have a way to disable or sidestep this, and at that pointRustforLinuxcan just ship the normal core library (in this respect
+------------------------
+The article phrased this poorly.  TheRust*language* is independent of the default standard library.  Plenty of use cases (includingRust-for-Linux) use "no-std" which fully supports writing code with fallible allocations.  Plenty more at e.g.  https://doc.rust-lang.org/stable/embedded-book/intro/no-s...
+------------------------
+Ruststability, or maybe not, inRustthere's a concept of "unstable" features. These features exist, and they work in whatever build ofRustyou have, but tomorrow there might be a newRustversion and they're altered, or renamed, or gone. In contrast all the stable features ofRustare promised to still work into the indefinite future, none have been removed since 1.0 in 2015. You have to specifically opt in to having unstable features, and to each specific unstable feature you want. TodayRustforLinux
+------------------------
+Rustlibrary†. That latter is worth a moment's thought:Rustsays you can format floating point numbers.Linux, of course, would very much rather you didn't use floating point numbers at all. So,Rust-for-Linuxwants to tell the core library that we aren't going
+------------------------
+Most of theRustcode itself currently appears in two crates.  The first,
+calledalloc,
+deals with memory allocation.  TheRustlanguage 
+wasn't built with the idea that code might need to continue when a memory
+allocation fails; instead, the normal result is an immediate crash.  Since
+crashing in kernel code is considered to be impolite, a modified allocator
+that can handle failures is required.  As aRustdeveloper would expect, it
+returns aResultobject that contains either a pointer to the allocated
+memory or an error indication, depending on what happened.  Evidently the
+work to support fallible allocations is meant to go into the upstreamRustlibrary, so the kernel's version of this crate may eventually be able to go
+away.
+------------------------
+Paul McKenney hasdeclaredthat hisblog series
+onRustand theLinuxkernelis now complete, and he has some
+recommendations regarding the use of some of the kernel's more esoteric
+techniques fromRust:
+------------------------
+Linux, but it's worth reflecting on the fact that "diversity" is often portrayed as a strength of C++ and that diversity consists only of three implementations with fairly incestuous relationships. For example the entire MSVC standard library source is published just like its equivalents from GNU and LLVM, and you will see primary authors of two standard libraries attending talks by authors of the other one on this or that interesting trick they exploited or corner case they wrestled with - after all they're by definition the most interested parties. 
+ 
+If we get two similarly "competing" compilers forRust
+------------------------
+Developers working in languages like C or C++ have access to
+two competing compilers — GCC and LLVM — either of which can usually get
+the job done.Rustdevelopers, though, are currently limited to the
+LLVM-based rustc compiler.  While rustc works well, there
+are legitimate reasons for developers to wish for an alternative.  As it
+turns out, there are two different ways to compileRustusing GCC under
+development, though neither is ready at the moment.  Developers of both
+approaches came to the2021LinuxPlumbers Conferenceto present the status of their work.
+------------------------
+[...]
+These blog posts will therefore present approaches ranging upwards from trivial workarounds. But be warned that some of the high-quality approaches require profound reworking of compiler backends that have thus far failed to spark joy in the hearts of compiler writers. In addition,Rustenjoys considerable use outside of theLinuxkernel, for example, as something into which to rewrite inefficient Python scripts. (A megawatt here, a megawatt there, and pretty soon you are talking about real power consumption!) Therefore, there are probably sharp limits beyond which the coreRustdevelopers are unwilling to go.
+------------------------
+Rust?  IfRustmakes an OS project attractive to many highly competent developers, one of these projects should be on the way to overtakeLinux, no?  Admittedly there is also the draw of contributing to the most widely-used kernel, but still, the BSDs survive despite not having the most
+------------------------
+Linuxdevelopment that "kernel maintainers shall not be required to learn anything new"?  
+ 
+In any busy project, maintainers tend to operate at 100+% of their capacity. Whenever they need to learn something new, that effort is taken away from their "usual" activities (which are possibly the activities that they get paid for). Obviously they keep learning new things incrementally, but new material that's intrusive and has a steep learning curve (= late RoI) must be a different sell. 
+ 
+ > I guess the problem is that those changes have been incremental but "learnRust
+------------------------
+respect the TSO (total store ordering) model that x86 uses. 
+ 
+* I might be wrong on this, but the first architecture for whichLinuxsupported SMP was either SPARC or Alpha, almost certainly not x86 
+ 
+Right now, theRustmemory model _is_ the C/C++ model since it just reuses the same backend code.
+------------------------
+Airlie said that there are examples ofRustcode at the edges of the kernel,
+such as drivers.  Has any work gone into puttingRustinto the core, with C
+code at the edges?  Ojeda answered that theRustdevelopers are not trying
+to rewrite things in the core kernel; instead, they are making a set of
+abstractions so that drivers can be written in saferust.  A C driver using
+aRustcore would lose a lot of the advantages of usingRust, he said;
+once you go toRust, you want to stay there.
+------------------------
+Rustdriver. 
+ 
+In my opinion the best targets are cases where multiple distinct hardware implementations exist without any good reason. Think entry-level PCI network cards in the late 1990s. There's no reason for so many different vendors to make a 100Mbps PCI Ethernet card that has essentially the same features as the competitors but requires its own driver, but that's what happened, and you can imagine that there's nothing interesting (potentially requiring unsafe and deep kernel knowledge or new subsystem code) in the NE2k driver compared to the 3Com one so that the work to make the 19th and 20th of these drivers is not actually the application of arcane wisdom kernel programmers might pride themselves in, but mostly rote work copying from manufacturer data sheets and a little bit of "suck it and see" when the data sheet is needlessly ambiguous.Rustis going to make that practical for patient non-experts whose sole advantage over the existingLinux
+------------------------
+There is a (default off) lint to warn you that this might be a bad idea  
+ 
+Indeed -- inRustforLinuxwe are already using `unsafe_op_in_unsafe_fn` (as an error, in fact, rather than a warning) and I hope it becomes the default in a futureRustedition.
+------------------------
+Thefirst dayof theKangrejos(RustforLinux) conference
+introduced the project and what it was trying to accomplish;day 2covered a number of coreRustconcepts and their relevance to the kernel.  On the third and final day of
+the conference, Wedson Almeida Filho delved deeper into howRustcan be
+made to work in theLinuxkernel, covered some of the lessons that have been
+learned so far, and discussed next steps with a number of kernel
+developers.
+------------------------
+Thefirst dayof the onlineKangrejos conferencewas focused on
+introducing the effort to bring theRustprogramming languageinto theLinuxkernel.  On the second day, conference organizer Miguel Ojeda shifted
+to presenting theRustlanguage itself with an emphasis on whatRustcan
+provide for kernel development.  The result was a useful resource for
+anybody who is curious about this project, but who has not yet had the time
+to become familiar withRust.
+------------------------
+Linuxdevelopment that "kernel maintainers shall not be required to learn anything new"? Presumably over time kernel devs have had to learn new rules for writing C code, as the kernel C dialect has moved away from standard C and issues like memory ordering have become important. I guess the problem is that those changes have been incremental but "learnRust
+------------------------
+So what is not "safe" byRuststandards?  The list of not-safe behaviors
+include using pointers after they are freed, dereferencing NULL pointers,
+freeing memory twice, using the contents of uninitialized memory,
+out-of-bounds memory accesses, data races, and more.  None of these things
+will happen, he asserted, in safe sections ofRustcode; that is why he
+wants to seeRustcode in the kernel.  About 70% of published C
+vulnerabilities result from undefined behavior, he said, and the rate for
+vulnerabilities in the Android media and Bluetooth components is closer to
+90%.Rustcan help make those problems go away.Rustoffers a number
+of other advantages as well, including stricter types, modules, pattern-matching
+primitives, lifetimes, an extensive set of development tools, and much more.
+------------------------
+that people with older hardware want to be sure that they kernel is safe. 
+AsLinuxis considering addingRustas the second language, I guess someone has counted how many bugs it would help to avoid in the last X years. 
+Does anyone know where such report is available?
+------------------------
+Rust. Take of that what you will. We will see what kind ofRustcode you are going to find in theLinuxkernel.  
+ 
+Hmm. Well, I found `parents_array` at least. Not *quite* sure why it needs to be specified there (possibly the length?), but type aliases would certainly
+------------------------
+Rustcame onto the scene?  
+ 
+How can you comment on this and the previous one with so much certainty if you have seemingly have not done your research? I obviously omitted a lot of information on Ada/SPARK. I am not supposed to sell it to you. That is not the point of the comment. I just wanted to know if Ada has been ever considered given that it is *perfectly suitable* for kernel development and is actually more safe thanRust(yes, it actually is, perhaps go through all of my links, then). To answer your question: they were actually working on it beforeRust. 
+ 
+ > I think theLinux
+------------------------
+Rust-like. The need for casts on the right and left side is also just weird…type deduction should make the left-hand type unnecessary (ignoring the unsafe-ness being presented). 
+ 
+ > Plus, pointers are no longer an issue either:  https://blog.adacore.com/using-pointers-in-spark.   
+ 
+Interesting how "cannot store pointers in structures" is considered suitable for "no longer an issue" in something like the kernel. That is still under active research and/or implementation by my reading of that post. And, withoutRust, Ada/SPARK might still be without pointers, so how would that have worked out beforeRustcame onto the scene? 
+ 
+ > I would also like to add, that Ada has a package manager as well, namely Alire  
+ 
+I think theLinux
+------------------------
+Rustover Ada/SPARK?  
+ 
+BecauseRustadvocates were willing to do the work (including the non-technical work of persuading the likes of Linus and Greg that their proposal is worthy of consideration at all), and Ada/SPARK advocates have apparently not been willing to do the work. 
+ 
+Of course, I'd be surprised if the average Ada/SPARK advocate was interested in touching theLinux
+------------------------
+Rustmight have more "mut"s. 
+ 
+The thing that surprises me the most is how different it looks from C. For example I couldn't follow how the irqchip can be used from C code, all I could see is an implementation of irq::Chip. 
+ 
+That on one hand means that the bindings are idiomatic, on the other hand it means theLinux
+------------------------
+rustis too modern and still 
+rapidly developed. 
+ 
+I like both languages. I had developed applications in C for over 5 years as a 
+professional job. And nowadays I feel fun writingrustcode and I am a 
+maintainer of redBPF which isrustlibrary for eBPF. 
+ 
+I knowrustis suitable for doing low-level stuff while providing memory 
+safety. But I don't want to convince other developers to use it. It's a too 
+different language from C. And I don't consider developers already satisfied 
+with C want other modern languages. It's really hard to prove thatrustwill 
+bring great advantages to theLinux
+------------------------
+Linuxstyle requires the open brace of the function to be on it's own line, there be a blank line after a function's variable declarations, and often a blank line before the return statement. TheRustcode is also using 4 char indents and ignores the line
+------------------------
+Linuxdominates the desktop with such attitude? 
+
+ In the universe where I live it's market share  is about 2-3% for last two decades .  Precisely  because of that toxic attitude. 
+
+ Linus kernel, on the other hand, which is religious about that… it's ubiquitous. Coupled with non- CADT  software it powers phones, robots, routers and almost anything you can imagine… except desktop. 
+
+ If program worked then it must continue to work! Compiler, operation system and so on are, for the majority of people, are  only enablers  — their raison d'être is the need to have tools to run certain program or programs, they are useless on their own. 
+
+ Sometimes said program doesn't even have sources and then quality of the compiler doesn't matter, of course, but if source  is  there then the  last  thing user wants to hear “this is incorrect program, you have to fix it”. Excuse me? How is it incorrect when I used it before and it worked? And I can still use it… except if I use  broken  new compiler. 
+
+ Except in C/C++ land that obvious idea transformed into something completely crazy: if new version of compiler couldn't compile that old code
+------------------------
+Rustcode still compile and run in 30 years? For theLinuxkernel this is a very real concern. This is a test that I do not believeRustcan reasonably pass.Rustis making very hard guarantees about backward compatibility. Thus I would guess that the chances of compiling
+------------------------
+Say what you will, but will currentRustcode still compile and run in 30 years? For theLinuxkernel this is a very real concern. This is a test that I do not believeRustcan reasonably pass.
+------------------------
+rust?" 
+ 
+Good morning! 
+ 
+This is entirely MY point of view, and MY context. 
+ 
+The company I work for is building machinery. There are a several components running a very smallLinuxsystem inside. 
+We work hard on providing all sources to fulfill our obligations with respect to all involved
+------------------------
+linuxkernel is not just a memcpy() implementation, it does a huge amount of controls that must be safe in their logic. And based on all the patches that I've seen posted, it seems particularly hard to quickly grasp a missing or misplaced check. 
+ 
+Overall I'm a bit irritated by all the marketing around the use of the "safe" word. I tend to consider a lot of C code as "safe" because it trivially translates to machine code. I haven't seen safeRust
+------------------------
+Rustcode for its subsystem, such maintainer will need to not only learnRust, but will also need to become an expert on it.  
+ 
+That's exactly it. To put it blunt, the discussion is important because it's more a matter of replacing people than a new way to write code. And it's totally natural that those having done their work meticulously for so many years to make whatlinux
+------------------------
+want to read about. Consider that theRustinLinuxsession atLinuxPlumbers last year was the most attended session at the conference. 
+ 
+Put that together with it being a substantial change to the way people work, which also makes it interesting to read about and talk about the implications.
+------------------------
+Rust. The original motivation forRustwas that Mozilla were fed up with C++ bugs. That's C++, where you have RAII types that clean up for themselves. In kernel style C code, with gotos for cleanup, the potential for bugs is greater and is putting a huge burden on developers. To this end there have been efforts like Sparse [1], originally written by Linus Torvalds, but I'd question whether heavily annotated C code aiming at emulatingRustis just a poor man'sRust- why not put the same energy into just supportingRust? 
+ 
+For some concrete examples of the problemsRustsolves from myLinux
+------------------------
+I don't remember if it was brought up already, but does thisrustthing especially if used for subsystems, implies that bunches of old architectures won't be supported byLinux?Rustonly supports small handful of arches afair.
+------------------------
+The theme ofRustproving itself was also present in a thread on the ksummit-discuss mailing
+list.  At the end of June, OjedaproposedRustforLinuxas a technical topic for the Kernel Summit track at this
+year'sLinuxPlumbers
+Conference.  On July 6,  Linus Walleijreplied, 
+agreeing that it was a topic that should be discussed.  He noted that there
+are already quite a few languages that kernel developers need to be
+up on (e.g. C, assembly, Make, Bash, Perl, Python, ...), so a question in
+his mind is whatRustwill bring to the table that makes it worth adding to
+the list.
+------------------------
+TheLinuxkernel is at the heart of the modern Internet, from
+servers to client devices. It’s on the front line for processing network
+data and other forms of input. As such, vulnerabilities in theLinuxkernel
+can have a wide-ranging impact, putting security and privacy for people,
+organizations, and devices at risk. Since it’s written largely in the C
+language, which is not memory-safe, memory safety vulnerabilities such as
+buffer overflows and use-after-frees are a constant concern. By making it
+possible to write parts of theLinuxkernel inRust, which is memory-safe,
+we can entirely eliminate memory safety vulnerabilities from certain
+components, such as drivers.
+------------------------
+ISRG is targeting several different improvements to Rustls as part of
+Ochtman's work, including working toeliminate functions that
+panic, which effectively cause the program to crash.  As theRustdocumentationpoints
+out, usingpanic!()precludes callers from recovering from an
+error, which is probably not appropriate in a lot ofRustcode.  The
+presence of panics in theRustcode making its way toward theLinuxkernel washighlighted as a problemby
+Linus Torvalds as part of his review.  The Rustls project is working toward eliminating
+panics in its own code as well as eliminating calls into library routines
+that might panic, so that it provides a panic-free API for applications.
+------------------------
+Rustyet for some dozen years because it's a young, unstandardized, and unproven language without a second compatible implementation. As such it's uncertain whether or not future revisions of the implicitRustlanguage semantics necessitate changes to theRustparts ofLinux. One would hope that
+------------------------
+LinuxKernel Style is outdated whether compared toRustor not. This is to be expected of a thirty year old code base started when ANSI C was still a tad moist behind the ears. Since then there have been two significant standard revisions, both introducing various syntax and library
+------------------------
+Rustare implemented as Traits. 
+ 
+So things you can Add have an implementation of add() such that the result of the function is the same type as the left hand side - andRustwill call that when you use the + operator. String implements add (using the allocator implicitly). Because the result must be the same type, you can't get a Result back and so we can't have allocation which might fail. 
+ 
+Presumably we should not like to have this implicit allocation in theLinux
+------------------------
+have to decide how much language and compiler work to do before you really push onRustbeing used in theLinuxkernel --- because before you do the latter, you will need to settle once and hopefully for all the idiomatic way to handle Errno results for various common T types.
+------------------------
+Rustin the kernel will enable allRustdevelopers to become kernel developers.  
+ 
+Sorry but this is exactly how I understood it: make it easier to write drivers (implicit "forrustdevelopers" as not everyone is fluent in it and even those used to it say the learning curve is pretty steep). 
+ 
+ > The main goal ofRustin the kernel is to make the kernel code better, not to attractRustfans and newcomers.  
+ 
+Better in terms of what ? Maintainability, with only 1% of kernel developers being able to review and fix that code instead of the previous 100% ? Ease of use, with everyone having to install two separate toolchains, some combinations of which will possibly cause trouble that will have to be detected and rejected ? Portability, with a number of existing architectures not even being implemented by the language ? Fame and ego forrustfanboys for having won a victory overLinux
+------------------------
+rustones because the libs themselves will not be safer than the example above and will not be audited by those who area used to deal with operating system issues. 
+ 
+It could very well be thatLinuxis the last project adoptingrustin the end... That's a dangerous
+------------------------
+Linux's C code. There area tons of READ_ONCE(), likely(), atomic_inc(), smp_rmb(), readb(), iowrite{8,16,32}(), div64_* etc everywhere that rely on asm and need to be applied not directly because of the language but because of the underlying hardware constraints, that make C code less easy to write.  
+ 
+And ifRust
+------------------------
+linuxkernel. When 1 out of 10 lines was in fact an inline function calling an asm statement it shows there were some limitations. I don't see howRustwill avoid this. There will be tons of "unsafe" blocks everywhere making the code very hard to read
+------------------------
+block device driver intoRust4 years ago, and gave a talk atLinuxcon. 
+ 
+ 
+So we've been working on it for a while now, including writing drivers. 
+ 
+(Turns outRustwasn't quite ready back then, but the hard part is definitely the safe abstraction layer.)
+------------------------
+Rustisn't "designed to write browsers".Rustis designed to be a general-purpose systems language for everything from kernels/firmware/embedded to browsers to WebAssembly. There is, by design, no "gap" between assembly andRust. 
+ 
+In any case, one of the critical values of theLinux
+------------------------
+Rust-for-LinuxusesRustin no_std mode which means libstd and liballoc are not linked in by default.  Only by explicitly defining a global_allocator ( https://github.com/Rust-for-Linux/linux/blob/9e6e67e06bdc... ) are they making use of liballoc right now and AFAIK this is to be removed in favor of custom, fallible
+------------------------
+Rustcompiler ends up doing hidden allocations, and they then cause panics [...]  
+ 
+In contrast to C++,Rustdoes not have such a thing as a core-language allocation primitive (like C++'s `new` operator).  As long as you don't link in the `alloc` crate, the is zero possibility for any kind of heap allocation to happen, much less a hidden one.  If I understood correctly, this is the routeRust-for-Linux
+------------------------
+Rust's alloc library with different code more suited to theLinuxkernel seems like a good step, and it's something supported by the language just fine and is used in various situations already, it doesn't make the code any lessRust. I do hope
+------------------------
+Rustcurrently uses the C11 memory model, Boqun Fengsaid, mostly
+because the LLVM compiler supports it by default, but there is interest in
+ensuring that its memory model works well with the kernel's. Right now, 
+"there is no code requiring
+synchronization between C side andRustside, so we are currently
+fine", but that will change eventually, so
+there are plans to put the rightRustand kernel people together to discuss
+the issue.  Almeidanotedthat the
+plan is for mostRustcode in the kernel to only need to be concerned with
+theRustmemory model:
+------------------------
+Rustprobably wouldn't exist. 
+ 
+Certainly at this point I wouldn't try to argue that a project as large and complex asLinuxshould switch to C++ now that we haveRustas a viable alternative;Rustlooks like clearly the better choice to me. But an argument
+------------------------
+rusthas a pretty clear opinion on this. A dereference of a raw pointer is never obviously correct. This rather hard judgement can of course not work in C++. According toruststandards almost every line in C++ is not obviously correct. 
+ 
+ > > Then you will only have a few lines that have to be verified by humans.  
+ > "A few lines" of unsafe code in an OS kernel?  
+ > Even the current C code inLinux
+------------------------
+rust, I can just take a pointer to the subobject, as long as the lifetime of the pointer to the subobject is contained in the lifetime of the whole object.  
+ 
+It depends what do you specifically mean by a subobject. 
+If it's like a class field then normally one does not provide a direct pointer to the field to an unrelated code but implements a specific interface and provides it instead. 
+ 
+ > How complex should code be such that you think that one should actually verify correctness?  
+ > People will disagree about the complexity that can be checked by humans.  
+ 
+There is no "scientifically-correct" answer to that question, since it's mostly an individual opinion. 
+One can simply identify obviously-correct code (like in my example) and treat any disagreement over this as an evidence that the code is not obviously-correct. 
+ 
+ > Then you will only have a few lines that have to be verified by humans.  
+ 
+"A few lines" of unsafe code in an OS kernel? 
+Even the current C code inLinux
+------------------------
+Rustis thatRustprovides memory safety by default. You can escape memory safety via "unsafe", but *only* those parts are unsafe. C++ doesn't provide memory safety, so C++ is no better than C if your goal is memory safety. TheLinuxkernel does unusually well
+------------------------
+rustnot supporting alllinuxarchitectures, will we eventually get 
+to a situation when there are two drivers for the same device, one inrust(written first) and second one in C (for the unsupported architectures)? 
+ 
+Also this will mean that you will no longer be able to build kernel
+------------------------
+Linuxdevs still give C++ a firm "No", while they're givingRusta cautious "Maybe". You shouldn't ignore that hint.  
+ 
+We've had that discussion elsewhere.Linuxneeds a low-level language, and probably the best definition of such a language
+------------------------
+counter-argument: being source-incompatible might actually be a good thing, as the clear demarcation between the C world and theRustworld could be more manageable than the fuzzy C/C++ demarcation. 
+ 
+The jury is still out onLinux-Rust, butLinux-C++ looks like a well-beaten dead horse.
+------------------------
+Rusttolinux-next are surely capable of it. 
+ 
+The most difficult sources of incompatibility don't come from C99 initialisers 
+(which can be rearranged) but from code like this: 
+ https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/...  
+ 
+If someone knows how C++ people deal with macrology/features above, please tell me. 
+ 
+Modules also have
+------------------------
+Followers of thelinux-next integration tree may have noticed a significant
+addition: initial support for writing device drivers in theRustlanguage.
+There is some documentation inDocumentation/rust,
+while the code itself is in therusttop-level directory.  Appearance inlinux-next generally implies readiness
+for the upcoming merge window, but it is not clear if that is the case
+here; this code has not seen a lot of wider review yet.  It is, regardless,
+an important step toward the ability to write drivers in a safer language.
+------------------------
+Linuxdevice driver as a test-bed forRust's adoption as a kernel development language offers a low risk entry, and could well lead to identifying additional new low-level interface features that will improveRust's usefulness and viability in similar low-level system use cases
+------------------------
+Linuxkernel is notorious for its use of intrusive doubly-linked lists, andRustis notorious for the difficulty/discouragement of linked lists. Surely if it was just a matter of finding a safe abstraction inRust(i.e. wrapper around unsafe code),Rustwould also have easy-to-use linked lists
+------------------------
+TheRustprogramming languagehas long aimed to be a suitable replacement for C in operating-system
+kernel development.  AsRusthas matured, many developers have expressed
+growing interest in using it in theLinuxkernel. At the 2020 (virtual)LinuxPlumbers Conference, theLLVMmicroconference track hosted a session
+on open questions about and 
+obstacles to acceptingRustupstream in theLinuxkernel.  The interest in
+this topic can be seen in the fact that this was the single most heavily
+attended session at the 2020 event.
+------------------------
+Rust? I don't know much about driver development, but an abstract driver framework looks interesting: You write the framework (API) once, drivers once and two (or more) implementations (one forlinuxand one for Redox)... and can use the same driver onlinuxand Redox. Another pro: this would
+------------------------
+Rust's immaturity as a language, regardless of its supposedly groundbreaking special features (which don't exist inside "unsafe" blocks), and the discussion moved forward perhaps to its conclusion.Rustis a huge crock. The reasons why it looks good to some are that contemporary C++ is also a crock (e.g. for attempting parity withRust); and because its advocacybots[0] soak up all the flak that its features and lack thereof should rather face. Oh, and also security[1], and indistinct references to studies supposedly proving how people[2] just aren't good enough to handle sharp-cornered objects. This is not substantially different from the 1996 Java deal[3], only now it's a good thing that there's not going to eventually be a sufficiently smart just-in-time compiler and prescient garbage collector. 
+ 
+ >(...) having Redox's kernel andLinux
+------------------------
+Rustcode unwind in panic situations? (I'm guessing `fn drop` calls would be skipped). 
+* Problem domain is similar to loadingRust-based DSOs in userspace, for frameworks that are not originally written inRust(think about a GIMP plugin, for instance). Perhaps we should tackle that problem first? 
+ 
+Bottom line, I think that it would be quite hard to extract value from this, given how much of the APIs exposed by the kernel are engrossed in C-based complexity and unsafety assumptions. When I do imagine such framework, I see it would need a to provide a thick layer with a disparate set of APIs, if it ever wants to be viable and a fully idiomaticRust. 
+ 
+Maybe it's just a crazy idea, but perhaps a different project can be realized, for example - having Redox's kernel andLinux
+------------------------
+Linuxkernel doesn't guarantee API/ABI stability, so it's hard to design a universalRustinterface. At least it is almost impossible to make it work on all versions ofLinux. 
+2. Many C language features have no correspondingRustsupport. For example, it seems like impossible to construct
+------------------------
+Linuxis supported under "Tier 2.5" in the  chart of supported targets  as  sparc-unknown-linux-gnu . 
+
+ Bare-metal RISC-V (ie. not on top ofLinux) is supported by the  riscv32imac-unknown-none-elf ,  riscv32imc-unknown-none-elf ,  riscv64gc-unknown-none-elf , and  riscv64imac-unknown-none-elf  targets under tier 2.
+
+ The others are blocked on LLVM  not having code generators for them  though, last I checked, Debian was exploring using the  mrustc  transpiler to support m68k. (However, currently, mrustc doesn't do borrow checking and is primarily intended for re-bootstraping the self-hostingRust
+------------------------
+I don't have many experience withLinuxkernel programming, but I loveRustand I would love to help if I can.
+------------------------
+technically feasible is to have some parts written in different languages, andRustwould fit just as well as C++ there. 
+ 
+Introducing a new compiler dependency on the other hand... A much much harder sell. Maybe when LLVM can compileLinuxwithout patches, or if GCC got aRustbackend.
+------------------------
+Linuxcould migrate from C toRust?
+ 
+The only realistic choice is migrating to C++ exactly because of backwards source compatibility.
+It is curse for C++ and it is a blessing for anyone migrating upwards. 
+ 
+I have small .config back-to-back compiled and linked with g++ [1].
+ 
+The flag
+------------------------
+Rust. This would already be quite a lot of work --- integratingRustinto theLinuxbuild system, writingRustwrappers around kernel APIs --- but much has already done experimentally. There's a good chance that encouraging people to submit their wacky drivers inRustwould improve the quality of the driver
+------------------------
+linuxhelps, inrust(and yes all other lagnuages which use a similar system) this is more problematic. 
+ 
+cargo gets problemtatic as when you as a maintainer have to even out the developer cargo dependencie trees from multiple groups, so update a dependency which has a CVE (or some other
+------------------------
+Linuxcould migrate from C toRust?  For instance, c andRustinteraction; writing new sources, new packages, new modules inRust; replacing old stable sources withRust. 
+ 
+I explicitly do not mean fantasies about Linus declaring a 5 year holiday while everything is rewritten all at once :-) 
+ 
+It's been
+------------------------
+will amount to choosing whether to keep or abandon relevance.  It's not there yet.   
+ 
+Indeed the competition for theLinuxkernel is unfortunately nowhere near yet. In fact I haven't really seen any at all. I betRustwill pass C++ long before there's any credible one.
+------------------------
+Rustproject has chosen to provide expressive power, and in many cases better defaults than C++, while making it harder to accidentally do many (but not all) unsafe operations.  In ten or twenty years, if it matures well, it may be a good choice for implementing a successor toLinux
+------------------------
+Linuxkernel is large has little bearing on quality of C. 
+ 
+Oh, and if C is so productive, then please, rewrite Chromium _and_ Qt in plain C. I think that can be done by... Wednesday? And by Thursday you'd probably finish rewriting all the Perl and Python code. 
+ 
+And if you stop giggling, you'd notice that it's perfectly possible to write kernel-mode code inRust
+------------------------
+On his blog, Andy Grovermakes a casefor using theRustlanguage for new projects instead of C or Python. 
+"Second, there are people like me, people working in C and Python onLinuxsystems-level stuff — the “plumbing”, who are frustrated with low productivity. C and Python have diametrically-opposed advantages and disadvantages. C is fast to run but slow to write, and hard to write securely. Python is more productive but too slow and RAM-hungry for something running all the time, on every system. We must deal with getting C components to talk to Python components all the time, and it isn’t fun.Rustis the first language that gives a system programmer performance and productivity. These people might seeRustas a chance to increase security, to increase their own productivity, to never have to touch libtool/autoconf ever again, and to solve the C/Python dilemma with a one language solution."
+------------------------

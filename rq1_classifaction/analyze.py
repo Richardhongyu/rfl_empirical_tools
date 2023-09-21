@@ -1,0 +1,71 @@
+import sqlite3
+import asyncio
+import aiohttp
+from bs4 import BeautifulSoup
+import matplotlib.pyplot as plt
+from collections import defaultdict
+
+async def fetch_email_time(session, mid):
+    url = f"https://lore.kernel.org/rust-for-linux/{mid}/"
+
+    async with session.get(url) as response:
+        content = await response.text()
+        soup = BeautifulSoup(content, "html.parser")
+        time_element = soup.find_all("b")[2]
+
+        if time_element:
+            return time_element.text.strip().split("`")[0].split(" ")[0][:7]
+        else:
+            return None
+
+async def retrieve_email_times_and_plot_counts():
+    # Connect to the SQLite database
+    conn = sqlite3.connect('msgmap.sqlite3')  # Replace 'your_database_file.db' with the actual file path
+
+    # Create a cursor object to execute SQL queries
+    cursor = conn.cursor()
+
+    # Fetch all rows from the msgmap table
+    cursor.execute("SELECT mid FROM msgmap")
+    rows = cursor.fetchall()
+
+    # Dictionary to store the email count per time
+    email_counts = defaultdict(int)
+
+    async with aiohttp.ClientSession() as session:
+        tasks = []
+
+        # Create a list of tasks for each message ID
+        for row in rows:
+            mid = row[0]
+            task = asyncio.ensure_future(fetch_email_time(session, mid))
+            tasks.append(task)
+
+        # Gather results from the tasks
+        results = await asyncio.gather(*tasks)
+
+        # Iterate over the results and increment the email count for each time
+        for time in results:
+            if time:
+                email_counts[time] += 1
+
+    # Plotting the figure
+    times = list(email_counts.keys())
+    counts = list(email_counts.values())
+
+    plt.plot(times, counts)
+    plt.xlabel("Time")
+    plt.ylabel("Email Count")
+    plt.title("Number of Emails over Time - Rust-for-Linux Mailing List")
+    plt.xticks(rotation=45, ha="right")
+    plt.tight_layout()
+    # plt.show()
+    plt.savefig("rust_for_linux_email_counts.png")
+
+    # Close the cursor and the database connection
+    cursor.close()
+    conn.close()
+
+# Run the async function to retrieve email times and plot email counts over time
+loop = asyncio.get_event_loop()
+loop.run_until_complete(retrieve_email_times_and_plot_counts())
