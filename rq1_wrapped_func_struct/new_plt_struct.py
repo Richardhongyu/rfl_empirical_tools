@@ -34,9 +34,34 @@ fs = 30
     # - others(sounds, trace, arch, lib, ipc)
     #   - 4/(19106-6664)=4/12442
 
-op1 = np.array([71,13.0, 4.0, 15.0, 8.0, 18.0, 5.0, 1.0, 4.0]) # compute
+# new results
+    # - mm
+    #   - 4/34
+    # - sched && sync
+    #   - 13/124
+    # - clock && irq
+    #   - 5/87
+    # - driver
+    #   - 18/1280
+    # - file
+    #   - 15/2139
+    # - security
+    #   - 1/196
+    # - net
+    #   - 8/2744
+    # - others(sounds, trace, arch, lib, ipc)
+    #   - 4/(19106-6664)=4/12442
+
+# op1 = np.array([71,13.0, 4.0, 15.0, 8.0, 18.0, 5.0, 1.0, 4.0]) # compute
+
+op1 = np.array([71,4,13,5,18,15,1,8,4,]) # new
+# op1 = np.array([71, 13,15,4,5,8,1,18,4,])
 print(op1.shape[0])
-op2 = np.array([19106,124,34,2139,2744,1280,87,196,12442]) # communicate 
+# op2 = np.array([19106,124,34,2139,2744,1280,87,196,12442]) # communicate 
+
+op2 = np.array([19106, 34,124,87,1280,2139,196,2744,12442,]) # new
+
+# op2 = np.array([19106, 124,2139,34,87,2744,196,1280,12442,])
 # op3 = np.array([5 * 29, 3 * 29 * 2, 40 * 29, 40*29, 40*29, 40*29, 40*29, 40*29]) # compute
 # print(op1.shape[0])
 # op4 = np.array([20 * 29, 17 * 29 * 2, 60 * 29, 60*29, 60*29, 60*29, 60*29, 60*29]) # compute
@@ -60,7 +85,8 @@ print(op2_regular)
 # print(op4_regular)
 # print(op5_regular)
 
-devices = ["Overall", "sched", "mm", "file", "net", "driver", "irq&&clock", "security", "others"]
+devices = ["Overall", "mm","sched", "irq&&clock", "driver","file", "security","net", "others"]
+# devices = ["Overall", "mm","sched", "file",  "irq&&clock", "net", "security", "driver", "others"]
 # devices = ["Overall", "23/7", "23/3", "23/1", "22/10", "22/7", "22/4", "22/1"]
 color = ['grey', 'white', 'green', '#FF8C00', '#9370DB', 'hotpink']
 # color = ['grey', 'white', 'green', '#FF8C00', '#9370DB', 'hotpink']
@@ -74,9 +100,9 @@ plt.ylim(0,100)
 plt.yscale('symlog')
 plt.xticks(fontsize=fs)
 plt.yticks(fontsize=fs)
-plt.bar(devices, op1_regular, width=0.4, label="wrapped", color=color[0],edgecolor='black',)
+
 plt.xticks(rotation=30) # 倾斜70度
-bottom = bottom + op1_regular
+# bottom = bottom + op1_regular
 
 # plt.bar(devices, op3_regular, width=0.4, label="c2", color=color[3], bottom=bottom,edgecolor='black')
 
@@ -101,8 +127,9 @@ bottom = bottom + op1_regular
 # plt.bar(devices, op2_regular, width=0.4, label="c7", color=color[1], bottom=bottom,edgecolor='black')
 
 # bottom = bottom + op5_regular
-
-plt.bar(devices, op2_regular, width=0.4, label="unwrapped", color=color[1], bottom=bottom,edgecolor='black',)
+# bottom=bottom
+plt.bar(devices, op2_regular, width=0.4, label="unwrapped", color=color[1], bottom=0, edgecolor='black',)
+plt.bar(devices, op1_regular, width=0.4, label="wrapped", color=color[0],edgecolor='black',)
 
 plt.legend(fontsize=23, loc=4, ncol=4, bbox_to_anchor=(0.8, 1), frameon=False)
 

@@ -34,8 +34,10 @@ fs = 30
     # - others(sounds, trace, arch, lib, ipc)
     #   - 23/8073
 
-op1 = np.array([188,50,10, 27, 21, 36, 15, 6, 23]) # compute
-op2 = np.array([28805,388,1050,2760,4526,8766,333,535,8073]) # communicate
+# op1 = np.array([188,50,10, 27, 21, 36, 15, 6, 23]) # compute
+# op2 = np.array([28805,388,1050,2760,4526,8766,333,535,8073]) # communicate
+op1 = np.array([188,50,15,6,27,10,21,36,23,]) # compute
+op2 = np.array([28805,388,333,535,2760,1050,4526,8766,8073,]) #new
 # op1 = np.array([71,13.0, 4.0, 15.0, 8.0, 18.0, 5.0, 1.0, 4.0]) # compute
 print(op1.shape[0])
 # op2 = np.array([19106,124,34,2139,2744,1280,87,196,12442]) # communicate 
@@ -78,7 +80,7 @@ plt.xticks(fontsize=fs)
 plt.yticks(fontsize=fs)
 plt.bar(devices, op1_regular, width=0.4, label="wrapped", color=color[0],edgecolor='black',)
 plt.xticks(rotation=30) # 倾斜70度
-bottom = bottom + op1_regular
+# bottom = bottom + op1_regular
 
 # plt.bar(devices, op3_regular, width=0.4, label="c2", color=color[3], bottom=bottom,edgecolor='black')
 
@@ -105,6 +107,7 @@ bottom = bottom + op1_regular
 # bottom = bottom + op5_regular
 
 plt.bar(devices, op2_regular, width=0.4, label="unwrapped", color=color[1], bottom=bottom,edgecolor='black',)
+plt.bar(devices, op1_regular, width=0.4, label="wrapped", color=color[0],edgecolor='black',)
 
 plt.legend(fontsize=23, loc=4, ncol=4, bbox_to_anchor=(0.8, 1), frameon=False)
 
