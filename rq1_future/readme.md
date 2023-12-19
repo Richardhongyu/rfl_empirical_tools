@@ -36,7 +36,7 @@ python3 commit_linus_number.py # refdevcommits/refcommits col number commit_line
 
 ## pr numbers
 
-see here
+see this link
 
 https://ossinsight.io/analyze/Rust-for-Linux/linux#pull-requests
 
