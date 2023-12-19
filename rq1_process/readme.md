@@ -61,6 +61,7 @@ sum change:
 ### numbers
 
 ```bash
+# git commits > file
 # commits: commits in the linux branch
 # rflcommits: commits in the rust branch
 # rfldevcommits: commits in the rust-dev branch
@@ -77,7 +78,7 @@ sum change:
 # commit_linus_number.py refdevcommits/refcommits col number 
 # new_3_number.py refdevcommits/refcommits numbers number
 
-python3 
+python3 github.py
 ```
 
 1540
@@ -91,10 +92,6 @@ python3 commit_linus.py
 112288
 
 ## in review
-
-```bash
-
-```
 
 ### numbers
 
