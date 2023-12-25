@@ -75,8 +75,8 @@ sum change:
 # new_com.py rflcommits numbers sum but the time is not correct, they are not sliced
 # commit_linus.py refdevcommits/refcommits col sum commit_lines_sum_dev.png
 # new_3.py refdevcommits/refcommits numbers sum commit_dates_new.png
-# commit_linus_number.py refdevcommits/refcommits col number 
-# new_3_number.py refdevcommits/refcommits numbers number
+# commit_linus_number.py refdevcommits/refcommits col number commit_lines_dev.png
+# new_3_number.py refdevcommits/refcommits numbers number commit_dates_number.png
 
 python3 github.py
 ```
