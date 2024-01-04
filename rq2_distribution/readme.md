@@ -16,13 +16,36 @@ commit 80180df388211c350c26a5fbd4985a2e2d59e8d5 (HEAD -> rust-dev)
 
 ### ci errors
 
+rfl:
+root@be7cdac3875e:/data/bupt-rtos/linux# git commit -m "add the message"
+[rust-dev 80180df38821] add the message
+ 2 files changed, 2000 insertions(+)
+ create mode 100644 doc_coverage.sh
+ create mode 100644 document.sh
+root@be7cdac3875e:/data/bupt-rtos/linux# git log
+commit 80180df388211c350c26a5fbd4985a2e2d59e8d5 (HEAD -> rust-dev)
+
+ebpf:
+root@795ba347cefe:/data/bupt-rtos/linux# git log
+commit 68e34488a3ebf67000718bc7f800f36c6b93cf9d (HEAD -> ci_errors_ebpf)
+
+io_uring:
+root@795ba347cefe:/data/bupt-rtos/linux# git log
+commit 223236274784958004bd5a5a2f1f7f830a2b359e (HEAD -> ci_errors_io-uring)
+
 ## code coverage
+
+
 
 ## docs coverage
 
 ### rust
 
 100%
+
+### ebpf
+
+see the find_*.sh
 
 ### io_uring
 
@@ -64,8 +87,11 @@ count by hand
 
 1. ci errors
 
+    8
+
 2. lines from rust branch 
 
+```
 root@be7cdac3875e:/data/bupt-rtos/linux# git log
 commit 409b3498e6fa53994ca3940ef801a25638c52cea (HEAD -> rust)
 
@@ -82,7 +108,6 @@ perl: warning: Falling back to the standard locale ("C").
      128 text files.
      128 unique files.                                          
       13 files ignored.
-
 github.com/AlDanial/cloc v 1.74  T=3.41 s (34.0 files/s, 25536.6 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
@@ -113,6 +138,8 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 63204-44840
 18364
 
+```
+
 ### ebpf
 
 1. ci errors
@@ -121,9 +148,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 2. lines read from rq3
 
-Processing: BPF [GENERAL] (Safe Dynamic Programs and Tools) 
- Total C/C++ Header lines in BPF [GENERAL] (Safe Dynamic Programs and Tools): 307686
- Total number of fixes in BPF [GENERAL] (Safe Dynamic Programs and Tools): 252
+this has problem, need to sync with the date 2020/09/01
+
+```
+Processing: BPF (Safe dynamic programs and tools) 
+ Total C/C++ Header lines in BPF (Safe dynamic programs and tools): 176138
+ Total number of fixes in BPF (Safe dynamic programs and tools): 119
+```
 
 ### io_uring
 
@@ -133,13 +164,19 @@ Processing: BPF [GENERAL] (Safe Dynamic Programs and Tools)
 
 2. lines read from rq3
 
-Processing: IO_URING 
- Total C/C++ Header lines in IO_URING: 15888
- Total number of fixes in IO_URING: 25
+this has problem, need to sync with the date 2021/07/24
 
->>> 132/307686
-0.00042900879468029096
->>> 12/15888
-0.0007552870090634441
->>> 7/18364
+```
+Processing: IO_URING 
+ Total C/C++ Header lines in IO_URING: 10102
+ Total number of fixes in IO_URING: 83
+```
+
+### cal
+
+>>> 132/176138
+0.0007494123925558369
+>>> 12/10102
+0.001187883587408434
+>>> 8/18364
 0.00038118057068176867
