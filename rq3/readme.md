@@ -24,7 +24,8 @@ git log --oneline -- /path | grep "keywords"
 ## plot
 
 ```
-python3 color4.py
+python3 rq3_4.py > result.text
+python3 color5.py # change the result.txt file path
 ```
 
 ## record
