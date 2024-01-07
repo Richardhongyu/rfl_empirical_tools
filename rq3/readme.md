@@ -34,6 +34,8 @@ python3 color5.py # change the result.txt file path
 
 #### loc
 
+cat result_12_21_2.txt  | grep C/C++ | awk -F ":" 'BEGIN {sum=0}; {print $2; sum+=$2}; END {print sum}' |less
+
 ```
 drivers:
 C                             18907        2097325        1687367       10462555
@@ -188,3 +190,11 @@ SUM:                          3406         185376         133491         875737
 -------------------------------------------------------------------------------
 root@795ba347cefe:/data/bupt-rtos/linux-dovetail-v5.13-dovetail-rebase#
 ```
+
+
+### numbers 
+
+above
+
+1. linux-ext4@vger.kernel.org
+2. 
