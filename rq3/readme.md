@@ -198,3 +198,36 @@ above
 
 1. linux-ext4@vger.kernel.org
 2. 
+
+root@be7cdac3875e:/data/bupt-rtos/linux# python3 find_drivers.py 
+linux-hams@vger.kernel.org
+9
+
+linux-block@vger.kernel.org
+9
+
+cgroups@vger.kernel.org
+4
+
+linux-ext4@vger.kernel.org
+3
+
+linux-hardening@vger.kernel.org
+5
+
+linux-nfs@vger.kernel.org
+2
+
+rcu@vger.kernel.org
+3
+
+root@be7cdac3875e:/data/bupt-rtos/linux# python3
+Python 3.10.6 (main, Nov 14 2022, 16:10:14) [GCC 11.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 9+9+4+3+5+2+3
+35
+>>> 35-7
+28
+>>> 28/2500
+0.0112
+>>> 
