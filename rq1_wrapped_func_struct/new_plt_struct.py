@@ -15,6 +15,8 @@ matplotlib.rcParams['ps.fonttype'] = 42
 fs = 30
 # opBreakdown (percentage bar)
 
+# (15+8+18)/(13+4+15+8+18+5+1+4)
+
 # op1 = np.array([1.86 * 29, 1.86 * 29 * 2, 34.02 * 29]) # compute
 # op2 = np.array([110.01 * 4 * 2] * 3) # communicate 
     # - sched && sync
