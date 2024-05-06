@@ -1,0 +1,427 @@
+{
+    "params": {
+        "repoId": "207181317"
+    },
+    "requestedAt": "2024-01-16T03:59:32.903+00:00",
+    "finishedAt": "2024-01-16T03:59:32.937+00:00",
+    "spent": 0.034,
+    "sql": "SELECT t_month AS event_month, xs, s, m, l, xl, xxl, all_size\nFROM (\n    SELECT\n        t_month,\n        SUM(CASE WHEN (additions + deletions) < 10 THEN 1 ELSE 0 END) OVER(PARTITION BY t_month) AS xs,\n        SUM(CASE WHEN (additions + deletions) >= 10 AND (additions + deletions) < 30 THEN 1 ELSE 0 END) OVER(PARTITION BY t_month) AS s,\n        SUM(CASE WHEN (additions + deletions) >= 30 AND (additions + deletions) < 100 THEN 1 ELSE 0 END) OVER(PARTITION BY t_month) AS m,\n        SUM(CASE WHEN (additions + deletions) >= 100 AND (additions + deletions) < 500 THEN 1 ELSE 0 END) OVER(PARTITION BY t_month) AS l,\n        SUM(CASE WHEN (additions + deletions) >= 500 AND (additions + deletions) < 1000 THEN 1 ELSE 0 END) OVER(PARTITION BY t_month) AS xl,\n        SUM(CASE WHEN (additions + deletions) >= 1000 THEN 1 ELSE 0 END) OVER (PARTITION BY t_month) AS xxl,\n        COUNT(*) OVER (PARTITION BY t_month) AS all_size,\n        ROW_NUMBER() OVER (PARTITION BY t_month) AS row_num\n    FROM (\n        SELECT\n            DATE_FORMAT(created_at, '%Y-%m-01') as t_month,\n            additions,\n            deletions\n        FROM\n            github_events\n        WHERE\n            type = 'PullRequestEvent'\n            AND repo_id = 207181317\n            AND action = 'opened'\n    ) sub\n) sub\nWHERE row_num = 1\nORDER BY t_month\n;",
+    "fields": [
+        {
+            "name": "event_month",
+            "columnType": 253
+        },
+        {
+            "name": "xs",
+            "columnType": 246
+        },
+        {
+            "name": "s",
+            "columnType": 246
+        },
+        {
+            "name": "m",
+            "columnType": 246
+        },
+        {
+            "name": "l",
+            "columnType": 246
+        },
+        {
+            "name": "xl",
+            "columnType": 246
+        },
+        {
+            "name": "xxl",
+            "columnType": 246
+        },
+        {
+            "name": "all_size",
+            "columnType": 8
+        }
+    ],
+    "data": [
+        {
+            "event_month": "2020-09-01",
+            "xs": 2,
+            "s": 2,
+            "m": 1,
+            "l": 0,
+            "xl": 1,
+            "xxl": 0,
+            "all_size": 6
+        },
+        {
+            "event_month": "2020-10-01",
+            "xs": 0,
+            "s": 0,
+            "m": 3,
+            "l": 0,
+            "xl": 0,
+            "xxl": 2,
+            "all_size": 5
+        },
+        {
+            "event_month": "2020-11-01",
+            "xs": 5,
+            "s": 1,
+            "m": 3,
+            "l": 1,
+            "xl": 1,
+            "xxl": 1,
+            "all_size": 12
+        },
+        {
+            "event_month": "2020-12-01",
+            "xs": 3,
+            "s": 3,
+            "m": 1,
+            "l": 2,
+            "xl": 0,
+            "xxl": 2,
+            "all_size": 11
+        },
+        {
+            "event_month": "2021-01-01",
+            "xs": 0,
+            "s": 4,
+            "m": 1,
+            "l": 2,
+            "xl": 0,
+            "xxl": 2,
+            "all_size": 9
+        },
+        {
+            "event_month": "2021-02-01",
+            "xs": 3,
+            "s": 1,
+            "m": 1,
+            "l": 5,
+            "xl": 1,
+            "xxl": 1,
+            "all_size": 12
+        },
+        {
+            "event_month": "2021-03-01",
+            "xs": 12,
+            "s": 8,
+            "m": 5,
+            "l": 9,
+            "xl": 3,
+            "xxl": 5,
+            "all_size": 42
+        },
+        {
+            "event_month": "2021-04-01",
+            "xs": 14,
+            "s": 14,
+            "m": 10,
+            "l": 13,
+            "xl": 2,
+            "xxl": 3,
+            "all_size": 56
+        },
+        {
+            "event_month": "2021-05-01",
+            "xs": 9,
+            "s": 7,
+            "m": 12,
+            "l": 13,
+            "xl": 2,
+            "xxl": 2,
+            "all_size": 45
+        },
+        {
+            "event_month": "2021-06-01",
+            "xs": 7,
+            "s": 13,
+            "m": 9,
+            "l": 14,
+            "xl": 3,
+            "xxl": 2,
+            "all_size": 48
+        },
+        {
+            "event_month": "2021-07-01",
+            "xs": 14,
+            "s": 9,
+            "m": 13,
+            "l": 11,
+            "xl": 3,
+            "xxl": 5,
+            "all_size": 55
+        },
+        {
+            "event_month": "2021-08-01",
+            "xs": 4,
+            "s": 3,
+            "m": 1,
+            "l": 2,
+            "xl": 0,
+            "xxl": 0,
+            "all_size": 10
+        },
+        {
+            "event_month": "2021-09-01",
+            "xs": 4,
+            "s": 3,
+            "m": 0,
+            "l": 1,
+            "xl": 0,
+            "xxl": 1,
+            "all_size": 9
+        },
+        {
+            "event_month": "2021-10-01",
+            "xs": 2,
+            "s": 2,
+            "m": 0,
+            "l": 0,
+            "xl": 0,
+            "xxl": 1,
+            "all_size": 5
+        },
+        {
+            "event_month": "2021-11-01",
+            "xs": 2,
+            "s": 4,
+            "m": 13,
+            "l": 14,
+            "xl": 2,
+            "xxl": 5,
+            "all_size": 40
+        },
+        {
+            "event_month": "2021-12-01",
+            "xs": 8,
+            "s": 6,
+            "m": 2,
+            "l": 2,
+            "xl": 0,
+            "xxl": 0,
+            "all_size": 18
+        },
+        {
+            "event_month": "2022-01-01",
+            "xs": 9,
+            "s": 4,
+            "m": 12,
+            "l": 12,
+            "xl": 0,
+            "xxl": 5,
+            "all_size": 42
+        },
+        {
+            "event_month": "2022-02-01",
+            "xs": 7,
+            "s": 4,
+            "m": 6,
+            "l": 7,
+            "xl": 1,
+            "xxl": 3,
+            "all_size": 28
+        },
+        {
+            "event_month": "2022-03-01",
+            "xs": 7,
+            "s": 5,
+            "m": 6,
+            "l": 11,
+            "xl": 2,
+            "xxl": 3,
+            "all_size": 34
+        },
+        {
+            "event_month": "2022-04-01",
+            "xs": 4,
+            "s": 1,
+            "m": 1,
+            "l": 4,
+            "xl": 4,
+            "xxl": 1,
+            "all_size": 15
+        },
+        {
+            "event_month": "2022-05-01",
+            "xs": 7,
+            "s": 2,
+            "m": 4,
+            "l": 5,
+            "xl": 1,
+            "xxl": 2,
+            "all_size": 21
+        },
+        {
+            "event_month": "2022-06-01",
+            "xs": 2,
+            "s": 0,
+            "m": 2,
+            "l": 5,
+            "xl": 3,
+            "xxl": 1,
+            "all_size": 13
+        },
+        {
+            "event_month": "2022-07-01",
+            "xs": 9,
+            "s": 5,
+            "m": 11,
+            "l": 5,
+            "xl": 1,
+            "xxl": 2,
+            "all_size": 33
+        },
+        {
+            "event_month": "2022-08-01",
+            "xs": 11,
+            "s": 6,
+            "m": 3,
+            "l": 6,
+            "xl": 0,
+            "xxl": 1,
+            "all_size": 27
+        },
+        {
+            "event_month": "2022-09-01",
+            "xs": 10,
+            "s": 4,
+            "m": 0,
+            "l": 4,
+            "xl": 1,
+            "xxl": 2,
+            "all_size": 21
+        },
+        {
+            "event_month": "2022-10-01",
+            "xs": 4,
+            "s": 3,
+            "m": 5,
+            "l": 2,
+            "xl": 0,
+            "xxl": 3,
+            "all_size": 17
+        },
+        {
+            "event_month": "2022-11-01",
+            "xs": 1,
+            "s": 1,
+            "m": 0,
+            "l": 1,
+            "xl": 0,
+            "xxl": 0,
+            "all_size": 3
+        },
+        {
+            "event_month": "2022-12-01",
+            "xs": 1,
+            "s": 1,
+            "m": 3,
+            "l": 2,
+            "xl": 0,
+            "xxl": 1,
+            "all_size": 8
+        },
+        {
+            "event_month": "2023-01-01",
+            "xs": 2,
+            "s": 0,
+            "m": 1,
+            "l": 2,
+            "xl": 1,
+            "xxl": 0,
+            "all_size": 6
+        },
+        {
+            "event_month": "2023-02-01",
+            "xs": 4,
+            "s": 1,
+            "m": 2,
+            "l": 3,
+            "xl": 1,
+            "xxl": 2,
+            "all_size": 13
+        },
+        {
+            "event_month": "2023-03-01",
+            "xs": 1,
+            "s": 1,
+            "m": 0,
+            "l": 2,
+            "xl": 0,
+            "xxl": 6,
+            "all_size": 10
+        },
+        {
+            "event_month": "2023-04-01",
+            "xs": 0,
+            "s": 0,
+            "m": 0,
+            "l": 2,
+            "xl": 0,
+            "xxl": 5,
+            "all_size": 7
+        },
+        {
+            "event_month": "2023-05-01",
+            "xs": 1,
+            "s": 0,
+            "m": 0,
+            "l": 0,
+            "xl": 0,
+            "xxl": 1,
+            "all_size": 2
+        },
+        {
+            "event_month": "2023-06-01",
+            "xs": 0,
+            "s": 0,
+            "m": 0,
+            "l": 2,
+            "xl": 1,
+            "xxl": 1,
+            "all_size": 4
+        },
+        {
+            "event_month": "2023-07-01",
+            "xs": 0,
+            "s": 1,
+            "m": 1,
+            "l": 3,
+            "xl": 0,
+            "xxl": 0,
+            "all_size": 5
+        },
+        {
+            "event_month": "2023-08-01",
+            "xs": 1,
+            "s": 0,
+            "m": 1,
+            "l": 0,
+            "xl": 0,
+            "xxl": 0,
+            "all_size": 2
+        },
+        {
+            "event_month": "2023-09-01",
+            "xs": 1,
+            "s": 0,
+            "m": 1,
+            "l": 2,
+            "xl": 0,
+            "xxl": 1,
+            "all_size": 5
+        },
+        {
+            "event_month": "2023-11-01",
+            "xs": 0,
+            "s": 0,
+            "m": 0,
+            "l": 0,
+            "xl": 0,
+            "xxl": 2,
+            "all_size": 2
+        }
+    ],
+    "expiresAt": "2024-01-17T03:59:32.937+00:00",
+    "refresh": true
+}
