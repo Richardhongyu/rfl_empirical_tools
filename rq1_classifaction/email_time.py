@@ -75,3 +75,5 @@ async def retrieve_email_times_and_plot_counts():
 # Run the async function to retrieve email times and plot email counts over time
 loop = asyncio.get_event_loop()
 loop.run_until_complete(retrieve_email_times_and_plot_counts())
+
+
