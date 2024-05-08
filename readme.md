@@ -11,6 +11,7 @@ After collecting all the results, you can run the `.ipynb` file in that director
         rfl-path_generated_data
     |---- code
         plot.py
+        log_code
     |---- README.md
         bash.sh
         see images in imgs, corresponding to the figures/table/text.N in the paper
