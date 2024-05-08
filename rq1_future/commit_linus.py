@@ -7,6 +7,8 @@ from datetime import datetime
 from collections import Counter
 from datetime import datetime, timedelta
 
+# git log --oneline >rflcommits
+# git log --oneline >commits
 # Read the first file
 filename1 = 'rflcommits'# rflcommits rfldevcommits
 with open(filename1, 'r', encoding="ISO-8859-1") as file1:
