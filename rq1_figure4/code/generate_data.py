@@ -1,21 +1,22 @@
-with open('my_file_2022-07.txt', 'r') as f:
+with open('mid_value1', 'r') as f:
     a = f.read()
 middle_values = []
-
 res = a.split("-----------------------------------------------------------")
 for i in range(1,len(res)-1):
 #    print(res[i])
     print("-----------------------------------------------------------")
     lines = res[i].split("\n")
     total = 0
+    index = -1
     for j, k in enumerate(lines):
         if "is" in k and (j<5 or j==6):
+            index += 1
             # total += int(k.split(" ")[-1])
             if i == 1:
                 middle_values.append(int(k.split(" ")[-1]))
                 print(k.split(" ")[-1])
             else:
-                print(k.split(" ")[-1] - middle_values[j-1])
+                print(int(k.split(" ")[-1]) - middle_values[index])
 # a = '''-----------------------------------------------------------
 # safety_abstraction length is  39
 # drivers length is  40

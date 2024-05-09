@@ -14,7 +14,7 @@ for i,j in enumerate(liness):
         olines.append(j)
         # print(j)
 
-print(elines[0], olines[0])
+#print(elines[0], olines[0])
 
 year = [2022, 2022, 2022, 2022, 2023, 2023, 2023,]
 month = [1, 4, 7, 10, 1, 4, 7]
