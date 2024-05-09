@@ -17,6 +17,8 @@ ebpf: 0.141 [doc/(exported+included)]=[12/(49+36)]
 
 `io_uring: 0.200 [doc/(exported+included)]=[2/(5+5)]` means document coverage in io_uring is 20.0% and the number of documented function is `2`, the number of functions with `EXPORT_SYMBOL` or `EXPORT_SYMBOL_GPL` is `5`, the number of functions included in header files is `5`. Line about ebpf is similar.
 
+> Note: We don't need to compute the document coverage of RFL, because the compile will not pass if there is a function without kernel-doc comment.
+
 ## CIerrors/10K LoC
 
 todo
