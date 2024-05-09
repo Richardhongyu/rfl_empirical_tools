@@ -4,8 +4,10 @@
 
 We present the data and the code of the RFL empirical study in each directory according to the RQ.
 In each directory, you can follow the README.md to reproduce the results.
-After collecting all the results, you can run the `.ipynb` file in that directory to generate the figures in `.pdf` format.
+After collecting all the results, you can run the `bash.sh` file in that directory to generate the figures in `.pdf` format.
+Here is an example of the directory structure.
 
+```bash
 ---- rq1
     |---- data
         rfl-path_generated_data
@@ -22,6 +24,11 @@ After collecting all the results, you can run the `.ipynb` file in that director
     |---- imgs
         |---- *.pdf
 -- rq2
+```
+
+To simplify the reproduction process, we provide a remote docker container.
+All the code we introduce in the paper is in the `code` directory.
+You can follow the instructions in the readme.md of each directory to reproduce the results.
 
 ## Environment setup
 
