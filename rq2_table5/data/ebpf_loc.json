@@ -1,0 +1,24 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.90",
+  "elapsed_seconds"    : 0.702874898910522,
+  "n_files"            : 1522,
+  "n_lines"            : 459405,
+  "files_per_second"   : 2165.39245086024,
+  "lines_per_second"   : 653608.488099506,
+  "report_file"        : "/home/yyx/rfl_empirical_tools/rq2_table5/data/ebpf_loc.json"},
+"C" :{
+  "nFiles": 1369,
+  "blank": 56705,
+  "comment": 36215,
+  "code": 326710},
+"C/C++ Header" :{
+  "nFiles": 153,
+  "blank": 4490,
+  "comment": 10994,
+  "code": 24291},
+"SUM": {
+  "blank": 61195,
+  "comment": 47209,
+  "code": 351001,
+  "nFiles": 1522} }

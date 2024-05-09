@@ -19,6 +19,8 @@ ebpf: 0.141 [doc/(exported+included)]=[12/(49+36)]
 
 > Note: We don't need to compute the document coverage of RFL, because the compile will not pass if there is a function without kernel-doc comment.
 
-## CIerrors/10K LoC
+## CI errors/10K LoC
 
-todo
+After the excution of `draw.sh`, there will be three json file generated in `data` directory.
+
+`ebpf_loc.json` store the information that `cloc` tool reported the loc of files in ebpf subsystem. `io_uring_loc.json` and `rfl-loc.json` are similar.

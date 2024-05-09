@@ -1,0 +1,19 @@
+{"header" : {
+  "cloc_url"           : "github.com/AlDanial/cloc",
+  "cloc_version"       : "1.90",
+  "elapsed_seconds"    : 0.0242280960083008,
+  "n_files"            : 58,
+  "n_lines"            : 13653,
+  "files_per_second"   : 2393.914898642,
+  "lines_per_second"   : 563519.312261366,
+  "report_file"        : "/home/yyx/rfl_empirical_tools/rq2_table5/data/rfl_loc.json"},
+"Rust" :{
+  "nFiles": 58,
+  "blank": 1107,
+  "comment": 6419,
+  "code": 6127},
+"SUM": {
+  "blank": 1107,
+  "comment": 6419,
+  "code": 6127,
+  "nFiles": 58} }
