@@ -1,4 +1,4 @@
-with open('mid_value1', 'r') as f:
+with open('my_file_2022-07.txt', 'r') as f:
     a = f.read()
 middle_values = []
 
