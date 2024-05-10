@@ -6,6 +6,10 @@ We manually collect all the bugs reported in the RFL community.
 The data is stored in the `data/bug_list.md` file.
 You can check the bug list in that file.
 
+### Table3
+
+![alt text](image.png)
+
 ### Table 3 format illustration and its relation with `bug_list`
 
 1. Table 3 illustration

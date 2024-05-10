@@ -24,6 +24,7 @@ Here is an example of the directory structure.
         rfl_generated_data  
     |---- code  
         preprocess/calculate/plot scripts  
+        previous experiment logs(usually stored in the readme.md)
     |---- imgs/table  
         figureM.pdf/tableM_data  
     |---- README.md  
