@@ -36,9 +36,6 @@
             - 1 merged
             - 3 staged
             - 0 reviewing
-    
-
-
 2. unsound
     - 6: https://github.com/Rust-for-Linux/linux/issues?q=label%3Aunsound+
         - items
