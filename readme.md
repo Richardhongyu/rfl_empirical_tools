@@ -6,7 +6,7 @@ Considering the complexity of the environment setup, we provide a docker contain
 This repo is already cloned in '/workspace/rfl_empirical_tools'.
 
 ```bash
-ssh -p tongchuan_port ae@panda_ip
+ssh -p 9101 ae@149.129.120.139
 # The password is `rfl_ae_docker`.
 
 docker attach rfl_ae
