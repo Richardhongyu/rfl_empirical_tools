@@ -19,21 +19,21 @@ We present the data and the code of the RFL empirical study in each directory ac
 Here is an example of the directory structure.
 
 ```bash
----- rqN_figure/tableM
-    |---- data
-        rfl_generated_data
-    |---- code
-        preprocess/calculate/plot scripts
-    |---- imgs/table
-        figureM.pdf/tableM_data
-    |---- README.md
-        give instuctions about how to run the code and indicate which figures/table/text this repo corresponds to
-    |---- bash.sh
-        the bash is organized as follows:
-        1) cd /path/to/rfl-path/rq1
-        2) call scripts
-        3) plot.py
-        4) cp data/imgs
+---- rqN_figure/tableM  
+    |---- data  
+        rfl_generated_data  
+    |---- code  
+        preprocess/calculate/plot scripts  
+    |---- imgs/table  
+        figureM.pdf/tableM_data  
+    |---- README.md  
+        give instuctions about how to run the code and indicate which figures/table/text this repo corresponds to  
+    |---- bash.sh  
+        the bash is organized as follows:  
+        1) cd /path/to/rfl-path/rq1  
+        2) call scripts  
+        3) plot.py  
+        4) cp data/imgs  
 ```
 
 In each directory, you can follow the `README.md` to reproduce the results.
