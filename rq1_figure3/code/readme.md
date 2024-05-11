@@ -101,7 +101,8 @@ result
       - 'rust/kernel/allocator.rs': 2
       - 'rust/kernel/pages.rs': 4,
       - 'rust/kernel/mm.rs': 1,
-      - 10
+      - 'rust/kernel/io_mem.rs': 3,
+      - 13
     - file
       - 'rust/kernel/file.rs': 6,
       - 'rust/kernel/fs.rs': 21,
@@ -127,9 +128,8 @@ result
         - 'rust/kernel/gpio.rs': 3,
         - 'rust/kernel/hwrng.rs': 2,
         - 'rust/kernel/iov_iter.rs': 3,
-        - 'rust/kernel/io_mem.rs': 3,
         - 'rust/kernel/sysctl.rs': 2,
-        - 36
+        - 33
     - clock && irq
       - 'rust/kernel/clk.rs': 4,
       - 'rust/kernel/irq.rs': 10,

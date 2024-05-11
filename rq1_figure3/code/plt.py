@@ -39,13 +39,13 @@ def plot(type):
     #     [0.41068, 0.5102],
     # ])
     # The values is get from the bash script and stored in the data
-    # first column: 50/(312+14), 10/(898), 27/(2394), 21/(3636), 36/(7711), 15/(266+243), 6/(15+514), 23/(2203)
+    # first column: 50/(312+14), 13/(898), 15/(266+243), 33/(7711), 27/(2394), 21/(3636),6/(15+514)
     # second column: 13/127, 4/34, 5/87, 18/1280, 15/2308, 8/2745, 1/196
     values = np.array([
         [0.15337423312883436*100, 0.10236220472440945*100],
-        [0.011135857461024499*100, 0.11764705882352941*100],
-        [0.0046686551679419016*100, 0.05747126436781609*100],
-        [0.029469548133595286*100, 0.0140625*100],
+        [0.014476614699331848*100, 0.11764705882352941*100],
+        [0.029469548133595286*100, 0.05747126436781609*100],
+        [0.0042796005706134095*100, 0.0140625*100],
         [0.011278195488721804*100, 0.006499133448873483*100],
         [0.005775577557755775*100, 0.0029143897996357013*100],
         [0.011342155009451797*100, 0.00510204081632653*100],
@@ -88,17 +88,17 @@ def plot(type):
     labels = ['Wrapped Functions', 'Wrapped Structs']
     axs[0].legend(bars, labels, ncol=2, loc="lower left", bbox_to_anchor=(1, 1), frameon=False, fontsize=20, columnspacing=2, handletextpad=0.5)
 
-    func = ConnectionPatch(xyA=(min(x)-bar_width*2,3.39), xyB=(max(x)+bar_width*2,3.39), coordsA="data", coordsB="data", axesA=axs[0], axesB=axs[6], color="red", linestyle='--')
+    func = ConnectionPatch(xyA=(min(x)-bar_width*2,3.29), xyB=(max(x)+bar_width*2,3.29), coordsA="data", coordsB="data", axesA=axs[0], axesB=axs[6], color="red", linestyle='--')
     axs[6].add_artist(func)
     struct = ConnectionPatch(xyA=(min(x)-bar_width*2,4.37), xyB=(max(x)+bar_width*2,4.37), coordsA="data", coordsB="data", axesA=axs[0], axesB=axs[6], color="blue", linestyle='--')
     axs[6].add_artist(struct)
-    # >>> a = 50/(312+14), 10/(898), 27/(2394), 21/(3636), 36/(7711), 15/(266+243), 6/(15+514), 23/(2203)
+    # >>> a = 50/(312+14), 13/(898), 15/(266+243), 33/(7711), 27/(2394), 21/(3636),6/(15+514)
     # >>> sum(a)/7
-    # 0.03392636151676012
+    # 0.03285656065547204
     # >>> b = 13/127, 4/34, 5/87, 18/1280, 15/2308, 8/2745, 1/196
     # >>> sum(b)/7
     # 0.04372265599722724
-    plt.text(max(x)+bar_width*2+0.05, 2, 'func avg\n3.39', fontsize=18, color='red', va='center', ha='left')
+    plt.text(max(x)+bar_width*2+0.05, 2, 'func avg\n3.29', fontsize=18, color='red', va='center', ha='left')
     plt.text(max(x)+bar_width*2+0.05, 5, 'structs avg\n4.37', fontsize=18, color='blue', va='center', ha='left')
 
     plt.subplots_adjust(wspace=0.3)

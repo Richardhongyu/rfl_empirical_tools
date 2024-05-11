@@ -26,9 +26,113 @@ cat function_info.txt | grep kernel/cred |wc -l >> function_total
 cat function_info.txt | grep linux/security |wc -l >> function_total
 cat function_info.txt | grep arch |wc -l >> function_total
 
+# Data1: Manually check the rust structures in the function_total
+# linux/kernel/sched/ 
+# kernel/locking 
+# 329+59=388
+
+# linux/mm 
+# 1050
+
+# linux/fs 
+# 2760
+
+# linux/net/ 
+# 4526
+
+# linux/drivers 
+# 8766
+
+# linux/kernel/time 
+# 333
+
+# linux/kernel/irq 
+# 234
+
+# kernel/cred 
+# linux/security 
+# 16+519=535
+
+# arch 
+# 2334
+
 find rust/kernel/ -name *.rs | xargs cat | grep 'bindings::[A-Za-z_]*(' -o | sort | uniq  > rust_wrapped_functions.txt
 python3 rust.py > result.bat
 python3 count.py > rust_functions_total
+
+# Data2: Manually check the rust structures in the rust_structers
+# result
+#     - sched && sync
+#       - sched
+#         - 'rust/kernel/task.rs': 6,
+#         - 'rust/kernel/sync.rs': 1,
+#         - 'rust/kernel/workqueue.rs': 5,
+#         - 12
+#       - lock
+#         - 'rust/kernel/sync/spinlock.rs': 10,
+#         - 'rust/kernel/sync/mutex.rs': 3,
+#         - 'rust/kernel/sync/condvar.rs': 6,
+#         - 'rust/kernel/sync/rwsem.rs': 5,
+#         - 'rust/kernel/sync/smutex.rs': 3,
+#         - 'rust/kernel/sync/rcu.rs': 2,
+#         - 'rust/kernel/sync/seqlock.rs': 5,
+#         - 'rust/kernel/revocable.rs': 1
+#         - 'rust/kernel/lib.rs': 3
+#         - 38
+#       - 50
+#     - memory
+#       - 'rust/kernel/sync/arc.rs': 3,
+#       - 'rust/kernel/allocator.rs': 2
+#       - 'rust/kernel/pages.rs': 4,
+#       - 'rust/kernel/mm.rs': 1,
+#       - 'rust/kernel/io_mem.rs': 3,
+#       - 13
+#     - file
+#       - 'rust/kernel/file.rs': 6,
+#       - 'rust/kernel/fs.rs': 21,
+#       - 27
+#     - net
+#       - 'rust/kernel/net/filter.rs': 3,
+#       - 'rust/kernel/net.rs': 15,
+#       - 'rust/kernel/kasync/net.rs': 3,
+#       - 21
+#     - driver
+#         - device
+#           - 'rust/kernel/device.rs': 5,
+#           - 'rust/kernel/miscdev.rs': 2,
+#           - 'rust/kernel/chrdev.rs': 5,
+#           - 12
+#         - driver
+#           - 'rust/kernel/module_param.rs': 1,
+#         - platform
+#           - 'rust/kernel/platform.rs': 5,
+#         - bus
+#           - 'rust/kernel/amba.rs': 4,
+#         - 'rust/kernel/power.rs': 1,
+#         - 'rust/kernel/gpio.rs': 3,
+#         - 'rust/kernel/hwrng.rs': 2,
+#         - 'rust/kernel/iov_iter.rs': 3,
+#         - 'rust/kernel/sysctl.rs': 2,
+#         - 33
+#     - clock && irq
+#       - 'rust/kernel/clk.rs': 4,
+#       - 'rust/kernel/irq.rs': 10,
+#       - 'rust/kernel/delay.rs': 1,
+#       - 15
+#     - security
+#       - 'rust/kernel/cred.rs': 2
+#       - 'rust/kernel/security.rs': 4,
+#       - 6
+#     - others
+#       - structers
+#         - 'rust/kernel/rbtree.rs': 8,
+#         - 'rust/kernel/str.rs': 2,
+#       - 'rust/kernel/error.rs': 4,
+#       - 'rust/kernel/print.rs': 1,
+#       - 'rust/kernel/kunit.rs': 1,
+#       - 'rust/kernel/user_ptr.rs': 3,
+#       - 'rust/kernel/random.rs': 4,
+#       - 23
 
 # structures
 find rust/kernel/ -name *.rs | xargs cat | grep 'bindings::[A-Za-z_]*' -o | sort | uniq |wc -l
@@ -39,7 +143,7 @@ tail -n 325 rust_wrapped_structers.txt > rust_wrapped_structers2.txt
 wc -l  rust_wrapped_structers2.txt
 python3 rust2.py
 
-# Data1: Manually check the rust structures in the rust_wrapped_structers_info.txt
+# Data1: Manually check the rust structures in the rust_structers
     # - sched && sync
     #   - sched
     #     - include/linux/completion.h:26:struct completion {
@@ -165,7 +269,7 @@ find security/ -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {'
 find ./include/linux/*security* -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l >>rust_structures_values
 find ./include/linux/*cred* -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l >>rust_structures_values
 
-# Data2: Manually count the number of structures in the rust_structures_values
+# Data2: Manually count the number of structures in the structure_total
 # the log is as follows
 # sum
 #     - sched && sync
