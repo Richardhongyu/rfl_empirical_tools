@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 from matplotlib.dates import DateFormatter
 import matplotlib.dates as mdates
+from matplotlib.ticker import MultipleLocator
 
 def extract_data(data_file):
     # [(date_time, commit_number)]
@@ -15,7 +16,7 @@ def extract_data(data_file):
             format_string = '%Y-%m-%dT%H:%M:%SZ'
             pr_date = datetime.strptime(pr_date, format_string)
             is_merged = True if is_merged == 'True' else False
-            if commits < 250:
+            if commits < 100:
                 data.append((pr_date, int(commits), is_merged, pr_index))
     data.sort(key=lambda x: x[0])
     return data
@@ -57,7 +58,7 @@ if __name__ == '__main__':
     file = '../data/data.txt'
     data = extract_data(file)
 
-    # Used to debug
+    # Comment code are used to debug
     # print(len(data))
     # print(sum([i[1] for i in data]))
     # print(sum([i[1] for i in list(filter(lambda x:x[1] > 10, data))]))
@@ -68,6 +69,7 @@ if __name__ == '__main__':
     # print(len(list(filter(lambda x:x[2], data))))
     
     data = group_data_per_week(data)
+    # print(list(filter(lambda x: x[0] > datetime(2022,3,1) and x[0] < datetime(2023,1,1), data)))
     x = [mdates.date2num(x[0]) for x in data]
     y1 = [y[2] for y in data]
     y2 = [y[1] + y[2] for y in data]
@@ -75,9 +77,10 @@ if __name__ == '__main__':
     ax.plot(x, y1)
     ax.plot(x, y2)
     ax.fill_between(x, y1, y2, color='grey', alpha=0.3)
-    ax.set_xlabel("date")
-    ax.set_ylabel("commits number")
-    date_format = DateFormatter('%Y-%m-%d')  # 设置时间格式
+    ax.set_ylabel("Number of Commits")
+    date_format = DateFormatter('%y/%m')  # 设置时间格式
     ax.xaxis.set_major_formatter(date_format)
-    fig.autofmt_xdate()
-    plt.show()
+    ax.xaxis.set_major_locator(mdates.MonthLocator(interval=6))  
+    ax.xaxis.set_minor_locator(mdates.MonthLocator(interval=3))  
+    plt.tick_params(rotation=45)
+    plt.savefig('../imgs/figure5_the_trend_of_RFL.pdf', bbox_inches='tight')
