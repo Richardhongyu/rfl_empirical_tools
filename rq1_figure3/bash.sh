@@ -28,18 +28,18 @@ cat function_info.txt | grep arch |wc -l >> function_total
 
 find rust/kernel/ -name *.rs | xargs cat | grep 'bindings::[A-Za-z_]*(' -o | sort | uniq  > rust_wrapped_functions.txt
 python3 rust.py > result.bat
-python3 count.py
+python3 count.py > rust_functions_total
 
 # structures
 find rust/kernel/ -name *.rs | xargs cat | grep 'bindings::[A-Za-z_]*' -o | sort | uniq |wc -l
 find rust/kernel/ -name *.rs | xargs cat | grep 'bindings::[A-Za-z_]*' -o | sort | uniq > struct_info.txt
 python3 diff.py
 ## delete the upper variable (because they are macros, not)
-tail -n 325 rust_wrapped_structers.txt > rust_wrapped_structers.txt
-wc -l  rust_wrapped_structers.txt
+tail -n 325 rust_wrapped_structers.txt > rust_wrapped_structers2.txt
+wc -l  rust_wrapped_structers2.txt
 python3 rust2.py
 
-# Manually check the rust structures
+# Data1: Manually check the rust structures in the rust_wrapped_structers_info.txt
     # - sched && sync
     #   - sched
     #     - include/linux/completion.h:26:struct completion {
@@ -165,7 +165,7 @@ find security/ -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {'
 find ./include/linux/*security* -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l >>rust_structures_values
 find ./include/linux/*cred* -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l >>rust_structures_values
 
-# manually count the number of structures
+# Data2: Manually count the number of structures in the rust_structures_values
 # the log is as follows
 # sum
 #     - sched && sync
@@ -208,5 +208,14 @@ find ./include/linux/*cred* -name *.h | xargs cat | grep '^[typedef ]*struct [A-
 #         - 196
 #     - 127+34+2308+2745+1280+87+196=6664
 
+# plot
+# manually put the above data into the plt.py
 python3 plt.py
+
+# copy data
+cp rust_functions_total /workspace/rfl_empirical_tools/rq1_figure3/data/rust_functions
+cp function_total /workspace/rfl_empirical_tools/rq1_figure3/data
+cp rust_wrapped_structers_info.txt /workspace/rfl_empirical_tools/rq1_figure3/data/rust_structers
+cp rust_structures_values /workspace/rfl_empirical_tools/rq1_figure3/data/structure_total
+cp ./figure3.pdf /workspace/rfl_empirical_tools/rq1_figure3/imgs
 popd

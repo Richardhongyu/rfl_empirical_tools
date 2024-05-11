@@ -31,7 +31,7 @@ def find_function_info(function_list_file, output_file):
             f_out.write(line)
 
 if __name__ == "__main__":
-    function_list_file = "rust_wrapped_structers.txt"
+    function_list_file = "rust_wrapped_structers2.txt"
     # vmlinux_file = "vmlinux"
     output_file = "rust_wrapped_structers_info.txt"
 

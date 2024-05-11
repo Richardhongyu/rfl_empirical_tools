@@ -233,8 +233,7 @@ find ./include/memory/ -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_
 
 find fs -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l
 2031
-find ./include/linux/fs* -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | 
-uniq |  wc -l
+find ./include/linux/fs* -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l
 101
 find ./include/linux/file* -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l
 7
@@ -244,13 +243,13 @@ find net -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sor
 find ./include/net -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l
 2043
 
-find ./include/linux/*driver* -name *.h | xargs cat | grep '^[typedef ]* struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l
+find ./include/linux/*driver* -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l
 20
 find ./include/linux/*dev* -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l
 197
 find ./include/linux/*platform* -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l
 568
-find ./include/linux/*bus* -name *.h | xargs cat | grep '^[typedef ]*str uct [A-Za-z_0-9]* {' | sort | uniq |  wc -l
+find ./include/linux/*bus* -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l
 235
 find ./include/linux/*pci* -name *.h | xargs cat | grep '^[typedef ]*struct [A-Za-z_0-9]* {' | sort | uniq |  wc -l
 47

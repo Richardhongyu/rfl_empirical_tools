@@ -3,6 +3,7 @@
 ## Instructions to reproduce
 
 We manually collect all the bugs reported in the RFL community. 
+This repo does not have any code to run.
 The data is stored in the `data/bug_list.md` file.
 You can check the bug list in that file.
 
