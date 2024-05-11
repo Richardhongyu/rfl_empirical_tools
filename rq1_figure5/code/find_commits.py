@@ -23,7 +23,7 @@ def find_commits_tab_counter(url, proxies=None):
 
 if __name__ == "__main__":
     # Replace 'YOUR_PROXY_URL' with the actual proxy URL you want to use
-    proxy_url = 'http://127.0.0.1:10809'  # Example: 'http://123.456.789.10:8080'
+    proxy_url = 'http://172.27.240.1:7890'  # Example: 'http://123.456.789.10:8080'
     proxies = {
         'http': proxy_url,
         'https': proxy_url
