@@ -7,7 +7,7 @@ def find_function_info(function_list_file, vmlinux_file, output_file):
 
     def process_function(function):
         address = function.split()[0]
-        cmd = "llvm-addr2line-14 -C -f -e {} {}".format(vmlinux_file, address)
+        cmd = "llvm-addr2line-13 -C -f -e {} {}".format(vmlinux_file, address)
         try:
             result = subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT).decode("utf-8")
             source_info = result.strip().split()[-1]  # Extract the last part (source file:line number)

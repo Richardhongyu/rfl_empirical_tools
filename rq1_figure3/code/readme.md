@@ -57,7 +57,7 @@ cat function_info.txt | grep linux/kernel/irq |wc -l
 234
 
 cat function_info.txt | grep kernel/cred |wc -l
-cat function_info.txt | grep linux/secutiry |wc -l
+cat function_info.txt | grep linux/security |wc -l
 16+519=535
 
 cat function_info.txt | grep arch |wc -l
@@ -207,7 +207,7 @@ python3 diff.py
 
 wc -l  rust_wrapped_structers.txt
 
-python rust2.py
+python3 rust2.py
 ```
 
 141->71
