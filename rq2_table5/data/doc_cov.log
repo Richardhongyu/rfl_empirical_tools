@@ -1,0 +1,127 @@
+In directory /home/yyx/linux-rust-dev/include/linux/io_uring/:
+0 functions of 0 exported functions have doc in /home/yyx/linux-rust-dev/include/linux/io_uring/.
+In directory /home/yyx/linux-rust-dev/io_uring/:
+	io_uring_cmd_mark_cancelable is exported.
+	__io_uring_cmd_do_in_task is exported.
+	io_uring_cmd_done is exported.
+	io_uring_cmd_import_fixed is exported.
+	io_uring_cmd_sock is exported.
+	Function 'io_uring_cmd_mark_cancelable' is exported and its previous line is: */
+	io_uring_cmd_mark_cancelable has doc.
+	Function 'io_uring_cmd_done' is exported and its previous line is: */
+	io_uring_cmd_done has doc.
+	Function 'io_uring_cmd_sock' is exported and its previous line is: #if defined(CONFIG_NET)
+	2 functions of 5 exported functions have doc in /home/yyx/linux-rust-dev/io_uring/uring_cmd.c.
+2 functions of 5 exported functions have doc in /home/yyx/linux-rust-dev/io_uring/.
+In subsystem io_uring total export 5 functions and 2 functions have doc.
+In directory /home/yyx/linux-rust-dev/Documentation/bpf/:
+0 functions of 0 exported functions have doc in /home/yyx/linux-rust-dev/Documentation/bpf/.
+Error: /home/yyx/linux-rust-dev/networking/filter is not a valid file or directory path.
+In directory /home/yyx/linux-rust-dev/Documentation/userspace-api/ebpf/:
+0 functions of 0 exported functions have doc in /home/yyx/linux-rust-dev/Documentation/userspace-api/ebpf/.
+pnet_id_by_dev_port is exported.
+Function 'pnet_id_by_dev_port' is exported and its previous line is: */
+pnet_id_by_dev_port has doc.
+1 functions of 1 exported functions have doc in /home/yyx/linux-rust-dev/arch/s390/net/pnet.c.
+In directory /home/yyx/linux-rust-dev/kernel/bpf/:
+	bpf_verifier_log_write is exported.
+	bpf_log is exported.
+	tnum_strn is exported.
+	Function 'bpf_verifier_log_write' is exported and its previous line is: */
+	bpf_verifier_log_write has doc.
+	1 functions of 3 exported functions have doc in /home/yyx/linux-rust-dev/kernel/bpf/log.c.
+	bpf_offload_dev_match is exported.
+	bpf_offload_dev_netdev_register is exported.
+	bpf_offload_dev_netdev_unregister is exported.
+	bpf_offload_dev_create is exported.
+	bpf_offload_dev_destroy is exported.
+	bpf_offload_dev_priv is exported.
+	Function 'bpf_offload_dev_create' is exported and its previous line is: struct bpf_offload_dev *
+	0 functions of 6 exported functions have doc in /home/yyx/linux-rust-dev/kernel/bpf/offload.c.
+	bpf_prog_alloc is exported.
+	__bpf_call_base is exported.
+	bpf_prog_select_runtime is exported.
+	bpf_prog_free is exported.
+	bpf_event_output is exported.
+	Function '__bpf_call_base' is exported and its previous line is: */
+	__bpf_call_base has doc.
+	Function 'bpf_prog_select_runtime' is exported and its previous line is: */
+	bpf_prog_select_runtime has doc.
+	Function 'bpf_event_output' is exported and its previous line is: u64 __weak
+	2 functions of 5 exported functions have doc in /home/yyx/linux-rust-dev/kernel/bpf/core.c.
+	bpf_preload_ops is exported.
+	0 functions of 1 exported functions have doc in /home/yyx/linux-rust-dev/kernel/bpf/inode.c.
+	bpf_map_put is exported.
+	bpf_map_inc is exported.
+	bpf_map_inc_with_uref is exported.
+	bpf_map_inc_not_zero is exported.
+	bpf_prog_put is exported.
+	bpf_prog_add is exported.
+	bpf_prog_sub is exported.
+	bpf_prog_inc is exported.
+	bpf_prog_inc_not_zero is exported.
+	bpf_prog_get_type_dev is exported.
+	Function 'bpf_map_put' is exported and its previous line is: */
+	bpf_map_put has doc.
+	Function 'bpf_prog_inc_not_zero' is exported and its previous line is: /* prog_idr_lock should have been held */
+	bpf_prog_inc_not_zero has doc.
+	2 functions of 10 exported functions have doc in /home/yyx/linux-rust-dev/kernel/bpf/syscall.c.
+	btf_type_by_id is exported.
+	btf_ctx_access is exported.
+	register_btf_kfunc_id_set is exported.
+	register_btf_fmodret_id_set is exported.
+	register_btf_id_dtor_kfuncs is exported.
+	__register_bpf_struct_ops is exported.
+	Function 'register_btf_kfunc_id_set' is exported and its previous line is: /* This function must be invoked only from initcalls/module init functions */
+	register_btf_kfunc_id_set has doc.
+	Function 'register_btf_fmodret_id_set' is exported and its previous line is: /* This function must be invoked only from initcalls/module init functions */
+	register_btf_fmodret_id_set has doc.
+	Function 'register_btf_id_dtor_kfuncs' is exported and its previous line is: /* This function must be invoked only from initcalls/module init functions */
+	register_btf_id_dtor_kfuncs has doc.
+	3 functions of 6 exported functions have doc in /home/yyx/linux-rust-dev/kernel/bpf/btf.c.
+8 functions of 31 exported functions have doc in /home/yyx/linux-rust-dev/kernel/bpf/.
+In directory /home/yyx/linux-rust-dev/net/bpf/:
+	bpf_fentry_test1 is exported.
+	0 functions of 1 exported functions have doc in /home/yyx/linux-rust-dev/net/bpf/test_run.c.
+0 functions of 1 exported functions have doc in /home/yyx/linux-rust-dev/net/bpf/.
+copy_bpf_fprog_from_user is exported.
+bpf_prog_create is exported.
+bpf_prog_create_from_user is exported.
+bpf_prog_destroy is exported.
+sk_attach_filter is exported.
+xdp_do_flush is exported.
+bpf_master_redirect_enabled_key is exported.
+xdp_master_redirect is exported.
+xdp_do_redirect is exported.
+xdp_do_redirect_frame is exported.
+ipv6_bpf_stub is exported.
+xfrm_bpf_md_dst is exported.
+nf_conn_btf_access_lock is exported.
+nfct_btf_struct_access is exported.
+bpf_warn_invalid_xdp_action is exported.
+sk_detach_filter is exported.
+Function 'bpf_prog_create' is exported and its previous line is: */
+bpf_prog_create has doc.
+Function 'bpf_prog_create_from_user' is exported and its previous line is: */
+bpf_prog_create_from_user has doc.
+Function 'sk_attach_filter' is exported and its previous line is: */
+sk_attach_filter has doc.
+Function 'xdp_do_flush' is exported and its previous line is: */
+xdp_do_flush has doc.
+4 functions of 16 exported functions have doc in /home/yyx/linux-rust-dev/net/core/filter.c.
+In directory /home/yyx/linux-rust-dev/samples/bpf/:
+0 functions of 0 exported functions have doc in /home/yyx/linux-rust-dev/samples/bpf/.
+Error: /home/yyx/linux-rust-dev/scripts/bpf_doc.py is not a valid file or directory path.
+Error: /home/yyx/linux-rust-dev/scripts/Makefile.btf is not a valid file or directory path.
+Error: /home/yyx/linux-rust-dev/scripts/pahole-version.sh is not a valid file or directory path.
+In directory /home/yyx/linux-rust-dev/tools/bpf/:
+0 functions of 0 exported functions have doc in /home/yyx/linux-rust-dev/tools/bpf/.
+In directory /home/yyx/linux-rust-dev/tools/lib/bpf/:
+0 functions of 0 exported functions have doc in /home/yyx/linux-rust-dev/tools/lib/bpf/.
+In directory /home/yyx/linux-rust-dev/tools/testing/selftests/bpf/:
+	bpf_fentry_shadow_test is exported.
+	0 functions of 1 exported functions have doc in /home/yyx/linux-rust-dev/tools/testing/selftests/bpf/bpf_testmod/bpf_testmod.c.
+0 functions of 1 exported functions have doc in /home/yyx/linux-rust-dev/tools/testing/selftests/bpf/.
+In subsystem ebpf total export 49 functions and 12 functions have doc.
+io_uring: 0.200 [doc/(exported+included)]=[2/(5+5)]
+ebpf: 0.141 [doc/(exported+included)]=[12/(49+36)]

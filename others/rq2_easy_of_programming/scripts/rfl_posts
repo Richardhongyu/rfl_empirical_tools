@@ -1,0 +1,51 @@
+Rust for embedded
+Three Questions and Answers: Rust for Linux (Heise)
+The rest of the 6.3 merge window
+Kernel time APIs for Rust
+Rust Keyword Generics Progress Report: February 2023
+Rust bandwagon
+KernelCI now testing Linux Rust code (Collabora blog)
+To all the "why bother" rustaceans
+Rust support coming to GCC
+Memory Safe Languages in Android 13 (Google security blog)
+Lina: Tales of the M1 GPU
+Rust in the 6.2 kernel
+Rust 1.65.0 released
+A first look at Rust in the 6.1 kernel
+Compiling Rust for Linux with rustc_codegen_gcc
+A deeper look into the GCC Rust front-end
+The first half of the 6.1 merge window
+Some 6.0 development statistics
+Compiling Rust with GCC: an update
+Safer flexible arrays for the kernel
+Next steps for Rust in the kernel
+The 2022 Linux Kernel Maintainers Summit
+A pair of Rust kernel modules
+Rust 1.62.0 released
+The Linux Foundation's "security mobilization plan"
+Huang: Rust: A Critical Retrospective
+Rust 1.61.0 released
+Supporting Linux kernel development in Rust
+Rustaceans at the border
+The kernel radar: folios, multi-generational LRU, and Rust
+Moving the kernel to modern C
+Rust
+Recommendations for Rust and read-copy-update
+Rust and GCC, two different ways
+McKenney: So You Want to Rust the Linux Kernel?
+More Rust concepts for the kernel
+The Rust for Linux project
+Using Rust for kernel development
+Key Rust concepts for the kernel
+Rust for Linux redux
+A GPIO driver in Rust
+Rust noise
+Supporting Miguel Ojeda’s Work on Rust in the Linux Kernel (Prossimo blog)
+Rustls: memory safety for TLS
+Rust in the Linux kernel (Google security blog)
+Rust heads into the kernel?
+Rust support hits linux-next
+Rust is the future of systems programming, C is the new Assembly (Packt)
+tl;dr: Rust is NFG. Try again in 2030.
+C, still?
+Grover: Why Rust for Low-level Linux programming?

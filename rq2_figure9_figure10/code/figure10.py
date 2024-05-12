@@ -1,0 +1,171 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+import matplotlib
+import matplotlib as mpl
+from matplotlib import colors
+
+nvme_data = np.array([0.7755102040816326, 0.9868421052631579, 0.9536423841059603, 0.9838709677419355, 0.9867724867724867, 1.0, 1.0294117647058822, 1.009009009009009, 1.0063694267515924, 0.995, 0.9743975903614458, 0.996415770609319, 1.1387900355871887, 1.1371428571428572, 1.0478821362799264, 1.0756823821339951, 1.0679277730008598, 1.125993883792049, 1.10625, 1.0972447325769854, 1.0429184549356223, 1.026074700493305, 1.019941634241245, 1.097012172630026, 1.0697084917617237, 1.0554474708171206, 1.0230870712401055, 1.011786038077969, 0.9421515561569689, 0.9919302775984506, 0.9195402298850575, 1.0108695652173914, 0.967032967032967, 1.0114942528735633, 0.9651162790697675, 0.978021978021978, 0.9515151515151515, 1.020066889632107, 0.9871589085072231, 0.9427828348504551, 0.9765533411488863, 1.0150115473441108, 1.0823529411764705, 1.115702479338843, 1.1135371179039302, 1.1615384615384616, 1.0656716417910448, 1.0756130790190737, 1.0896860986547086, 1.0646651270207852, 1.0611888111888113, 1.157699443413729, 1.0779049295774648, 1.0551338393927288, 1.027739251040222, 1.043170559094126, 1.0794701986754967, 1.0, 1.3692030616839261, 0.9678266579120157, 0.95, 1.0256410256410255, 0.810126582278481, 0.6078431372549019, 1.407185628742515, 0.9512820512820512, 0.953125, 1.5857142857142856, 1.385135135135135, 1.254416961130742, 1.1330645161290323, 1.134587554269175, 1.0, 1.277027027027027, 1.5502183406113537, 1.7907608695652173, 1.2347826086956522, 1.026258205689278, 0.9842931937172775, 1.2972972972972974, 1.1388888888888888, 1.1265580057526365, 2.0977528089887643, 1.1520958083832336, 0.9810725552050473, 1.2061224489795919, 1.3622828784119108, 1.2445616348055373, 1.0939922480620154, 0.843947982660887, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 0.9025974025974026, 0.9076433121019108, 0.8921568627450981, 0.9071428571428571, 0.9174193548387096, 0.9284833538840938, 0.984313725490196, 0.971830985915493, 1.024442082890542, 0.8985148514851485, 0.9199029126213593, 0.9595419847328245, 1.0045146726862302, 1.0275449101796408, 0.9844333748443338, 0.8116213683223993, 0.9311199207135779, 0.7526315789473684, 1.3659420289855073, 1.2445652173913044, 1.0017211703958693, 0.9966666666666667, 1.3976470588235295, 0.9949152542372881, 0.7551020408163265, 1.0, 1.0, 0.9731800766283525, 1.0206185567010309, 1.00199203187251, 1.0538922155688624, 0.9777777777777777, 0.9686520376175548, 0.9975062344139651, 1.020123839009288, 0.9976442873969376, 1.1056338028169015, 1.1477272727272727, 1.1423076923076922, 1.0739827373612825, 1.029585798816568, 1.1403940886699508, 1.1389473684210527, 1.0896, 1.0828729281767955, 1.0601983002832862, 1.0102840352595495, 1.0554561717352415, 1.0695876288659794, 1.0331061343719572, 1.050836120401338, 1.0213539300318037, 0.9457074991516796, 0.9928963513077171, 0.9759036144578314, 1.0, 1.0, 1.0476190476190477, 0.9761904761904762, 0.9651162790697675, 0.975609756097561, 1.0063897763578276, 0.9854838709677419, 0.9645203679369251, 0.9474313022700119, 0.9642857142857143, 1.057915057915058, 1.1216494845360825, 1.0512048192771084, 1.0643367752184274, 1.1129770992366412, 0.9905482041587902, 1.0851528384279476, 1.0740318906605923, 1.044548651817116, 1.130215497478221, 1.3402889245585874, 1.0779591836734694, 0.9904371584699454, 1.0473022912047303, 1.0395525369556533, 1.004296100462657, 1.0049358341559724, 1.0043304463690872, 1.1904761904761905, 1.1904761904761905, 1.391304347826087, 1.8541666666666667, 2.601769911504425, 1.037593984962406, 0.9682539682539683, 1.536231884057971, 1.3777777777777778, 1.2552447552447552, 1.2037470725995316, 1.1935483870967742, 0.9809523809523809, 1.2876712328767124, 2.152941176470588, 1.3190184049079754, 1.3614775725593669, 1.0459363957597174, 1.0268817204301075, 1.1943462897526502, 1.0348432055749128, 1.2820224719101123, 1.1774949765572673, 1.0455911823647295, 1.0096463022508038, 1.159362549800797, 1.266355140186916, 1.3600883652430045, 1.119205298013245, 0.8095726495726496, 1.1475409836065573, 1.1311475409836065, 1.1311475409836065, 1.1333333333333333, 1.1147540983606556, 1.1147540983606556, 0.875, 0.9355932203389831, 0.9092465753424658, 0.8920863309352518, 0.8926767676767676, 0.9177914110429448, 1.0658436213991769, 1.0081135902636917, 0.9923413566739606, 0.8963265306122449, 0.9992012779552716, 0.9883040935672515, 0.9866369710467706, 0.9816933638443935, 1.0346375881975625, 0.8307402168788307, 0.8261065943992774, 0.7874396135265701, 0.8992974238875878, 0.685971685971686, 0.8843226788432268, 1.0084175084175084, 0.976897689768977, 1.00513698630137, 0.7755102040816326, 1.0, 1.0066225165562914, 0.9850746268656716, 0.9744897959183674, 1.003992015968064, 1.0176470588235293, 0.9911111111111112, 0.9845201238390093, 1.0025, 0.993920972644377, 1.0035502958579883, 1.1858736059479553, 1.1274238227146813, 1.0654545454545454, 1.046172539489672, 1.024431339511373, 1.0968354430379748, 1.1143451143451144, 1.1038338658146964, 1.0377562028047465, 1.0424328147100423, 1.0286686103012634, 1.051520572450805, 1.066411238825032, 1.0339805825242718, 1.0465735196274117, 1.0174391922900412, 0.9600811907983762, 1.0016217969510217, 0.9523809523809523, 1.0, 1.0227272727272727, 0.9775280898876404, 1.0, 1.0120481927710843, 0.9212121212121213, 1.0439189189189189, 0.9413629160063391, 0.9485488126649076, 1.0514800514800515, 0.9808773903262092, 1.1369294605809128, 1.082, 1.0370741482965933, 1.0047281323877069, 1.07421875, 1.1048387096774193, 1.0979955456570156, 1.0748299319727892, 1.0681399631675874, 1.0008968609865472, 1.011468901632113, 1.0024650780608053, 1.0577200577200576, 1.05395935529082, 1.0306528662420382, 0.9986842105263158, 1.0106987629555333, 0.97363216875412, 1.3157894736842106, 1.3157894736842106, 1.2025316455696202, 1.6857142857142857, 1.166023166023166, 1.0637755102040816, 0.9523809523809523, 1.4714285714285715, 1.6328125, 1.4, 0.735981308411215, 1.085076708507671, 1.0288461538461537, 1.2272727272727273, 1.4285714285714286, 1.3280632411067195, 1.023138832997988, 1.2881355932203389, 1.0, 1.3243243243243243, 1.7306666666666666, 1.0975609756097562, 2.198265179677819, 1.363767074047448, 1.0126984126984127, 1.211297071129707, 1.2414578587699316, 1.4265041888804264, 0.9291059472233163, 0.7906824146981627, 1.1311475409836065, 1.1311475409836065, 1.1311475409836065, 1.1311475409836065, 1.1147540983606556, 1.1147540983606556, 0.9135802469135802, 0.9435215946843853, 0.8848684210526315, 0.885952712100139, 0.8931297709923665, 0.8980582524271845, 1.0, 1.0330578512396693, 0.9088050314465409, 0.8719253604749788, 0.8792834890965732, 0.9323671497584541, 1.0022421524663676, 0.9761092150170648, 0.8908865468071916, 0.7893507706679121, 0.8481012658227848, 1.175720992622401, 1.318936877076412, 0.9195205479452054, 0.9585406301824212, 1.0083892617449663, 0.9933110367892977, 0.9717607973421927]).reshape(3,4,5,6)
+print(nvme_data[0,2,0], nvme_data[0,3,0])
+nvme_data[:, [2,3]] = nvme_data[:, [3,2]]
+print(nvme_data[0,2,0], nvme_data[0,3,0])
+nvme_data = 1 / nvme_data
+nvme_data = (nvme_data - 1) * 100
+print(nvme_data[0][0])
+print(np.max(nvme_data), np.min(nvme_data))
+
+label_font_conf = {
+    # "weight": "bold",
+    "size": "18"
+}
+bs = [2,4,8,16,32]
+jobs = [1,2,4,8,16,32]
+iodepth = [1,2,4]
+iotypes = ['seq write', 'seq read', 'rand write', 'rand read']
+jobs_y = 0
+
+def heatmap(data, row_labels, col_labels, ax=None,
+            cbar_kw=None, cbarlabel="", **kwargs):
+    """
+    Create a heatmap from a numpy array and two lists of labels.
+
+    Parameters
+    ----------
+    data
+        A 2D numpy array of shape (M, N).
+    row_labels
+        A list or array of length M with the labels for the rows.
+    col_labels
+        A list or array of length N with the labels for the columns.
+    ax
+        A `matplotlib.axes.Axes` instance to which the heatmap is plotted.  If
+        not provided, use current axes or create a new one.  Optional.
+    cbar_kw
+        A dictionary with arguments to `matplotlib.Figure.colorbar`.  Optional.
+    cbarlabel
+        The label for the colorbar.  Optional.
+    **kwargs
+        All other arguments are forwarded to `imshow`.
+    """
+
+    if ax is None:
+        ax = plt.gca()
+
+    if cbar_kw is None:
+        cbar_kw = {}
+
+    # Plot the heatmap
+    im = ax.imshow(data, **kwargs)
+
+    # Create colorbar
+    # cbar = ax.figure.colorbar(im, ax=ax, **cbar_kw)
+    # cbar.ax.set_ylabel(cbarlabel, va="bottom")
+    cbar = None
+
+    # Show all ticks and label them with the respective list entries.
+    ax.set_xticks(np.arange(data.shape[1]), labels=col_labels, **label_font_conf)
+    ax.set_yticks(np.arange(data.shape[0]), labels=row_labels, **label_font_conf)
+
+    # Let the horizontal axes labeling appear on top.
+    # ax.tick_params(top=True, bottom=False,
+    #                labeltop=True, labelbottom=False)
+
+    ax.tick_params(bottom=False, labelbottom=True, left=False, labelleft=True)
+
+    # Rotate the tick labels and set their alignment.
+    plt.setp(ax.get_xticklabels(), ha="center",
+             rotation_mode="anchor")
+
+    # Turn spines off and create white grid.
+    ax.spines[:].set_visible(False)
+
+    ax.set_xticks(np.arange(data.shape[1]+1)-.5, minor=True)
+    ax.set_yticks(np.arange(data.shape[0]+1)-.5, minor=True)
+    ax.grid(which="minor", color="w", linestyle='-', linewidth=3)
+    ax.tick_params(which="minor", bottom=False, left=False)
+
+    return im, cbar
+
+def annotate_heatmap(im, data=None, valfmt="{x:.2f}",
+                     textcolors=("black", "white"),
+                     threshold=None, **textkw):
+    """
+    A function to annotate a heatmap.
+
+    Parameters
+    ----------
+    im
+        The AxesImage to be labeled.
+    data
+        Data used to annotate.  If None, the image's data is used.  Optional.
+    valfmt
+        The format of the annotations inside the heatmap.  This should either
+        use the string format method, e.g. "$ {x:.2f}", or be a
+        `matplotlib.ticker.Formatter`.  Optional.
+    textcolors
+        A pair of colors.  The first is used for values below a threshold,
+        the second for those above.  Optional.
+    threshold
+        Value in data units according to which the colors from textcolors are
+        applied.  If None (the default) uses the middle of the colormap as
+        separation.  Optional.
+    **kwargs
+        All other arguments are forwarded to each call to `text` used to create
+        the text labels.
+    """
+
+    if not isinstance(data, (list, np.ndarray)):
+        data = im.get_array()
+
+    # Normalize the threshold to the images color range.
+    if threshold is not None:
+        threshold = im.norm(threshold)
+    else:
+        threshold = im.norm(data.max())/2.
+
+    # Set default alignment to center, but allow it to be
+    # overwritten by textkw.
+    kw = dict(horizontalalignment="center",
+              verticalalignment="center")
+    kw.update(textkw)
+
+    # Get the formatter in case a string is supplied
+    if isinstance(valfmt, str):
+        valfmt = matplotlib.ticker.StrMethodFormatter(valfmt)
+
+    # Loop over the data and create a `Text` for each "pixel".
+    # Change the text's color depending on the data.
+    texts = []
+    for i in range(data.shape[0]):
+        for j in range(data.shape[1]):
+            kw.update(color=textcolors[int(im.norm(data[i, j]) > threshold)])
+            text = im.axes.text(j, i, valfmt(data[i, j], None), **kw)
+            texts.append(text)
+
+    return texts
+
+fig, axs = plt.subplots(3,4,figsize=(15,7),dpi=100)
+fig.supylabel("blocksize (KiB)", x=0.04, y=jobs_y+0.5, **label_font_conf)
+fig.supxlabel("Number of IO jobs", x=0.44, y=jobs_y, **label_font_conf)
+
+# im, cbar = heatmap(nvme_data[0][0], bs, jobs ,ax=axs[0,0], vmin=-65, vmax=65, cmap="RdYlGn")
+# cbar = fig.colorbar(im, ax=axs, pad=0.05)
+# cbar.ax.tick_params(labelsize=16)
+# cbar.set_label("The Performance Superiority of Rust Over C (%)", size=16)
+# texts = annotate_heatmap(im, valfmt="{x:.0f}", fontsize=13, textcolors=("#A52A2A", "darkgreen"))
+
+for i in range(len(iodepth)):
+    for j in range(len(iotypes)):
+        im, cbar = heatmap(nvme_data[i][j], bs, jobs ,ax=axs[i,j], vmin=-65, vmax=65, cmap="RdYlGn", aspect='auto')
+        texts = annotate_heatmap(im, valfmt="{x:.0f}", fontsize=13, textcolors=("black", "darkgreen"))
+        if i == 0 and j == 0:
+            cbar = fig.colorbar(im, ax=axs, pad=0.05)
+            cbar.ax.tick_params(labelsize=16)
+            cbar.set_label("The Performance Superiority of Rust Over C (%)", size=16)
+        if j == 0:
+            axs[i,j].set_ylabel(f"iodepth={iodepth[i]}", fontsize=16)
+        if i == 0:
+            axs[i, j].set_title(iotypes[j], fontsize=20)
+        axs[i,j].label_outer()
+
+plt.savefig("../imgs/figure5_1.pdf", bbox_inches="tight")

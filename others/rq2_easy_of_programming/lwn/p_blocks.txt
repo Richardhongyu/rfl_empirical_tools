@@ -1,0 +1,2113 @@
+OpenBSD 7.3 released([Distributions]
+       Posted Apr 10, 2023 14:05 UTC (Mon)
+       by corbet )
+Meta's Buck2 build system([Development]
+       Posted Apr 10, 2023 0:08 UTC (Mon)
+       by tialaramex )
+openSUSE Release Engineering minutes April 5([Announcements]
+       Posted Apr 6, 2023 15:54 UTC (Thu)
+       by corbet )
+A quarter century of Mozilla([Development]
+       Posted Apr 2, 2023 15:01 UTC (Sun)
+       by rsidd )
+A quarter century of Mozilla - my sincere gratitude([Development]
+       Posted Apr 1, 2023 11:15 UTC (Sat)
+       by fredrik )
+A quarter century of Mozilla([Development]
+       Posted Apr 1, 2023 11:02 UTC (Sat)
+       by pizza )
+Landlock news #3 March 22([Announcements]
+       Posted Mar 29, 2023 16:20 UTC (Wed)
+       by corbet )
+Jumping the licensing shark([Front]
+       Posted Mar 23, 2023 9:36 UTC (Thu)
+       by jmalcolm )
+Google launches KataOS([Distributions]
+       Posted Mar 22, 2023 19:41 UTC (Wed)
+       by Wol )
+Ubuntu Weekly Newsletter March 11([Announcements]
+       Posted Mar 14, 2023 14:56 UTC (Tue)
+       by jake )
+The initial posting of the Apple AGX graphics driver([Kernel]
+       Posted Mar 9, 2023 4:31 UTC (Thu)
+       by fredrik )
+Three Questions and Answers: Rust for Linux (Heise)([Kernel]
+       Posted Mar 7, 2023 7:11 UTC (Tue)
+       by tlamp )
+The rest of the 6.3 merge window([Kernel]
+       Posted Mar 6, 2023 16:35 UTC (Mon)
+       by Jonathan Corbet )
+Three Questions and Answers: Rust for Linux (Heise)([Kernel]
+       Posted Mar 6, 2023 15:58 UTC (Mon)
+       by corbet )
+SUSE security update to trivy([Security]
+       Posted Mar 6, 2023 14:15 UTC (Mon)
+       by jake )
+Python packaging and its tools([Development]
+       Posted Mar 3, 2023 9:48 UTC (Fri)
+       by cyperpunks )
+Kernel time APIs for Rust([Kernel]
+       Posted Mar 3, 2023 1:33 UTC (Fri)
+       by NYKevin )
+Python packaging and its tools([Development]
+       Posted Mar 2, 2023 18:10 UTC (Thu)
+       by NYKevin )
+Some useful tools for binary formats([Development]
+       Posted Feb 28, 2023 23:03 UTC (Tue)
+       by Koen Vervloesem )
+Rust Keyword Generics Progress Report: February 2023([Development]
+       Posted Feb 24, 2023 19:54 UTC (Fri)
+       by yoshuawuyts )
+The first half of the 6.3 merge window([Kernel]
+       Posted Feb 23, 2023 15:52 UTC (Thu)
+       by Jonathan Corbet )
+Python packaging targets([Development]
+       Posted Feb 22, 2023 22:42 UTC (Wed)
+       by Jake Edge )
+Passwordless authentication with FIDO2—beyond just the web([Security]
+       Posted Feb 21, 2023 19:51 UTC (Tue)
+       by Koen Vervloesem )
+GDB 13.1 released([Development]
+       Posted Feb 20, 2023 15:15 UTC (Mon)
+       by corbet )
+Managing sysctl knobs with BPF([Kernel]
+       Posted Feb 15, 2023 17:06 UTC (Wed)
+       by yunwei37 )
+The extensible scheduler class([Kernel]
+       Posted Feb 10, 2023 15:40 UTC (Fri)
+       by Jonathan Corbet )
+Users and Python packaging([Development]
+       Posted Feb 8, 2023 23:24 UTC (Wed)
+       by Jake Edge )
+Fedora packages versus upstream Flatpaks([Distributions]
+       Posted Feb 7, 2023 20:58 UTC (Tue)
+       by Jake Edge )
+Object-oriented design patterns in the kernel, part 2([Kernel]
+       Posted Jan 31, 2023 21:31 UTC (Tue)
+       by neilbrown )
+The Linux SVSM project([Kernel]
+       Posted Jan 30, 2023 16:01 UTC (Mon)
+       by Carlos Bilbao )
+Fedora security update to rust-resctl-demo([Security]
+       Posted Jan 30, 2023 14:52 UTC (Mon)
+       by jake )
+FreeBSD Status Report - Fourth Quarter 2022 January 25([Announcements]
+       Posted Jan 26, 2023 16:57 UTC (Thu)
+       by corbet )
+Python packaging, visions, and unification([Development]
+       Posted Jan 24, 2023 23:25 UTC (Tue)
+       by Jake Edge )
+A survey of the Python packaging landscape([Development]
+       Posted Jan 17, 2023 20:44 UTC (Tue)
+       by Jake Edge )
+Täht: Flaws and features in the Flent network testing tool([Development]
+       Posted Jan 16, 2023 21:34 UTC (Mon)
+       by mtaht )
+OCaml Weekly News January 10([Announcements]
+       Posted Jan 10, 2023 16:06 UTC (Tue)
+       by corbet )
+Rust bandwagon([Front]
+       Posted Jan 9, 2023 23:38 UTC (Mon)
+       by khim )
+Rust bandwagon([Front]
+       Posted Jan 3, 2023 22:56 UTC (Tue)
+       by eean )
+Welcome to 2023([Front]
+       Posted Jan 3, 2023 9:28 UTC (Tue)
+       by TheGopher )
+Welcome to 2023([Front]
+       Posted Jan 2, 2023 17:17 UTC (Mon)
+       by Jonathan Corbet )
+Wrapping up 2022([Front]
+       Posted Dec 29, 2022 17:01 UTC (Thu)
+       by Wol )
+So layering is no longer a thing?([Security]
+       Posted Dec 22, 2022 6:06 UTC (Thu)
+       by mrugiero )
+Wrapping up 2022([Front]
+       Posted Dec 21, 2022 21:10 UTC (Wed)
+       by Jonathan Corbet )
+Losing the magic([Kernel]
+       Posted Dec 13, 2022 6:02 UTC (Tue)
+       by tytso )
+KernelCI now testing Linux Rust code (Collabora blog)([Kernel]
+       Posted Dec 11, 2022 13:21 UTC (Sun)
+       by khim )
+To all the "why bother" rustaceans([Development]
+       Posted Dec 8, 2022 19:58 UTC (Thu)
+       by hunger )
+Rust support coming to GCC([Development]
+       Posted Dec 7, 2022 22:54 UTC (Wed)
+       by njs )
+Rust support coming to GCC([Development]
+       Posted Dec 7, 2022 14:44 UTC (Wed)
+       by zorro )
+Losing the magic([Kernel]
+       Posted Dec 7, 2022 10:04 UTC (Wed)
+       by anselm )
+Losing the magic([Kernel]
+       Posted Dec 6, 2022 15:24 UTC (Tue)
+       by khim )
+Memory Safe Languages in Android 13 (Google security blog)([Security]
+       Posted Dec 5, 2022 17:22 UTC (Mon)
+       by khim )
+Development quote of the week([Development]
+       Posted Dec 4, 2022 4:36 UTC (Sun)
+       by khim )
+Development quote of the week([Development]
+       Posted Dec 3, 2022 16:00 UTC (Sat)
+       by khim )
+Juggling software interrupts and realtime tasks([Kernel]
+       Posted Dec 3, 2022 14:33 UTC (Sat)
+       by mss )
+Development quote of the week([Development]
+       Posted Dec 2, 2022 23:12 UTC (Fri)
+       by Wol )
+Development quote of the week([Development]
+       Posted Dec 2, 2022 19:32 UTC (Fri)
+       by khim )
+Open source community split over offer of 'corporate' welfare for criticaldev tools (Register)([Briefs]
+       Posted Dec 2, 2022 18:38 UTC (Fri)
+       by khim )
+Open source community split over offer of 'corporate' welfare for criticaldev tools (Register)([Briefs]
+       Posted Dec 2, 2022 16:08 UTC (Fri)
+       by khim )
+Lina: Tales of the M1 GPU([Kernel]
+       Posted Dec 1, 2022 14:21 UTC (Thu)
+       by moltonel )
+Development quote of the week([Development]
+       Posted Dec 1, 2022 9:01 UTC (Thu)
+       by anton )
+Lina: Tales of the M1 GPU([Kernel]
+       Posted Dec 1, 2022 4:10 UTC (Thu)
+       by docontra )
+SUSE security update to binutils([Security]
+       Posted Nov 30, 2022 13:13 UTC (Wed)
+       by corbet )
+Lina: Tales of the M1 GPU([Kernel]
+       Posted Nov 30, 2022 10:57 UTC (Wed)
+       by tialaramex )
+Lina: Tales of the M1 GPU([Kernel]
+       Posted Nov 30, 2022 8:56 UTC (Wed)
+       by pbonzini )
+Lina: Tales of the M1 GPU([Kernel]
+       Posted Nov 30, 2022 5:13 UTC (Wed)
+       by rsidd )
+SUSE security update to binutils([Security]
+       Posted Nov 21, 2022 15:08 UTC (Mon)
+       by jake )
+Rust in the 6.2 kernel([Kernel]
+       Posted Nov 19, 2022 11:19 UTC (Sat)
+       by khim )
+Rust in the 6.2 kernel([Kernel]
+       Posted Nov 19, 2022 8:56 UTC (Sat)
+       by gasche )
+Rust in the 6.2 kernel([Kernel]
+       Posted Nov 18, 2022 14:26 UTC (Fri)
+       by corbet )
+Rust in the 6.2 kernel([Kernel]
+       Posted Nov 18, 2022 13:15 UTC (Fri)
+       by walters )
+Rust in the 6.2 kernel([Kernel]
+       Posted Nov 17, 2022 15:30 UTC (Thu)
+       by Jonathan Corbet )
+Ubuntu Weekly Newsletter November 12([Announcements]
+       Posted Nov 16, 2022 16:04 UTC (Wed)
+       by corbet )
+OCaml Weekly News November 15([Announcements]
+       Posted Nov 15, 2022 14:27 UTC (Tue)
+       by corbet )
+A new crop of malicious modules found on PyPI([Security]
+       Posted Nov 4, 2022 22:58 UTC (Fri)
+       by roc )
+Rust 1.65.0 released([Development]
+       Posted Nov 4, 2022 19:41 UTC (Fri)
+       by khim )
+Welcome to the LWN.net Weekly Edition for November 3, 2022([Front]
+       Posted Nov 2, 2022 21:44 UTC (Wed)
+       by corbet )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 31, 2022 17:19 UTC (Mon)
+       by rjones )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 31, 2022 6:12 UTC (Mon)
+       by ceplm )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 31, 2022 1:11 UTC (Mon)
+       by ssokolow )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 30, 2022 21:33 UTC (Sun)
+       by khim )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 30, 2022 21:21 UTC (Sun)
+       by khim )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 30, 2022 20:09 UTC (Sun)
+       by ceplm )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 30, 2022 18:48 UTC (Sun)
+       by mmstick )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 30, 2022 14:30 UTC (Sun)
+       by emk )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 30, 2022 12:49 UTC (Sun)
+       by emk )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 30, 2022 11:58 UTC (Sun)
+       by khim )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 30, 2022 11:22 UTC (Sun)
+       by khim )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 30, 2022 2:23 UTC (Sun)
+       by dvdeug )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 29, 2022 21:53 UTC (Sat)
+       by seanyoung )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 29, 2022 16:26 UTC (Sat)
+       by khim )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 29, 2022 15:56 UTC (Sat)
+       by amacater )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 29, 2022 14:41 UTC (Sat)
+       by khim )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 29, 2022 14:04 UTC (Sat)
+       by khim )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 29, 2022 13:33 UTC (Sat)
+       by khim )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 29, 2022 8:32 UTC (Sat)
+       by wtarreau )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 28, 2022 19:53 UTC (Fri)
+       by walters )
+Packaging Rust for Fedora([Distributions]
+       Posted Oct 28, 2022 15:25 UTC (Fri)
+       by Jonathan Corbet )
+Would you like signs with those chars?([Kernel]
+       Posted Oct 26, 2022 12:03 UTC (Wed)
+       by tialaramex )
+FreeBSD Quarterly Status Report third quarter([Announcements]
+       Posted Oct 21, 2022 20:36 UTC (Fri)
+       by corbet )
+Google launches KataOS([Distributions]
+       Posted Oct 19, 2022 19:56 UTC (Wed)
+       by kreijack )
+Gentoo security update to rust([Security]
+       Posted Oct 17, 2022 13:59 UTC (Mon)
+       by corbet )
+A first look at Rust in the 6.1 kernel([Kernel]
+       Posted Oct 15, 2022 19:17 UTC (Sat)
+       by khim )
+A first look at Rust in the 6.1 kernel([Kernel]
+       Posted Oct 14, 2022 23:41 UTC (Fri)
+       by tialaramex )
+A first look at Rust in the 6.1 kernel([Kernel]
+       Posted Oct 14, 2022 13:39 UTC (Fri)
+       by khim )
+A first look at Rust in the 6.1 kernel([Kernel]
+       Posted Oct 14, 2022 13:22 UTC (Fri)
+       by geert )
+A first look at Rust in the 6.1 kernel([Kernel]
+       Posted Oct 13, 2022 23:55 UTC (Thu)
+       by Gaelan )
+A first look at Rust in the 6.1 kernel([Kernel]
+       Posted Oct 13, 2022 23:06 UTC (Thu)
+       by tialaramex )
+A first look at Rust in the 6.1 kernel([Kernel]
+       Posted Oct 13, 2022 13:42 UTC (Thu)
+       by Jonathan Corbet )
+Compiling Rust for Linux with rustc_codegen_gcc([Development]
+       Posted Oct 12, 2022 8:40 UTC (Wed)
+       by MrWim )
+A deeper look into the GCC Rust front-end([Development]
+       Posted Oct 10, 2022 14:51 UTC (Mon)
+       by Jonathan Corbet )
+The first half of the 6.1 merge window([Kernel]
+       Posted Oct 7, 2022 15:11 UTC (Fri)
+       by Jonathan Corbet )
+Some 6.0 development statistics([Kernel]
+       Posted Oct 3, 2022 17:55 UTC (Mon)
+       by Jonathan Corbet )
+Compiling Rust with GCC: an update([Development]
+       Posted Oct 1, 2022 14:05 UTC (Sat)
+       by Wol )
+openSUSE Release Engineering minutes September 28([Announcements]
+       Posted Sep 28, 2022 15:47 UTC (Wed)
+       by corbet )
+BPF as a safer kernel programming environment([Kernel]
+       Posted Sep 23, 2022 14:50 UTC (Fri)
+       by David Vernet )
+Safer flexible arrays for the kernel([Security]
+       Posted Sep 23, 2022 0:53 UTC (Fri)
+       by tialaramex )
+Security quote of the week - BYOD([Security]
+       Posted Sep 22, 2022 14:54 UTC (Thu)
+       by pizza )
+Welcome to the LWN.net Weekly Edition for September 22, 2022([Front]
+       Posted Sep 21, 2022 22:28 UTC (Wed)
+       by corbet )
+Next steps for Rust in the kernel([Kernel]
+       Posted Sep 21, 2022 14:11 UTC (Wed)
+       by Tuna-Fish )
+The perils of pinning([Kernel]
+       Posted Sep 21, 2022 11:24 UTC (Wed)
+       by tialaramex )
+The perils of pinning([Kernel]
+       Posted Sep 21, 2022 1:25 UTC (Wed)
+       by D1plo1d )
+Introducing io_uring_spawn([Kernel]
+       Posted Sep 20, 2022 21:08 UTC (Tue)
+       by Jake Edge )
+Ubuntu Weekly Newsletter September 17([Announcements]
+       Posted Sep 20, 2022 14:07 UTC (Tue)
+       by jake )
+The 2022 Linux Kernel Maintainers Summit([Kernel]
+       Posted Sep 19, 2022 16:56 UTC (Mon)
+       by Jonathan Corbet )
+Next steps for Rust in the kernel([Kernel]
+       Posted Sep 19, 2022 16:55 UTC (Mon)
+       by Jonathan Corbet )
+The road to Zettalinux([Kernel]
+       Posted Sep 18, 2022 6:25 UTC (Sun)
+       by willy )
+How much of this is that a new language displays undefined behavior in a preceeding language?([Kernel]
+       Posted Sep 17, 2022 11:42 UTC (Sat)
+       by milesrout )
+The perils of pinning([Kernel]
+       Posted Sep 16, 2022 21:42 UTC (Fri)
+       by comex )
+The perils of pinning([Kernel]
+       Posted Sep 16, 2022 12:27 UTC (Fri)
+       by milesrout )
+The road to Zettalinux([Kernel]
+       Posted Sep 16, 2022 12:05 UTC (Fri)
+       by Jonathan Corbet )
+The perils of pinning([Kernel]
+       Posted Sep 16, 2022 6:54 UTC (Fri)
+       by mb )
+The perils of pinning([Kernel]
+       Posted Sep 16, 2022 2:35 UTC (Fri)
+       by milesrout )
+The perils of pinning([Kernel]
+       Posted Sep 16, 2022 2:27 UTC (Fri)
+       by khim )
+The perils of pinning([Kernel]
+       Posted Sep 16, 2022 2:15 UTC (Fri)
+       by wahern )
+The perils of pinning([Kernel]
+       Posted Sep 16, 2022 1:32 UTC (Fri)
+       by tialaramex )
+The perils of pinning([Kernel]
+       Posted Sep 15, 2022 15:12 UTC (Thu)
+       by 0x3333 )
+The perils of pinning([Kernel]
+       Posted Sep 15, 2022 15:05 UTC (Thu)
+       by mb )
+A pair of Rust kernel modules([Kernel]
+       Posted Sep 14, 2022 22:02 UTC (Wed)
+       by khim )
+A pair of Rust kernel modules([Kernel]
+       Posted Sep 14, 2022 16:08 UTC (Wed)
+       by lambda )
+A pair of Rust kernel modules([Kernel]
+       Posted Sep 14, 2022 15:35 UTC (Wed)
+       by lambda )
+Welcome to the LWN.net Weekly Edition for September 15, 2022([Front]
+       Posted Sep 14, 2022 13:25 UTC (Wed)
+       by corbet )
+A pair of Rust kernel modules([Kernel]
+       Posted Sep 14, 2022 9:54 UTC (Wed)
+       by rsidd )
+A pair of Rust kernel modules([Kernel]
+       Posted Sep 14, 2022 9:45 UTC (Wed)
+       by wtarreau )
+A pair of Rust kernel modules([Kernel]
+       Posted Sep 13, 2022 18:23 UTC (Tue)
+       by lambda )
+A pair of Rust kernel modules([Kernel]
+       Posted Sep 13, 2022 16:12 UTC (Tue)
+       by ssokolow )
+A pair of Rust kernel modules([Kernel]
+       Posted Sep 13, 2022 11:12 UTC (Tue)
+       by milesrout )
+Compiling Rust with GCC: an update([Development]
+       Posted Sep 11, 2022 10:39 UTC (Sun)
+       by tialaramex )
+Compiling Rust with GCC: an update([Development]
+       Posted Sep 10, 2022 20:33 UTC (Sat)
+       by tialaramex )
+s390x vs s390([Development]
+       Posted Sep 10, 2022 0:54 UTC (Sat)
+       by tialaramex )
+Compiling Rust with GCC: an update([Development]
+       Posted Sep 9, 2022 21:36 UTC (Fri)
+       by scientes )
+Compiling Rust with GCC: an update([Development]
+       Posted Sep 9, 2022 20:46 UTC (Fri)
+       by atnot )
+Compiling Rust with GCC: an update([Development]
+       Posted Sep 9, 2022 20:16 UTC (Fri)
+       by developer122 )
+Compiling Rust with GCC: an update([Development]
+       Posted Sep 9, 2022 17:33 UTC (Fri)
+       by atnot )
+Compiling Rust with GCC: an update([Development]
+       Posted Sep 9, 2022 13:46 UTC (Fri)
+       by Jonathan Corbet )
+Ushering out strlcpy()([Kernel]
+       Posted Aug 29, 2022 19:26 UTC (Mon)
+       by tialaramex )
+Ushering out strlcpy()([Kernel]
+       Posted Aug 25, 2022 20:31 UTC (Thu)
+       by tialaramex )
+Ubuntu Weekly Newsletter August 26([Announcements]
+       Posted Aug 23, 2022 14:03 UTC (Tue)
+       by corbet )
+The ABI status of ELF hash tables([Development]
+       Posted Aug 21, 2022 13:21 UTC (Sun)
+       by marcH )
+The ABI status of ELF hash tables([Development]
+       Posted Aug 20, 2022 11:51 UTC (Sat)
+       by khim )
+OCaml Weekly News August 2([Announcements]
+       Posted Aug 2, 2022 13:47 UTC (Tue)
+       by corbet )
+Welcome to the LWN.net Weekly Edition for July 28, 2022([Front]
+       Posted Jul 27, 2022 22:00 UTC (Wed)
+       by corbet )
+Docker and the OCI container ecosystem([Development]
+       Posted Jul 26, 2022 17:02 UTC (Tue)
+       by Jordan Webb )
+The trouble with symbolic links([Kernel]
+       Posted Jul 15, 2022 22:19 UTC (Fri)
+       by ma4ris5 )
+Long-lived kernel pointers in BPF([Kernel]
+       Posted Jul 14, 2022 14:18 UTC (Thu)
+       by David Vernet )
+w00t for exception-throwing languages([Kernel]
+       Posted Jul 8, 2022 13:55 UTC (Fri)
+       by NachoGomez )
+The 2022 embedded Linux update([Front]
+       Posted Jul 6, 2022 22:30 UTC (Wed)
+       by Jake Edge )
+Rust 1.62.0 released([Development]
+       Posted Jun 30, 2022 17:36 UTC (Thu)
+       by corbet )
+A "fireside" chat([Front]
+       Posted Jun 28, 2022 19:20 UTC (Tue)
+       by Jake Edge )
+Ojeda: Memory Safety for the World’s Largest Software Project([Kernel]
+       Posted Jun 27, 2022 14:05 UTC (Mon)
+       by corbet )
+Vetting the cargo([Security]
+       Posted Jun 23, 2022 10:57 UTC (Thu)
+       by mathstuf )
+Quotes of the week([Kernel]
+       Posted Jun 22, 2022 19:02 UTC (Wed)
+       by corbet )
+Vetting the cargo([Security]
+       Posted Jun 15, 2022 8:49 UTC (Wed)
+       by khim )
+Vetting the cargo([Security]
+       Posted Jun 13, 2022 1:45 UTC (Mon)
+       by khim )
+Rethinking Fedora's Java packaging([Distributions]
+       Posted Jun 11, 2022 17:40 UTC (Sat)
+       by mbunkus )
+ioctl() forever?([Kernel]
+       Posted Jun 9, 2022 23:14 UTC (Thu)
+       by wahern )
+The Linux Foundation's "security mobilization plan"([Security]
+       Posted Jun 2, 2022 12:41 UTC (Thu)
+       by Wol )
+Adding an in-kernel TLS handshake([Kernel]
+       Posted Jun 1, 2022 20:51 UTC (Wed)
+       by Jake Edge )
+The Clever Audio Plugin([Development]
+       Posted May 30, 2022 14:57 UTC (Mon)
+       by Alexandre Prokoudine )
+The Linux Foundation's "security mobilization plan"([Security]
+       Posted May 28, 2022 1:02 UTC (Sat)
+       by tialaramex )
+Huang: Rust: A Critical Retrospective([Development]
+       Posted May 24, 2022 19:05 UTC (Tue)
+       by khim )
+Rust 1.61.0 released([Development]
+       Posted May 21, 2022 1:29 UTC (Sat)
+       by notriddle )
+LWN is hiring([Front]
+       Posted May 18, 2022 20:48 UTC (Wed)
+       by corbet )
+Bringing bcachefs to the mainline([Kernel]
+       Posted May 17, 2022 17:13 UTC (Tue)
+       by Jake Edge )
+Quotes of the week([Kernel]
+       Posted May 11, 2022 15:02 UTC (Wed)
+       by anton )
+The malicious "rustdecimal" crate([Security]
+       Posted May 11, 2022 13:55 UTC (Wed)
+       by corbet )
+Red Hat security update to rust-toolset:rhel8([Security]
+       Posted May 11, 2022 13:25 UTC (Wed)
+       by corbet )
+openSUSE Release Engineering minutes May 5([Announcements]
+       Posted May 8, 2022 16:27 UTC (Sun)
+       by corbet )
+DeVault: Announcing the Hare programming language([Development]
+       Posted May 3, 2022 5:22 UTC (Tue)
+       by PengZheng )
+DeVault: Announcing the Hare programming language([Development]
+       Posted May 2, 2022 20:14 UTC (Mon)
+       by mathstuf )
+DeVault: Announcing the Hare programming language([Development]
+       Posted May 2, 2022 18:09 UTC (Mon)
+       by excors )
+DeVault: Announcing the Hare programming language([Development]
+       Posted May 2, 2022 13:25 UTC (Mon)
+       by excors )
+Fedora project leader Matthew Miller weighs in (TechRepublic)([Distributions]
+       Posted Apr 30, 2022 8:00 UTC (Sat)
+       by joib )
+Fedora project leader Matthew Miller weighs in (TechRepublic)([Distributions]
+       Posted Apr 30, 2022 5:50 UTC (Sat)
+       by mattdm )
+Fedora project leader Matthew Miller weighs in (TechRepublic)([Distributions]
+       Posted Apr 29, 2022 15:09 UTC (Fri)
+       by corbet )
+Yocto Project 4.0 released([Distributions]
+       Posted Apr 27, 2022 14:11 UTC (Wed)
+       by corbet )
+OCaml Weekly News April 26([Announcements]
+       Posted Apr 26, 2022 13:45 UTC (Tue)
+       by corbet )
+Clouds and VPSes([Distributions]
+       Posted Apr 25, 2022 3:41 UTC (Mon)
+       by wtarreau )
+OpenBSD 7.1 released([Distributions]
+       Posted Apr 22, 2022 7:30 UTC (Fri)
+       by corbet )
+Clouds and VPSes([Distributions]
+       Posted Apr 22, 2022 7:21 UTC (Fri)
+       by johannbg )
+Ubuntu 22.04 LTS (Jammy Jellyfish) released([Distributions]
+       Posted Apr 21, 2022 21:12 UTC (Thu)
+       by jake )
+Rustaceans at the border([Kernel]
+       Posted Apr 19, 2022 18:28 UTC (Tue)
+       by rahulsundaram )
+Rustaceans at the border([Kernel]
+       Posted Apr 17, 2022 11:35 UTC (Sun)
+       by tialaramex )
+Rustaceans at the border([Kernel]
+       Posted Apr 16, 2022 22:57 UTC (Sat)
+       by Cyberax )
+Rustaceans at the border([Kernel]
+       Posted Apr 16, 2022 15:39 UTC (Sat)
+       by tialaramex )
+Rustaceans at the border([Kernel]
+       Posted Apr 16, 2022 12:10 UTC (Sat)
+       by excors )
+Rustaceans at the border([Kernel]
+       Posted Apr 16, 2022 10:43 UTC (Sat)
+       by jsakkine )
+openSUSE Release Engineering minutes April 13([Announcements]
+       Posted Apr 16, 2022 9:35 UTC (Sat)
+       by corbet )
+Rustaceans at the border([Kernel]
+       Posted Apr 15, 2022 11:30 UTC (Fri)
+       by fazalmajid )
+Rustaceans at the border([Kernel]
+       Posted Apr 15, 2022 6:47 UTC (Fri)
+       by qyliss )
+Rustaceans at the border([Kernel]
+       Posted Apr 15, 2022 6:44 UTC (Fri)
+       by Cyberax )
+Rustaceans at the border([Kernel]
+       Posted Apr 15, 2022 0:05 UTC (Fri)
+       by tialaramex )
+Rustaceans at the border([Kernel]
+       Posted Apr 14, 2022 21:49 UTC (Thu)
+       by tialaramex )
+Rustaceans at the border([Kernel]
+       Posted Apr 14, 2022 20:29 UTC (Thu)
+       by djc )
+Rustaceans at the border([Kernel]
+       Posted Apr 14, 2022 19:24 UTC (Thu)
+       by rvolgers )
+Rustaceans at the border([Kernel]
+       Posted Apr 14, 2022 18:42 UTC (Thu)
+       by Jonathan Corbet )
+SUSE security update to firefox([Security]
+       Posted Apr 8, 2022 13:08 UTC (Fri)
+       by jake )
+Rust 1.60.0 released([Development]
+       Posted Apr 7, 2022 20:50 UTC (Thu)
+       by tialaramex )
+openSUSE Release Engineering minutes April 6([Announcements]
+       Posted Apr 6, 2022 14:51 UTC (Wed)
+       by corbet )
+openSUSE Release Engineering minutes March 30([Announcements]
+       Posted Mar 30, 2022 16:23 UTC (Wed)
+       by corbet )
+openSUSE Release Engineering minutes March 23([Announcements]
+       Posted Mar 23, 2022 14:54 UTC (Wed)
+       by corbet )
+Documentation([Kernel]
+       Posted Mar 19, 2022 13:37 UTC (Sat)
+       by dottedmag )
+SUSE security update to rust, rust1.58, rust1.59([Security]
+       Posted Mar 16, 2022 14:26 UTC (Wed)
+       by corbet )
+FreeBSD Quarterly Status Report fourth quarter([Announcements]
+       Posted Mar 12, 2022 21:57 UTC (Sat)
+       by corbet )
+The kernel radar: folios, multi-generational LRU, and Rust([Kernel]
+       Posted Mar 3, 2022 18:19 UTC (Thu)
+       by jd )
+Rust operator overloading([Kernel]
+       Posted Feb 28, 2022 2:41 UTC (Mon)
+       by tialaramex )
+Moving the kernel to modern C([Kernel]
+       Posted Feb 26, 2022 22:05 UTC (Sat)
+       by camhusmj38 )
+openSUSE Release Engineering minutes February 23([Announcements]
+       Posted Feb 23, 2022 15:56 UTC (Wed)
+       by corbet )
+SUSE security update to rust([Security]
+       Posted Feb 18, 2022 15:10 UTC (Fri)
+       by jake )
+OCaml Weekly News February 15([Announcements]
+       Posted Feb 15, 2022 15:31 UTC (Tue)
+       by corbet )
+Deprecated shouldn't mean removal([Development]
+       Posted Feb 4, 2022 18:21 UTC (Fri)
+       by mb )
+Fedora security update to rust-ripgrep([Security]
+       Posted Feb 4, 2022 15:16 UTC (Fri)
+       by jake )
+Fedora security update to rust-ripgrep([Security]
+       Posted Jan 31, 2022 14:56 UTC (Mon)
+       by jake )
+Goodbye FLoC, hello Topics([Security]
+       Posted Jan 29, 2022 18:19 UTC (Sat)
+       by amacater )
+SUSE security update to rust([Security]
+       Posted Jan 26, 2022 15:35 UTC (Wed)
+       by corbet )
+Rust 1.58.1 released([Development]
+       Posted Jan 25, 2022 2:30 UTC (Tue)
+       by bwelling )
+Rust 1.58.1 released([Development]
+       Posted Jan 25, 2022 0:12 UTC (Tue)
+       by nybble41 )
+Rust([Kernel]
+       Posted Jan 22, 2022 21:32 UTC (Sat)
+       by tialaramex )
+The kernel radar: folios, multi-generational LRU, and Rust([Kernel]
+       Posted Jan 21, 2022 17:43 UTC (Fri)
+       by walters )
+Rust([Kernel]
+       Posted Jan 21, 2022 0:57 UTC (Fri)
+       by tialaramex )
+Rust([Kernel]
+       Posted Jan 20, 2022 23:29 UTC (Thu)
+       by tialaramex )
+The kernel radar: folios, multi-generational LRU, and Rust([Kernel]
+       Posted Jan 20, 2022 16:40 UTC (Thu)
+       by Jonathan Corbet )
+LWN's unreliable predictions for 2022([Front]
+       Posted Jan 4, 2022 2:25 UTC (Tue)
+       by roc )
+LWN's unreliable predictions for 2022([Front]
+       Posted Jan 3, 2022 23:37 UTC (Mon)
+       by Jonathan Corbet )
+Lunar Linux Weekly News December 17([Announcements]
+       Posted Dec 18, 2021 0:26 UTC (Sat)
+       by ris )
+Mold (linker) 1.0 released([Development]
+       Posted Dec 16, 2021 0:27 UTC (Thu)
+       by rillian )
+Red Hat security update to rust-toolset:rhel8([Security]
+       Posted Nov 10, 2021 15:40 UTC (Wed)
+       by ris )
+Red Hat security update to rust-toolset:rhel8([Security]
+       Posted Nov 10, 2021 15:40 UTC (Wed)
+       by ris )
+Trojan Source: tricks (no treats) with Unicode([Security]
+       Posted Nov 3, 2021 22:21 UTC (Wed)
+       by Jake Edge )
+openSUSE Release Engineering minutes November 3([Announcements]
+       Posted Nov 3, 2021 15:32 UTC (Wed)
+       by corbet )
+Tor News November 2([Announcements]
+       Posted Nov 2, 2021 20:16 UTC (Tue)
+       by ris )
+Yocto Project 3.4 (Honister) released([Distributions]
+       Posted Oct 29, 2021 21:02 UTC (Fri)
+       by jake )
+Recommendations for Rust and read-copy-update([Kernel]
+       Posted Oct 27, 2021 17:20 UTC (Wed)
+       by corbet )
+OCaml Weekly News October 26([Announcements]
+       Posted Oct 26, 2021 16:56 UTC (Tue)
+       by ris )
+openSUSE Release Engineering minutes October 20([Announcements]
+       Posted Oct 22, 2021 20:04 UTC (Fri)
+       by corbet )
+Locking one thing while modifying another([Kernel]
+       Posted Oct 20, 2021 20:13 UTC (Wed)
+       by tialaramex )
+openSUSE security update to firefox([Security]
+       Posted Oct 19, 2021 14:54 UTC (Tue)
+       by ris )
+SUSE security update to firefox, rust-cbindgen([Security]
+       Posted Oct 18, 2021 14:26 UTC (Mon)
+       by ris )
+Red Hat security update to thunderbird([Security]
+       Posted Oct 13, 2021 14:49 UTC (Wed)
+       by ris )
+Red Hat security update to thunderbird([Security]
+       Posted Oct 13, 2021 14:49 UTC (Wed)
+       by ris )
+Red Hat security update to thunderbird([Security]
+       Posted Oct 13, 2021 14:49 UTC (Wed)
+       by ris )
+Red Hat security update to thunderbird([Security]
+       Posted Oct 13, 2021 14:49 UTC (Wed)
+       by ris )
+openSUSE security update to firefox([Security]
+       Posted Oct 12, 2021 15:21 UTC (Tue)
+       by ris )
+Red Hat security update to firefox([Security]
+       Posted Oct 12, 2021 15:21 UTC (Tue)
+       by ris )
+Red Hat security update to firefox([Security]
+       Posted Oct 11, 2021 15:00 UTC (Mon)
+       by ris )
+Red Hat security update to firefox([Security]
+       Posted Oct 11, 2021 15:00 UTC (Mon)
+       by ris )
+Red Hat security update to firefox([Security]
+       Posted Oct 11, 2021 15:00 UTC (Mon)
+       by ris )
+Welcome to the LWN.net Weekly Edition for October 7, 2021([Front]
+       Posted Oct 6, 2021 20:43 UTC (Wed)
+       by corbet )
+Rust and GCC, two different ways([Development]
+       Posted Oct 4, 2021 20:12 UTC (Mon)
+       by tialaramex )
+volatile([Kernel]
+       Posted Oct 4, 2021 19:52 UTC (Mon)
+       by PaulMcKenney )
+volatile([Kernel]
+       Posted Oct 4, 2021 18:50 UTC (Mon)
+       by tialaramex )
+Rust and GCC, two different ways([Development]
+       Posted Oct 4, 2021 15:33 UTC (Mon)
+       by Jonathan Corbet )
+McKenney: So You Want to Rust the Linux Kernel?([Kernel]
+       Posted Oct 3, 2021 21:38 UTC (Sun)
+       by jake )
+Welcome to the LWN.net Weekly Edition for September 30, 2021([Front]
+       Posted Sep 29, 2021 18:56 UTC (Wed)
+       by corbet )
+More Rust concepts for the kernel([Kernel]
+       Posted Sep 29, 2021 18:13 UTC (Wed)
+       by anton )
+The Rust for Linux project([Kernel]
+       Posted Sep 29, 2021 10:20 UTC (Wed)
+       by lacos )
+Using Rust for kernel development([Kernel]
+       Posted Sep 28, 2021 16:40 UTC (Tue)
+       by pbonzini )
+The 2021 Kernel Maintainers Summit([Kernel]
+       Posted Sep 27, 2021 17:19 UTC (Mon)
+       by Jonathan Corbet )
+Using Rust for kernel development([Kernel]
+       Posted Sep 27, 2021 17:14 UTC (Mon)
+       by Jonathan Corbet )
+More Rust concepts for the kernel([Kernel]
+       Posted Sep 23, 2021 19:48 UTC (Thu)
+       by tialaramex )
+An update on Memory Safety in Chrome([Security]
+       Posted Sep 22, 2021 22:56 UTC (Wed)
+       by rahulsundaram )
+Welcome to the LWN.net Weekly Edition for September 23, 2021([Front]
+       Posted Sep 22, 2021 19:03 UTC (Wed)
+       by corbet )
+Key Rust concepts for the kernel([Kernel]
+       Posted Sep 21, 2021 10:11 UTC (Tue)
+       by ojeda )
+More Rust concepts for the kernel([Kernel]
+       Posted Sep 20, 2021 16:27 UTC (Mon)
+       by Jonathan Corbet )
+Conill: The long-term consequences of maintainers’ actions([Distributions]
+       Posted Sep 17, 2021 19:43 UTC (Fri)
+       by ariadne )
+Conill: The long-term consequences of maintainers’ actions([Distributions]
+       Posted Sep 17, 2021 17:25 UTC (Fri)
+       by josh )
+Conill: The long-term consequences of maintainers’ actions([Distributions]
+       Posted Sep 17, 2021 16:06 UTC (Fri)
+       by corbet )
+Key Rust concepts for the kernel([Kernel]
+       Posted Sep 17, 2021 15:55 UTC (Fri)
+       by Jonathan Corbet )
+How will cooperation of rust-knowing and not-rust-knowing maintainers look like?([Kernel]
+       Posted Sep 17, 2021 9:28 UTC (Fri)
+       by gray_-_wolf )
+The Rust for Linux project([Kernel]
+       Posted Sep 16, 2021 23:47 UTC (Thu)
+       by roc )
+Architecture support([Kernel]
+       Posted Sep 16, 2021 22:38 UTC (Thu)
+       by Wol )
+Architecture support([Kernel]
+       Posted Sep 16, 2021 18:29 UTC (Thu)
+       by corbet )
+The Rust for Linux project([Kernel]
+       Posted Sep 16, 2021 15:09 UTC (Thu)
+       by Jonathan Corbet )
+OCaml Weekly News September 7([Announcements]
+       Posted Sep 7, 2021 17:41 UTC (Tue)
+       by ris )
+Tor News September 2([Announcements]
+       Posted Sep 3, 2021 15:08 UTC (Fri)
+       by jake )
+Oracle security update to rust-toolset:ol8([Security]
+       Posted Aug 13, 2021 13:05 UTC (Fri)
+       by jake )
+Red Hat security update to rust-toolset-1.52 and rust-toolset-1.52-rust([Security]
+       Posted Aug 10, 2021 13:43 UTC (Tue)
+       by jake )
+Linux Kernel Security Done Right (Google Security Blog)([Kernel]
+       Posted Aug 5, 2021 2:35 UTC (Thu)
+       by timrichardson )
+(non) UTF-8 filenames([Development]
+       Posted Aug 4, 2021 0:46 UTC (Wed)
+       by tialaramex )
+Tor News July 29([Announcements]
+       Posted Jul 29, 2021 21:46 UTC (Thu)
+       by jake )
+SUSE security update to git([Security]
+       Posted Jul 29, 2021 13:14 UTC (Thu)
+       by jake )
+openSUSE security update to git([Security]
+       Posted Jul 29, 2021 13:14 UTC (Thu)
+       by jake )
+Rust for Linux redux([Kernel]
+       Posted Jul 29, 2021 5:18 UTC (Thu)
+       by mkru )
+A look forward to Linux Plumbers 2021([Front]
+       Posted Jul 27, 2021 19:49 UTC (Tue)
+       by Jake Edge )
+Rust for Linux redux([Kernel]
+       Posted Jul 25, 2021 20:45 UTC (Sun)
+       by mathstuf )
+Rust for Linux redux([Kernel]
+       Posted Jul 25, 2021 18:19 UTC (Sun)
+       by Coconut )
+Rust for Linux redux([Kernel]
+       Posted Jul 25, 2021 13:34 UTC (Sun)
+       by mathstuf )
+Rust for Linux redux([Kernel]
+       Posted Jul 25, 2021 9:47 UTC (Sun)
+       by mpr22 )
+The Sequoia seq_file vulnerability([Kernel]
+       Posted Jul 21, 2021 21:21 UTC (Wed)
+       by Jake Edge )
+Welcome to the LWN.net Weekly Edition for July 22, 2021([Front]
+       Posted Jul 21, 2021 20:00 UTC (Wed)
+       by corbet )
+A GPIO driver in Rust([Kernel]
+       Posted Jul 20, 2021 10:54 UTC (Tue)
+       by pbonzini )
+Rust for Linux redux([Kernel]
+       Posted Jul 20, 2021 6:13 UTC (Tue)
+       by rhdxmr )
+A GPIO driver in Rust([Kernel]
+       Posted Jul 19, 2021 16:55 UTC (Mon)
+       by logang )
+Rust for Linux redux([Kernel]
+       Posted Jul 17, 2021 0:43 UTC (Sat)
+       by khim )
+Announcing Arti, a pure-Rust Tor implementation (Tor blog)([Development]
+       Posted Jul 15, 2021 6:10 UTC (Thu)
+       by roc )
+Unstable features([Kernel]
+       Posted Jul 14, 2021 11:31 UTC (Wed)
+       by matthias )
+Unstable features([Kernel]
+       Posted Jul 14, 2021 10:07 UTC (Wed)
+       by khim )
+Unstable features([Kernel]
+       Posted Jul 13, 2021 21:29 UTC (Tue)
+       by ojeda )
+OCaml Weekly News July 13([Announcements]
+       Posted Jul 13, 2021 20:08 UTC (Tue)
+       by ris )
+Ownership and lifetimes([Development]
+       Posted Jul 12, 2021 9:40 UTC (Mon)
+       by khim )
+Footguns([Kernel]
+       Posted Jul 11, 2021 1:56 UTC (Sun)
+       by khim )
+Footguns([Kernel]
+       Posted Jul 11, 2021 0:58 UTC (Sun)
+       by tialaramex )
+Rust for Linux redux([Kernel]
+       Posted Jul 10, 2021 9:31 UTC (Sat)
+       by matthias )
+Rust for Linux redux([Kernel]
+       Posted Jul 10, 2021 2:18 UTC (Sat)
+       by BirAdam )
+Meticulous work([Kernel]
+       Posted Jul 9, 2021 22:00 UTC (Fri)
+       by polyergic )
+Unstable features([Kernel]
+       Posted Jul 9, 2021 21:59 UTC (Fri)
+       by wtarreau )
+Unstable features([Kernel]
+       Posted Jul 9, 2021 18:14 UTC (Fri)
+       by ericonr )
+Unstable features([Kernel]
+       Posted Jul 9, 2021 12:45 UTC (Fri)
+       by pizza )
+Meticulous work([Kernel]
+       Posted Jul 9, 2021 11:29 UTC (Fri)
+       by jezuch )
+Meticulous work([Kernel]
+       Posted Jul 9, 2021 7:26 UTC (Fri)
+       by roc )
+Rust for Linux redux([Kernel]
+       Posted Jul 9, 2021 5:56 UTC (Fri)
+       by erwaelde )
+Rust for Linux redux([Kernel]
+       Posted Jul 8, 2021 17:59 UTC (Thu)
+       by wtarreau )
+Rust for Linux redux([Kernel]
+       Posted Jul 8, 2021 17:52 UTC (Thu)
+       by wtarreau )
+Rust noise([Kernel]
+       Posted Jul 8, 2021 14:40 UTC (Thu)
+       by josh )
+Signal([Kernel]
+       Posted Jul 8, 2021 7:19 UTC (Thu)
+       by proski )
+Rust for Linux redux([Kernel]
+       Posted Jul 8, 2021 5:05 UTC (Thu)
+       by irogers )
+Signal([Kernel]
+       Posted Jul 8, 2021 2:40 UTC (Thu)
+       by karath )
+Rust for Linux redux([Kernel]
+       Posted Jul 8, 2021 2:36 UTC (Thu)
+       by alkbyby )
+Rust for Linux redux([Kernel]
+       Posted Jul 7, 2021 22:36 UTC (Wed)
+       by Jake Edge )
+Welcome to the LWN.net Weekly Edition for July 8, 2021([Front]
+       Posted Jul 7, 2021 21:38 UTC (Wed)
+       by corbet )
+Suppressing SIGBUS signals([Kernel]
+       Posted Jun 28, 2021 0:07 UTC (Mon)
+       by izbyshev )
+Suppressing SIGBUS signals([Kernel]
+       Posted Jun 27, 2021 21:26 UTC (Sun)
+       by NYKevin )
+Suppressing SIGBUS signals([Kernel]
+       Posted Jun 27, 2021 17:17 UTC (Sun)
+       by NYKevin )
+Suppressing SIGBUS signals([Kernel]
+       Posted Jun 27, 2021 5:57 UTC (Sun)
+       by dancol )
+Pulling GitHub into the kernel process([Kernel]
+       Posted Jun 23, 2021 22:38 UTC (Wed)
+       by Jake Edge )
+Supporting Miguel Ojeda’s Work on Rust in the Linux Kernel (Prossimo blog)([Kernel]
+       Posted Jun 17, 2021 18:17 UTC (Thu)
+       by jake )
+OCaml Weekly News June 15([Announcements]
+       Posted Jun 15, 2021 21:00 UTC (Tue)
+       by ris )
+Rewriting the GNU Coreutils in Rust([Development]
+       Posted Jun 14, 2021 8:49 UTC (Mon)
+       by Cyberax )
+Rust lacunae([Development]
+       Posted Jun 11, 2021 17:08 UTC (Fri)
+       by rahulsundaram )
+Rust lacunae([Development]
+       Posted Jun 11, 2021 15:16 UTC (Fri)
+       by mathstuf )
+Rust lacunae([Development]
+       Posted Jun 11, 2021 14:33 UTC (Fri)
+       by Sesse )
+Rust lacunae([Development]
+       Posted Jun 11, 2021 14:27 UTC (Fri)
+       by rahulsundaram )
+Rust lacunae([Development]
+       Posted Jun 11, 2021 14:06 UTC (Fri)
+       by rahulsundaram )
+Rust lacunae([Development]
+       Posted Jun 11, 2021 10:08 UTC (Fri)
+       by khim )
+Rewriting the GNU Coreutils in Rust([Development]
+       Posted Jun 11, 2021 9:44 UTC (Fri)
+       by farnz )
+Rust lacunae([Development]
+       Posted Jun 11, 2021 1:44 UTC (Fri)
+       by ncm )
+Rewriting the GNU Coreutils in Rust([Development]
+       Posted Jun 9, 2021 13:00 UTC (Wed)
+       by rahulsundaram )
+Refreshing([Development]
+       Posted Jun 9, 2021 6:21 UTC (Wed)
+       by zdzichu )
+Rewriting the GNU Coreutils in Rust([Development]
+       Posted Jun 8, 2021 21:48 UTC (Tue)
+       by Ayooluwa Isaiah )
+SUSE security update to 389-ds([Security]
+       Posted Jun 8, 2021 15:06 UTC (Tue)
+       by ris )
+Multi-generational LRU: the next generation([Kernel]
+       Posted May 25, 2021 12:05 UTC (Tue)
+       by k3ninho )
+Ubuntu Weekly Newsletter May 22([Announcements]
+       Posted May 24, 2021 22:45 UTC (Mon)
+       by ris )
+Red Hat security update to rust-toolset:rhel8([Security]
+       Posted May 19, 2021 14:42 UTC (Wed)
+       by ris )
+T2 Linux 21.5 "Because we can" for 18 architectures([Distributions]
+       Posted May 17, 2021 18:57 UTC (Mon)
+       by ris )
+Rustls: memory safety for TLS([Security]
+       Posted May 4, 2021 20:45 UTC (Tue)
+       by Jake Edge )
+Rust in the Linux kernel (Google security blog)([Kernel]
+       Posted May 3, 2021 10:13 UTC (Mon)
+       by ksandstr )
+Rust heads into the kernel?([Kernel]
+       Posted May 3, 2021 9:32 UTC (Mon)
+       by ksandstr )
+Quote of the week([Kernel]
+       Posted Apr 28, 2021 18:30 UTC (Wed)
+       by corbet )
+SUSE security update to librsvg([Security]
+       Posted Apr 26, 2021 14:35 UTC (Mon)
+       by ris )
+Wuffs([Kernel]
+       Posted Apr 23, 2021 3:01 UTC (Fri)
+       by tialaramex )
+Rust heads into the kernel?([Kernel]
+       Posted Apr 23, 2021 1:47 UTC (Fri)
+       by tialaramex )
+Rust heads into the kernel?([Kernel]
+       Posted Apr 23, 2021 0:43 UTC (Fri)
+       by roc )
+Intentionally buggy commits for fame—and papers([Kernel]
+       Posted Apr 22, 2021 22:38 UTC (Thu)
+       by roc )
+Rust heads into the kernel?([Kernel]
+       Posted Apr 22, 2021 20:11 UTC (Thu)
+       by wtarreau )
+Rust heads into the kernel?([Kernel]
+       Posted Apr 22, 2021 20:06 UTC (Thu)
+       by wtarreau )
+Rust heads into the kernel?([Kernel]
+       Posted Apr 22, 2021 3:55 UTC (Thu)
+       by Wol )
+Rust heads into the kernel?([Kernel]
+       Posted Apr 22, 2021 2:54 UTC (Thu)
+       by wtarreau )
+Rust heads into the kernel?([Kernel]
+       Posted Apr 21, 2021 20:08 UTC (Wed)
+       by tbelaire )
+Rust heads into the kernel?([Kernel]
+       Posted Apr 21, 2021 17:57 UTC (Wed)
+       by josh )
+Rust heads into the kernel?([Kernel]
+       Posted Apr 21, 2021 16:14 UTC (Wed)
+       by rahix )
+Rust heads into the kernel?([Kernel]
+       Posted Apr 21, 2021 6:49 UTC (Wed)
+       by rahix )
+Rust heads into the kernel?([Kernel]
+       Posted Apr 21, 2021 1:57 UTC (Wed)
+       by rvolgers )
+Rust heads into the kernel?([Kernel]
+       Posted Apr 21, 2021 1:09 UTC (Wed)
+       by Jake Edge )
+Ubuntu Weekly Newsletter April 17([Announcements]
+       Posted Apr 20, 2021 19:11 UTC (Tue)
+       by ris )
+Rust in the Linux kernel (Google security blog)([Kernel]
+       Posted Apr 19, 2021 15:32 UTC (Mon)
+       by nye )
+C++ Core Guidelines([Kernel]
+       Posted Apr 18, 2021 23:50 UTC (Sun)
+       by mss )
+C++ Core Guidelines([Kernel]
+       Posted Apr 18, 2021 15:15 UTC (Sun)
+       by mss )
+C++ Core Guidelines([Kernel]
+       Posted Apr 17, 2021 0:50 UTC (Sat)
+       by mss )
+Python cryptography, Rust, and Gentoo([Distributions]
+       Posted Apr 16, 2021 22:23 UTC (Fri)
+       by mathstuf )
+Rust in the Linux kernel (Google security blog)([Kernel]
+       Posted Apr 15, 2021 23:00 UTC (Thu)
+       by matthias )
+Rust in the Linux kernel (Google security blog)([Kernel]
+       Posted Apr 15, 2021 22:17 UTC (Thu)
+       by mss )
+Rust in the Linux kernel (Google security blog)([Kernel]
+       Posted Apr 15, 2021 18:06 UTC (Thu)
+       by david.a.wheeler )
+Rust in the Linux kernel (Google security blog)([Kernel]
+       Posted Apr 15, 2021 15:26 UTC (Thu)
+       by gray_-_wolf )
+Quotes of the week([Kernel]
+       Posted Apr 14, 2021 19:30 UTC (Wed)
+       by corbet )
+OCaml Weekly News April 13([Announcements]
+       Posted Apr 13, 2021 21:15 UTC (Tue)
+       by ris )
+Development quotes of the week([Development]
+       Posted Apr 1, 2021 19:00 UTC (Thu)
+       by dvdeug )
+Rust support hits linux-next([Kernel]
+       Posted Mar 22, 2021 11:10 UTC (Mon)
+       by Wol )
+Rust support hits linux-next([Kernel]
+       Posted Mar 21, 2021 21:42 UTC (Sun)
+       by moltonel )
+Rust support hits linux-next([Kernel]
+       Posted Mar 20, 2021 22:18 UTC (Sat)
+       by adobriyan )
+Rust support hits linux-next([Kernel]
+       Posted Mar 19, 2021 14:35 UTC (Fri)
+       by corbet )
+Woodruff: Weird architectures weren't supported to begin with([Security]
+       Posted Mar 6, 2021 21:33 UTC (Sat)
+       by farnz )
+BPF meets io_uring([Kernel]
+       Posted Mar 6, 2021 11:04 UTC (Sat)
+       by excors )
+Woodruff: Weird architectures weren't supported to begin with([Security]
+       Posted Mar 4, 2021 16:10 UTC (Thu)
+       by farnz )
+Woodruff: Weird architectures weren't supported to begin with([Security]
+       Posted Mar 4, 2021 15:19 UTC (Thu)
+       by farnz )
+Woodruff: Weird architectures weren't supported to begin with([Security]
+       Posted Mar 4, 2021 9:17 UTC (Thu)
+       by Vipketsh )
+So layering is no longer a thing?([Security]
+       Posted Mar 3, 2021 12:16 UTC (Wed)
+       by ceplm )
+So layering is no longer a thing?([Security]
+       Posted Mar 2, 2021 15:42 UTC (Tue)
+       by rgmoore )
+Woodruff: Weird architectures weren't supported to begin with([Security]
+       Posted Mar 2, 2021 12:13 UTC (Tue)
+       by joib )
+Woodruff: Weird architectures weren't supported to begin with([Security]
+       Posted Mar 2, 2021 8:44 UTC (Tue)
+       by pm215 )
+So layering is no longer a thing?([Security]
+       Posted Mar 2, 2021 7:38 UTC (Tue)
+       by glaubitz )
+Woodruff: Weird architectures weren't supported to begin with([Security]
+       Posted Mar 1, 2021 23:15 UTC (Mon)
+       by pizza )
+Lockless patterns: relaxed access and partial memory barriers([Kernel]
+       Posted Feb 26, 2021 18:45 UTC (Fri)
+       by Paolo Bonzini )
+Go 1.16 released([Development]
+       Posted Feb 18, 2021 10:13 UTC (Thu)
+       by mti )
+Python cryptography, Rust, and Gentoo([Distributions]
+       Posted Feb 15, 2021 14:32 UTC (Mon)
+       by ceplm )
+Python cryptography, Rust, and Gentoo([Distributions]
+       Posted Feb 15, 2021 8:58 UTC (Mon)
+       by glaubitz )
+Python cryptography, Rust, and Gentoo([Distributions]
+       Posted Feb 14, 2021 22:10 UTC (Sun)
+       by marcH )
+"fringe platforms which can't even run a Rust compiler"([Distributions]
+       Posted Feb 13, 2021 19:38 UTC (Sat)
+       by sthibaul )
+"fringe platforms which can't even run a Rust compiler"([Distributions]
+       Posted Feb 12, 2021 17:26 UTC (Fri)
+       by moltonel )
+Development quotes of the week([Development]
+       Posted Feb 11, 2021 15:57 UTC (Thu)
+       by mti )
+LLVM += new architecture([Distributions]
+       Posted Feb 11, 2021 10:58 UTC (Thu)
+       by sthibaul )
+Development quotes of the week([Development]
+       Posted Feb 11, 2021 9:21 UTC (Thu)
+       by roc )
+Python cryptography, Rust, and Gentoo([Distributions]
+       Posted Feb 11, 2021 6:54 UTC (Thu)
+       by StillSubjectToChange )
+LLVM += new architecture([Distributions]
+       Posted Feb 11, 2021 1:56 UTC (Thu)
+       by marcH )
+Python cryptography, Rust, and Gentoo([Distributions]
+       Posted Feb 10, 2021 23:33 UTC (Wed)
+       by Jake Edge )
+Wayland support (and more) for Emacs([Development]
+       Posted Jan 28, 2021 16:03 UTC (Thu)
+       by Jonathan Corbet )
+Lunar Linux Weekly News (January 22)([Announcements]
+       Posted Jan 25, 2021 19:59 UTC (Mon)
+       by ris )
+Corellium: How we ported Linux to the M1([Kernel]
+       Posted Jan 22, 2021 21:44 UTC (Fri)
+       by rahulsundaram )
+Rust 1.49.0 released([Development]
+       Posted Jan 5, 2021 7:19 UTC (Tue)
+       by dvdeug )
+Rust 1.49.0 released([Development]
+       Posted Jan 4, 2021 18:54 UTC (Mon)
+       by Jonno )
+Rust 1.49.0 released([Development]
+       Posted Jan 3, 2021 14:54 UTC (Sun)
+       by rsidd )
+Rust 1.49.0 released([Development]
+       Posted Jan 1, 2021 0:14 UTC (Fri)
+       by jake )
+t2 Linux 20.10 released([Distributions]
+       Posted Dec 4, 2020 21:31 UTC (Fri)
+       by corbet )
+Eleven Years of Go([Development]
+       Posted Nov 23, 2020 3:18 UTC (Mon)
+       by mathstuf )
+Lunar Linux Weekly News (November 13)([Announcements]
+       Posted Nov 13, 2020 23:00 UTC (Fri)
+       by ris )
+KVM for Android([Kernel]
+       Posted Nov 11, 2020 18:12 UTC (Wed)
+       by Jake Edge )
+Packaging Kubernetes for Debian([Distributions]
+       Posted Nov 6, 2020 5:48 UTC (Fri)
+       by Cyberax )
+Arch Linux security update to firefox([Security]
+       Posted Nov 4, 2020 15:39 UTC (Wed)
+       by ris )
+Packaging Kubernetes for Debian([Distributions]
+       Posted Oct 31, 2020 14:25 UTC (Sat)
+       by cyphar )
+Rust is the future of systems programming, C is the new Assembly (Packt)([Development]
+       Posted Oct 28, 2020 22:35 UTC (Wed)
+       by jerrywrice@fabnexus.com )
+GDB 10.1 released([Development]
+       Posted Oct 24, 2020 16:34 UTC (Sat)
+       by corbet )
+Rejuvenating Autoconf([Development]
+       Posted Oct 23, 2020 16:08 UTC (Fri)
+       by Sumana Harihareswara )
+OCaml Weekly News (October 20)([Announcements]
+       Posted Oct 20, 2020 22:23 UTC (Tue)
+       by ris )
+Zig heading toward a self-hosting compiler([Development]
+       Posted Oct 8, 2020 19:23 UTC (Thu)
+       by excors )
+Zig heading toward a self-hosting compiler([Development]
+       Posted Oct 7, 2020 18:52 UTC (Wed)
+       by Cyberax )
+Zig heading toward a self-hosting compiler([Development]
+       Posted Oct 6, 2020 23:35 UTC (Tue)
+       by Jake Edge )
+Oracle security update to thunderbird([Security]
+       Posted Sep 18, 2020 14:22 UTC (Fri)
+       by jake )
+OpenPGP in Rust: the Sequoia project([Development]
+       Posted Sep 11, 2020 16:06 UTC (Fri)
+       by John Coggeshall )
+Notes from an online free-software conference([Front]
+       Posted Sep 4, 2020 14:07 UTC (Fri)
+       by Jonathan Corbet )
+Supporting Linux kernel development in Rust([Kernel]
+       Posted Sep 4, 2020 7:04 UTC (Fri)
+       by vegard )
+Welcome to the LWN.net Weekly Edition for September 3, 2020([Front]
+       Posted Sep 2, 2020 17:03 UTC (Wed)
+       by corbet )
+MIR is a wiser choice([Kernel]
+       Posted Sep 1, 2020 17:24 UTC (Tue)
+       by Baughn )
+MIR is a wiser choice([Kernel]
+       Posted Sep 1, 2020 14:27 UTC (Tue)
+       by intgr )
+MIR is a wiser choice([Kernel]
+       Posted Sep 1, 2020 12:57 UTC (Tue)
+       by Polynka )
+MIR is a wiser choice([Kernel]
+       Posted Sep 1, 2020 6:51 UTC (Tue)
+       by CChittleborough )
+Supporting Linux kernel development in Rust([Kernel]
+       Posted Aug 31, 2020 17:20 UTC (Mon)
+       by Nelson Elhage )
+Time for a Reckoning([Development]
+       Posted Aug 20, 2020 12:33 UTC (Thu)
+       by roc )
+SUSE security update to rust, rust-cbindgen([Security]
+       Posted Jul 27, 2020 14:51 UTC (Mon)
+       by ris )
+openSUSE security update to rust, rust-cbindgen([Security]
+       Posted Jul 7, 2020 14:46 UTC (Tue)
+       by ris )
+openSUSE security update to rust, rust-cbindgen([Security]
+       Posted Jul 7, 2020 14:46 UTC (Tue)
+       by ris )
+Lunar Linux Weekly News (July 3)([Announcements]
+       Posted Jul 3, 2020 20:53 UTC (Fri)
+       by ris )
+Managing tasks with todo.txt and Taskwarrior([Development]
+       Posted Jun 26, 2020 18:09 UTC (Fri)
+       by tomj )
+Development quote of the week([Development]
+       Posted Jun 4, 2020 11:56 UTC (Thu)
+       by rahulsundaram )
+The 5.7 kernel is out([Kernel]
+       Posted Jun 2, 2020 2:04 UTC (Tue)
+       by mathstuf )
+OCaml Weekly News (May 26)([Announcements]
+       Posted May 26, 2020 17:20 UTC (Tue)
+       by ris )
+Ubuntu Weekly Newsletter (May 16)([Announcements]
+       Posted May 18, 2020 21:56 UTC (Mon)
+       by ris )
+Compatibility is King([Development]
+       Posted Apr 9, 2020 8:41 UTC (Thu)
+       by Vipketsh )
+systemd 245 released([Development]
+       Posted Mar 14, 2020 21:26 UTC (Sat)
+       by nix )
+Lua and Python([Development]
+       Posted Feb 13, 2020 13:03 UTC (Thu)
+       by excors )
+Better tools for kernel developers([Kernel]
+       Posted Feb 6, 2020 21:56 UTC (Thu)
+       by milesrout )
+A tiny Python called Snek([Development]
+       Posted Jan 22, 2020 20:28 UTC (Wed)
+       by Jake Edge )
+Szorc: Mercurial's Journey to and Reflections on Python 3([Development]
+       Posted Jan 16, 2020 21:28 UTC (Thu)
+       by roc )
+Szorc: Mercurial's Journey to and Reflections on Python 3([Development]
+       Posted Jan 16, 2020 10:48 UTC (Thu)
+       by roc )
+Szorc: Mercurial's Journey to and Reflections on Python 3([Development]
+       Posted Jan 16, 2020 10:17 UTC (Thu)
+       by roc )
+Szorc: Mercurial's Journey to and Reflections on Python 3([Development]
+       Posted Jan 15, 2020 22:35 UTC (Wed)
+       by roc )
+Szorc: Mercurial's Journey to and Reflections on Python 3([Development]
+       Posted Jan 15, 2020 11:46 UTC (Wed)
+       by dvdeug )
+Szorc: Mercurial's Journey to and Reflections on Python 3([Development]
+       Posted Jan 15, 2020 10:23 UTC (Wed)
+       by roc )
+Szorc: Mercurial's Journey to and Reflections on Python 3([Development]
+       Posted Jan 14, 2020 11:00 UTC (Tue)
+       by dvdeug )
+Szorc: Mercurial's Journey to and Reflections on Python 3([Development]
+       Posted Jan 14, 2020 5:29 UTC (Tue)
+       by ssmith32 )
+Ubuntu Weekly Newsletter (December 14)([Announcements]
+       Posted Dec 16, 2019 21:56 UTC (Mon)
+       by ris )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 7, 2019 8:46 UTC (Sat)
+       by nim-nim )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 6, 2019 23:36 UTC (Fri)
+       by farnz )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 5, 2019 16:31 UTC (Thu)
+       by farnz )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 5, 2019 8:29 UTC (Thu)
+       by smurf )
+Development quotes of the fortnight([Development]
+       Posted Dec 4, 2019 21:15 UTC (Wed)
+       by ris )
+Two malicious Python libraries caught stealing SSH and GPG keys (ZDNet)([Security]
+       Posted Dec 4, 2019 18:57 UTC (Wed)
+       by mageta )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 2, 2019 19:37 UTC (Mon)
+       by roc )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 2, 2019 0:30 UTC (Mon)
+       by mjg59 )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 2, 2019 0:21 UTC (Mon)
+       by mcatanzaro )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 2, 2019 0:05 UTC (Mon)
+       by rahulsundaram )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 1, 2019 23:57 UTC (Sun)
+       by mcatanzaro )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 1, 2019 20:38 UTC (Sun)
+       by roc )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 1, 2019 17:32 UTC (Sun)
+       by BirAdam )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 1, 2019 16:27 UTC (Sun)
+       by mcatanzaro )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 1, 2019 15:44 UTC (Sun)
+       by mcatanzaro )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 1, 2019 14:38 UTC (Sun)
+       by Wol )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 1, 2019 5:24 UTC (Sun)
+       by roc )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Dec 1, 2019 2:41 UTC (Sun)
+       by rillian )
+Soller: Real hardware breakthroughs, and focusing on rustc([Development]
+       Posted Nov 30, 2019 17:20 UTC (Sat)
+       by mcatanzaro )
+Rust is the future of systems programming, C is the new Assembly (Packt)([Development]
+       Posted Nov 26, 2019 15:47 UTC (Tue)
+       by silvergate )
+Fedora's modularity mess([Distributions]
+       Posted Nov 21, 2019 18:24 UTC (Thu)
+       by Jonathan Corbet )
+A recap of KVM Forum 2019([Kernel]
+       Posted Nov 19, 2019 17:00 UTC (Tue)
+       by Stefan Hajnoczi )
+Rust 1.39.0 released([Development]
+       Posted Nov 8, 2019 22:23 UTC (Fri)
+       by joib )
+SUSE security update to thunderbird([Security]
+       Posted Nov 7, 2019 14:52 UTC (Thu)
+       by jake )
+SUSE security update to rust([Security]
+       Posted Oct 24, 2019 15:01 UTC (Thu)
+       by jake )
+Lunar Linux Weekly News (October 18)([Announcements]
+       Posted Oct 18, 2019 21:26 UTC (Fri)
+       by ris )
+Adding the pidfd abstraction to the kernel([Kernel]
+       Posted Oct 7, 2019 15:59 UTC (Mon)
+       by Jonathan Corbet )
+Lunar Linux Weekly News (September 27)([Announcements]
+       Posted Sep 30, 2019 19:33 UTC (Mon)
+       by ris )
+SUSE security update to rust([Security]
+       Posted Sep 24, 2019 14:42 UTC (Tue)
+       by ris )
+Schedule Up - 26th Annual Tcl/Tk Conference (Tcl'2019)([Announcements]
+       Posted Sep 23, 2019 22:06 UTC (Mon)
+       by ris )
+tl;dr: Rust is NFG. Try again in 2030.([Development]
+       Posted Sep 1, 2019 14:24 UTC (Sun)
+       by ksandstr )
+Rust is the future of systems programming, C is the new Assembly (Packt)([Development]
+       Posted Sep 1, 2019 7:19 UTC (Sun)
+       by da-x )
+Rust is the future of systems programming, C is the new Assembly (Packt)([Development]
+       Posted Aug 30, 2019 12:53 UTC (Fri)
+       by lzh )
+Rust is the future of systems programming, C is the new Assembly (Packt)([Development]
+       Posted Aug 29, 2019 19:38 UTC (Thu)
+       by ssokolow )
+Rust is the future of systems programming, C is the new Assembly (Packt)([Development]
+       Posted Aug 29, 2019 18:34 UTC (Thu)
+       by klmrdn )
+Rust is the future of systems programming, C is the new Assembly (Packt)([Development]
+       Posted Aug 29, 2019 11:39 UTC (Thu)
+       by moltonel )
+Rust is the future of systems programming, C is the new Assembly (Packt)([Development]
+       Posted Aug 29, 2019 11:01 UTC (Thu)
+       by adobriyan )
+Rust is the future of systems programming, C is the new Assembly (Packt)([Development]
+       Posted Aug 29, 2019 6:39 UTC (Thu)
+       by roc )
+Rust is the future of systems programming, C is the new Assembly (Packt)([Development]
+       Posted Aug 29, 2019 6:17 UTC (Thu)
+       by Archimedes )
+Rust is the future of systems programming, C is the new Assembly (Packt)([Development]
+       Posted Aug 29, 2019 1:39 UTC (Thu)
+       by felixfix )
+Backdoor code found in 11 Ruby libraries (ZDNet)([Security]
+       Posted Aug 27, 2019 21:47 UTC (Tue)
+       by roc )
+Git v2.23.0 released([Development]
+       Posted Aug 18, 2019 15:06 UTC (Sun)
+       by corbet )
+Who's afraid of a big bad optimizing compiler?([Kernel]
+       Posted Aug 16, 2019 15:06 UTC (Fri)
+       by PaulMcKenney )
+3rd Call For Papers - 26th Annual Tcl/Tk Conference (Tcl'2019)([Announcements]
+       Posted Aug 13, 2019 16:14 UTC (Tue)
+       by ris )
+2nd Call For Papers - 26th Annual Tcl/Tk Conference (Tcl'2019)([Announcements]
+       Posted Jun 17, 2019 22:50 UTC (Mon)
+       by ris )
+openSUSE security update to thunderbird([Security]
+       Posted Jun 3, 2019 15:02 UTC (Mon)
+       by ris )
+The Linux "copy problem"([Kernel]
+       Posted Jun 1, 2019 1:40 UTC (Sat)
+       by tarkasteve )
+Quotes of the week([Kernel]
+       Posted May 3, 2019 23:30 UTC (Fri)
+       by roc )
+GNU Guix 1.0.0 released([Distributions]
+       Posted May 2, 2019 12:36 UTC (Thu)
+       by corbet )
+Quotes of the week([Kernel]
+       Posted May 2, 2019 11:55 UTC (Thu)
+       by roc )
+OCaml Weekly News (April 30)([Announcements]
+       Posted Apr 30, 2019 19:11 UTC (Tue)
+       by ris )
+ClearlyDefined: Putting license information in one place([Front]
+       Posted Apr 30, 2019 1:20 UTC (Tue)
+       by Jake Edge )
+openSUSE board meeting minutes (April 2)([Announcements]
+       Posted Apr 19, 2019 15:43 UTC (Fri)
+       by corbet )
+Re: BFQ (The creation of the io.latency block I/O controller)([Kernel]
+       Posted Apr 8, 2019 14:50 UTC (Mon)
+       by frr )
+FreeBSD Quarterly Status Report (fourth quarter)([Announcements]
+       Posted Mar 25, 2019 20:13 UTC (Mon)
+       by corbet )
+Layers and abstractions([Development]
+       Posted Mar 20, 2019 18:36 UTC (Wed)
+       by Jake Edge )
+The creation of the io.latency block I/O controller([Kernel]
+       Posted Mar 14, 2019 16:52 UTC (Thu)
+       by Josef Bacik )
+Revisiting PEP 394([Development]
+       Posted Feb 27, 2019 17:02 UTC (Wed)
+       by Jake Edge )
+Ubuntu Weekly Newsletter (February 9)([Announcements]
+       Posted Feb 12, 2019 19:27 UTC (Tue)
+       by ris )
+Alpine Linux 3.9.0 Released([Distributions]
+       Posted Feb 5, 2019 10:28 UTC (Tue)
+       by mps )
+Ubuntu Weekly Newsletter (February 2)([Announcements]
+       Posted Feb 4, 2019 22:35 UTC (Mon)
+       by ris )
+Free Software Supporter (February)([Announcements]
+       Posted Feb 4, 2019 22:34 UTC (Mon)
+       by ris )
+Snowpatch: continuous-integration testing for the kernel([Kernel]
+       Posted Jan 26, 2019 0:36 UTC (Sat)
+       by Jonathan Corbet )
+A set of systemd-journald exploits([Security]
+       Posted Jan 14, 2019 22:11 UTC (Mon)
+       by roc )
+The Firecracker virtual machine monitor([Development]
+       Posted Jan 1, 2019 16:24 UTC (Tue)
+       by Azhar Desai )
+Gentoo security update to rust([Security]
+       Posted Dec 31, 2018 15:26 UTC (Mon)
+       by ris )
+OCaml Weekly News (December 4)([Announcements]
+       Posted Dec 4, 2018 22:59 UTC (Tue)
+       by ris )
+Debian, Rust, and librsvg([Distributions]
+       Posted Nov 19, 2018 21:27 UTC (Mon)
+       by roc )
+Debian, Rust, and librsvg([Distributions]
+       Posted Nov 18, 2018 17:53 UTC (Sun)
+       by hsivonen )
+Debian, Rust, and librsvg([Distributions]
+       Posted Nov 17, 2018 8:20 UTC (Sat)
+       by cpitrat )
+Debian, Rust, and librsvg([Distributions]
+       Posted Nov 16, 2018 21:13 UTC (Fri)
+       by josh )
+Debian, Rust, and librsvg([Distributions]
+       Posted Nov 16, 2018 10:44 UTC (Fri)
+       by Ieee754 )
+Debian, Rust, and librsvg([Distributions]
+       Posted Nov 15, 2018 23:01 UTC (Thu)
+       by nybble41 )
+Debian, Rust, and librsvg([Distributions]
+       Posted Nov 14, 2018 16:59 UTC (Wed)
+       by jccleaver )
+Development quotes of the week([Development]
+       Posted Nov 7, 2018 21:47 UTC (Wed)
+       by ris )
+OCaml Weekly News (November 6)([Announcements]
+       Posted Nov 6, 2018 23:34 UTC (Tue)
+       by ris )
+Lunar Linux Weekly News (October 26)([Announcements]
+       Posted Oct 26, 2018 20:33 UTC (Fri)
+       by ris )
+SUSE security update to rust([Security]
+       Posted Oct 24, 2018 14:41 UTC (Wed)
+       by ris )
+C++ hate([Development]
+       Posted Oct 11, 2018 22:56 UTC (Thu)
+       by ncm )
+Development quotes of the week([Development]
+       Posted Oct 10, 2018 19:00 UTC (Wed)
+       by ris )
+The kernel's code of conduct, one week later([Kernel]
+       Posted Sep 29, 2018 7:36 UTC (Sat)
+       by daniel )
+Fedora reawakens the hibernation debate([Distributions]
+       Posted Sep 19, 2018 3:10 UTC (Wed)
+       by zblaxell )
+Trying to get STACKLEAK into the kernel([Security]
+       Posted Sep 14, 2018 9:36 UTC (Fri)
+       by blackwood )
+C considered dangerous([Security]
+       Posted Sep 4, 2018 5:19 UTC (Tue)
+       by ncm )
+C considered dangerous([Security]
+       Posted Aug 30, 2018 1:12 UTC (Thu)
+       by balkanboy )
+Sharing and archiving data sets with Dat([Development]
+       Posted Aug 27, 2018 23:25 UTC (Mon)
+       by Antoine Beaupré )
+Diverse technical topics from OSCON 2018([Front]
+       Posted Aug 7, 2018 17:40 UTC (Tue)
+       by Josh Berkus )
+Python post-Guido([Development]
+       Posted Jul 19, 2018 5:09 UTC (Thu)
+       by edomaur )
+Python and the web([Development]
+       Posted Jul 4, 2018 13:54 UTC (Wed)
+       by Jake Edge )
+Linux distributions and Python 2([Development]
+       Posted Jun 24, 2018 14:40 UTC (Sun)
+       by codewiz )
+Stratis: Easy local storage management for Linux([Development]
+       Posted May 29, 2018 14:49 UTC (Tue)
+       by Andy Grover )
+Free software for whom?([Distributions]
+       Posted Apr 11, 2018 21:28 UTC (Wed)
+       by ay )
+OpenBSD 6.3 released([Distributions]
+       Posted Apr 2, 2018 20:11 UTC (Mon)
+       by corbet )
+Re: Announcing DNF 3 development([Distributions]
+       Posted Mar 28, 2018 21:25 UTC (Wed)
+       by jake )
+Re: Announcing DNF 3 development([Distributions]
+       Posted Mar 28, 2018 21:24 UTC (Wed)
+       by jake )
+Re: Announcing DNF 3 development([Distributions]
+       Posted Mar 28, 2018 21:24 UTC (Wed)
+       by jake )
+Shrinking the kernel with a hammer([Kernel]
+       Posted Mar 10, 2018 9:40 UTC (Sat)
+       by fratti )
+Shrinking the kernel with a hammer([Kernel]
+       Posted Mar 10, 2018 8:13 UTC (Sat)
+       by jdub )
+Shrinking the kernel with a hammer([Kernel]
+       Posted Mar 7, 2018 18:34 UTC (Wed)
+       by nix )
+Debian System Administration team sprint report  (February 7)([Announcements]
+       Posted Feb 7, 2018 21:46 UTC (Wed)
+       by corbet )
+Too many lords, not enough stewards([Kernel]
+       Posted Jan 31, 2018 22:37 UTC (Wed)
+       by Jake Edge )
+Varlink: a protocol for IPC([Development]
+       Posted Jan 3, 2018 23:40 UTC (Wed)
+       by Jake Edge )
+Python 3, ASCII, and UTF-8([Development]
+       Posted Dec 17, 2017 16:37 UTC (Sun)
+       by Jake Edge )
+C, still?([Kernel]
+       Posted Nov 17, 2017 19:39 UTC (Fri)
+       by marcH )
+GStreamer: state of the union([Front]
+       Posted Oct 30, 2017 19:13 UTC (Mon)
+       by Mischa Spiegelmock )
+FreeBSD Quarterly Status Report (September 27)([Distributions]
+       Posted Oct 3, 2017 22:49 UTC (Tue)
+       by corbet )
+Security quotes of the week([Security]
+       Posted Sep 29, 2017 17:34 UTC (Fri)
+       by wahern )
+C, still?([Kernel]
+       Posted Sep 22, 2017 16:11 UTC (Fri)
+       by ncm )
+OCaml Weekly News (September 12)([Announcements]
+       Posted Sep 12, 2017 22:32 UTC (Tue)
+       by ris )
+SUSE reaffirms support for Btrfs([Distributions]
+       Posted Aug 26, 2017 16:35 UTC (Sat)
+       by Wol )
+The D-Bus Broker project([Development]
+       Posted Aug 26, 2017 0:51 UTC (Sat)
+       by njs )
+The D-Bus Broker project([Development]
+       Posted Aug 25, 2017 20:43 UTC (Fri)
+       by ncm )
+Oracle security update to kernel([Security]
+       Posted Aug 16, 2017 14:55 UTC (Wed)
+       by ris )
+Oracle security update to kernel([Security]
+       Posted Aug 9, 2017 15:04 UTC (Wed)
+       by ris )
+Ubuntu Weekly Newsletter (July 31)([Announcements]
+       Posted Aug 2, 2017 16:39 UTC (Wed)
+       by ris )
+[PATCH] mm: mm, mmap: do not blow on PROT_NONE MAP_FIXED holes in the stack([Kernel]
+       Posted Jul 5, 2017 18:37 UTC (Wed)
+       by corbet )
+Announcing Rust 1.18([Development]
+       Posted Jun 14, 2017 8:37 UTC (Wed)
+       by anselm )
+Announcing Rust 1.18([Development]
+       Posted Jun 13, 2017 16:52 UTC (Tue)
+       by Wol )
+Announcing Rust 1.18([Development]
+       Posted Jun 13, 2017 11:23 UTC (Tue)
+       by aggelos )
+Announcing Rust 1.18([Development]
+       Posted Jun 13, 2017 11:13 UTC (Tue)
+       by paulj )
+Announcing Rust 1.18([Development]
+       Posted Jun 12, 2017 20:11 UTC (Mon)
+       by glaubitz )
+Announcing Rust 1.18([Development]
+       Posted Jun 12, 2017 19:58 UTC (Mon)
+       by Cyberax )
+Announcing Rust 1.18([Development]
+       Posted Jun 12, 2017 19:44 UTC (Mon)
+       by glaubitz )
+Announcing Rust 1.18([Development]
+       Posted Jun 12, 2017 19:29 UTC (Mon)
+       by Cyberax )
+Announcing Rust 1.18([Development]
+       Posted Jun 12, 2017 19:13 UTC (Mon)
+       by glaubitz )
+Announcing Rust 1.18([Development]
+       Posted Jun 11, 2017 21:48 UTC (Sun)
+       by glaubitz )
+Announcing Rust 1.18([Development]
+       Posted Jun 11, 2017 21:45 UTC (Sun)
+       by glaubitz )
+Announcing Rust 1.18([Development]
+       Posted Jun 10, 2017 11:09 UTC (Sat)
+       by darwish )
+Keeping Python competitive([Front]
+       Posted May 31, 2017 15:20 UTC (Wed)
+       by Jake Edge )
+Appears to be resolved([Development]
+       Posted Feb 13, 2017 10:55 UTC (Mon)
+       by glaubitz )
+Appears to be resolved([Development]
+       Posted Feb 8, 2017 0:06 UTC (Wed)
+       by liam )
+Appears to be resolved([Development]
+       Posted Feb 7, 2017 6:51 UTC (Tue)
+       by glaubitz )
+Appears to be resolved([Development]
+       Posted Feb 7, 2017 3:15 UTC (Tue)
+       by liam )
+Different distributions are not a bless :-)([Distributions]
+       Posted Jan 28, 2017 21:14 UTC (Sat)
+       by darwish )
+The trouble with FreeBSD([Front]
+       Posted Jan 25, 2017 21:15 UTC (Wed)
+       by Jonathan Corbet )
+GDB 7.12.1 released([Development]
+       Posted Jan 25, 2017 21:11 UTC (Wed)
+       by ris )
+Package managers all the way down([Distributions]
+       Posted Jan 24, 2017 20:02 UTC (Tue)
+       by Jonathan Corbet )
+Python 2.8?([Development]
+       Posted Jan 19, 2017 16:49 UTC (Thu)
+       by excors )
+Rethinking Fedora multilib support([Distributions]
+       Posted Jan 11, 2017 21:15 UTC (Wed)
+       by Jake Edge )
+SipHash in the kernel([Security]
+       Posted Jan 10, 2017 21:31 UTC (Tue)
+       by Jonathan Corbet )
+The long road to getrandom() in glibc([Kernel]
+       Posted Jan 10, 2017 17:09 UTC (Tue)
+       by thestinger )
+GStreamer and the state of Linux desktop security([Development]
+       Posted Dec 7, 2016 20:26 UTC (Wed)
+       by Hanno Böck )
+Fedora 25 released([Distributions]
+       Posted Nov 22, 2016 14:51 UTC (Tue)
+       by corbet )
+Announcing the release of Fedora 25 Beta([Distributions]
+       Posted Oct 12, 2016 0:03 UTC (Wed)
+       by ris )
+GDB 7.12 released([Development]
+       Posted Oct 10, 2016 13:19 UTC (Mon)
+       by corbet )
+GNOME 3.22 released([Development]
+       Posted Sep 26, 2016 17:21 UTC (Mon)
+       by halla )
+Weird([Front]
+       Posted Aug 14, 2016 4:31 UTC (Sun)
+       by neilbrown )
+Mozilla Servo arrives in nightly demo form([Front]
+       Posted Jul 7, 2016 22:17 UTC (Thu)
+       by Nathan Willis )
+Grover: Why Rust for Low-level Linux programming?([Development]
+       Posted Jun 12, 2016 6:02 UTC (Sun)
+       by Cyberax )
+Grover: Why Rust for Low-level Linux programming?([Development]
+       Posted Jun 10, 2016 20:29 UTC (Fri)
+       by jake )
+April/May 2016 GNU Toolchain Update([Development]
+       Posted Jun 8, 2016 17:55 UTC (Wed)
+       by corbet )
+Klumpp: Adventures in D programming([Development]
+       Posted May 10, 2016 9:36 UTC (Tue)
+       by Corazoor )
+OCaml 4.03([Development]
+       Posted Apr 20, 2016 22:15 UTC (Wed)
+       by Gabriel SCHERER )
+Python looks at paths([Development]
+       Posted Apr 14, 2016 8:13 UTC (Thu)
+       by fishface60 )
+Deciding between Buildroot & Yocto([Distributions]
+       Posted Apr 6, 2016 21:08 UTC (Wed)
+       by Nathan Willis )
+Redox: a Rust-based microkernel([Front]
+       Posted Apr 6, 2016 20:10 UTC (Wed)
+       by Jake Edge )
+OpenBSD 5.9 released([Distributions]
+       Posted Mar 30, 2016 7:35 UTC (Wed)
+       by corbet )
+How they present it in their website:([Distributions]
+       Posted Mar 22, 2016 9:56 UTC (Tue)
+       by m.alessandrini )
+A few new licence misrepresentation tricks, too([Distributions]
+       Posted Mar 21, 2016 20:23 UTC (Mon)
+       by pboddie )
+Rust's Redox OS could show Linux a few new tricks (InfoWorld)([Distributions]
+       Posted Mar 21, 2016 18:56 UTC (Mon)
+       by ris )
+Luu: Files are hard([Kernel]
+       Posted Dec 14, 2015 23:03 UTC (Mon)
+       by Wol )
+A journal for MD/RAID5([Kernel]
+       Posted Dec 13, 2015 21:24 UTC (Sun)
+       by nix )
+Ubuntu Weekly Newsletter Issue 444([Distributions]
+       Posted Dec 1, 2015 18:34 UTC (Tue)
+       by ris )
+Looking at a few recent kernel security holes([Security]
+       Posted Oct 28, 2015 17:12 UTC (Wed)
+       by smckay )
+Fuzzing with american fuzzy lop([Security]
+       Posted Sep 22, 2015 17:43 UTC (Tue)
+       by Hanno Böck )
+Re: Select provider of libav* libraries([Distributions]
+       Posted Jul 13, 2015 15:22 UTC (Mon)
+       by corbet )
+Parallel page rendering with Mozilla Servo([Development]
+       Posted Jun 17, 2015 22:04 UTC (Wed)
+       by Nathan Willis )
+Debian Project News - June 15, 2015([Distributions]
+       Posted Jun 16, 2015 21:12 UTC (Tue)
+       by ris )
+Systemd and containers([Front]
+       Posted Jun 12, 2015 9:35 UTC (Fri)
+       by Kamilion )
+Great!([Development]
+       Posted May 18, 2015 21:32 UTC (Mon)
+       by Cyberax )
+Great!([Development]
+       Posted May 18, 2015 21:17 UTC (Mon)
+       by roc )
+Great!([Development]
+       Posted May 16, 2015 10:49 UTC (Sat)
+       by roc )
+Great!([Development]
+       Posted May 16, 2015 1:59 UTC (Sat)
+       by cesarb )
+Great!([Development]
+       Posted May 15, 2015 17:40 UTC (Fri)
+       by cesarb )
+Just give it up already([Development]
+       Posted Apr 17, 2015 16:49 UTC (Fri)
+       by kreijack )
+Rust 1.0 beta released([Development]
+       Posted Apr 7, 2015 11:54 UTC (Tue)
+       by joib )
+XFS:  There and back ... and there again?([Kernel]
+       Posted Apr 1, 2015 18:43 UTC (Wed)
+       by Jake Edge )
+Ubuntu Weekly Newsletter Issue 408([Distributions]
+       Posted Mar 17, 2015 1:33 UTC (Tue)
+       by ris )
+Fedora security update to libuv([Security]
+       Posted Mar 16, 2015 16:50 UTC (Mon)
+       by ris )
+New open source dependency manager on the scene (Opensource.com)([Development]
+       Posted Jan 25, 2015 13:50 UTC (Sun)
+       by ibukanov )
+A better fix?([Front]
+       Posted Dec 25, 2014 11:08 UTC (Thu)
+       by miquels )
+Fedora security update to libuv([Security]
+       Posted Dec 15, 2014 17:47 UTC (Mon)
+       by ris )
+Fedora security update to libuv([Security]
+       Posted Dec 15, 2014 17:46 UTC (Mon)
+       by ris )
+language-implementation startup times([Development]
+       Posted Dec 4, 2014 5:43 UTC (Thu)
+       by idupree )
+The road to Rust 1.0([Development]
+       Posted Sep 16, 2014 23:00 UTC (Tue)
+       by Cyberax )
+OpenSSL speeds up development to avoid being “slow-moving and insular” (Ars Technica)([Security]
+       Posted Aug 17, 2014 10:22 UTC (Sun)
+       by Duncan )
+Attn: Development Editor, Latest OCaml Weekly News([Development]
+       Posted Jul 2, 2014 15:51 UTC (Wed)
+       by n8willis )
+Re: Python "2migr8"([Development]
+       Posted Apr 16, 2014 19:46 UTC (Wed)
+       by corbet )
+Attn: Development Editor, Latest OCaml Weekly News([Development]
+       Posted Apr 9, 2014 23:43 UTC (Wed)
+       by n8willis )
+"we're able to get it so right so much of the time"?([Announcements]
+       Posted Mar 28, 2014 14:26 UTC (Fri)
+       by Cyberax )
+Dirty page caching not mostly harmless([Kernel]
+       Posted Mar 27, 2014 16:25 UTC (Thu)
+       by zblaxell )
+Re: [Lsf-pc] [LSF/MM TOPIC] really large storage sectors - going
+ beyond 4096 bytes([Kernel]
+       Posted Jan 28, 2014 22:32 UTC (Tue)
+       by corbet )
+Re: [Lsf-pc] [LSF/MM TOPIC] really large storage sectors - going
+ beyond 4096 bytes([Kernel]
+       Posted Jan 28, 2014 22:32 UTC (Tue)
+       by corbet )
+2013 Linux and free software timeline([Front]
+       Posted Jan 6, 2014 17:30 UTC (Mon)
+       by Nathan Willis )
+Positions forming in the Debian init system discussion([Distributions]
+       Posted Jan 2, 2014 0:09 UTC (Thu)
+       by bojan )
+2013 Linux and free software timeline - Q4([Front]
+       Posted Dec 19, 2013 0:01 UTC (Thu)
+       by Nathan Willis )
+2013 Linux and free software timeline - Q3([Front]
+       Posted Dec 11, 2013 23:53 UTC (Wed)
+       by Nathan Willis )
+The 1970s called([Security]
+       Posted Oct 14, 2013 22:59 UTC (Mon)
+       by HelloWorld )
+The 1970s called([Security]
+       Posted Oct 11, 2013 10:51 UTC (Fri)
+       by HelloWorld )
+The 1970s called([Security]
+       Posted Oct 10, 2013 21:58 UTC (Thu)
+       by dlang )
+Re: Some baseline tests on new hardware (was Re: [PATCH] xfs:
+ optimise CIL insertion during transaction commit [RFC])([Kernel]
+       Posted Jul 10, 2013 20:01 UTC (Wed)
+       by corbet )
+Philosophy and "for" loops — more from Go and Rust([Front]
+       Posted Jul 3, 2013 17:32 UTC (Wed)
+       by Neil Brown )
+More behind the scenes changes...([Development]
+       Posted Jun 17, 2013 13:57 UTC (Mon)
+       by edomaur )
+Little things that matter in language design([Front]
+       Posted Jun 8, 2013 0:46 UTC (Sat)
+       by Neil Brown )
+Homebrew([Distributions]
+       Posted May 23, 2013 9:50 UTC (Thu)
+       by man_ls )
+LSFMM: I/O hints([Kernel]
+       Posted Apr 24, 2013 20:42 UTC (Wed)
+       by Jake Edge )
+Rust-lang([Development]
+       Posted Apr 4, 2013 15:43 UTC (Thu)
+       by tjc )
+Samsung's F2FS filesystem([Kernel]
+       Posted Oct 9, 2012 15:45 UTC (Tue)
+       by dwmw2 )
+KS2012: The future of kernel regression tracking([Kernel]
+       Posted Aug 29, 2012 13:50 UTC (Wed)
+       by sdalley )
+Rigo: Multicore Programming in PyPy and CPython([Development]
+       Posted Aug 10, 2012 18:08 UTC (Fri)
+       by njs )
+32-bit x86 will be relevant for some time yet([Distributions]
+       Posted Jun 2, 2012 5:58 UTC (Sat)
+       by Duncan )
+Van Rossum: Python is not too slow (InfoWorld)([Development]
+       Posted Mar 20, 2012 18:17 UTC (Tue)
+       by njs )
+Van Rossum: Python is not too slow (InfoWorld)([Development]
+       Posted Mar 20, 2012 9:06 UTC (Tue)
+       by cmccabe )
+xorg-server 1.10.0([Development]
+       Posted Mar 2, 2011 15:18 UTC (Wed)
+       by corbet )
+Kernel prepatch 2.6.36-rc8([Kernel]
+       Posted Oct 15, 2010 14:02 UTC (Fri)
+       by corbet )
+SSD([Front]
+       Posted Oct 6, 2009 6:23 UTC (Tue)
+       by dwmw2 )
+Re: [patch] ext2/3: document conditions when reliable operation is possible([Kernel]
+       Posted Aug 31, 2009 19:55 UTC (Mon)
+       by corbet )
+Bridges, and Code is King([Distributions]
+       Posted Apr 22, 2008 22:07 UTC (Tue)
+       by nix )
+Bridges, and Code is King([Distributions]
+       Posted Apr 22, 2008 21:39 UTC (Tue)
+       by tialaramex )
+Is VMware too close to Linux? (The Register)([Press]
+       Posted Aug 17, 2007 21:48 UTC (Fri)
+       by ris )
+ShipIt Deus Ex: Ubuntu, good for Disorder?([Distributions]
+       Posted Dec 8, 2004 20:39 UTC (Wed)
+       by corbet )
+Software announcements by license([Announcements]
+       Posted Oct 20, 2004 17:56 UTC (Wed)
+       by cook )
+Software announcements by section([Announcements]
+       Posted Oct 20, 2004 17:55 UTC (Wed)
+       by cook )
+Software announcements by license([Announcements]
+       Posted Jul 16, 2003 18:29 UTC (Wed)
+       by cook )
+Software announcements by section([Announcements]
+       Posted Jul 16, 2003 18:29 UTC (Wed)
+       by cook )
+Copyright © 2023, Eklektix, Inc.Comments and public postings are copyrighted by their creators.Linux  is a registered trademark of Linus Torvalds

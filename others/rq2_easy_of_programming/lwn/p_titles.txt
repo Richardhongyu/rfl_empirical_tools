@@ -1,0 +1,774 @@
+OpenBSD 7.3 released
+Meta's Buck2 build system
+  openSUSE Release Engineering minutes April 5  
+A quarter century of Mozilla
+A quarter century of Mozilla - my sincere gratitude
+A quarter century of Mozilla
+Landlock news #3 March 22
+Jumping the licensing shark
+Google launches KataOS
+  Ubuntu Weekly Newsletter March 11  
+The initial posting of the Apple AGX graphics driver
+Three Questions and Answers: Rust for Linux (Heise)
+The rest of the 6.3 merge window
+Three Questions and Answers: Rust for Linux (Heise)
+SUSE security update to trivy
+Python packaging and its tools
+Kernel time APIs for Rust
+Python packaging and its tools
+Some useful tools for binary formats
+Rust Keyword Generics Progress Report: February 2023
+The first half of the 6.3 merge window
+Python packaging targets
+Passwordless authentication with FIDO2—beyond just the web
+GDB 13.1 released
+Managing sysctl knobs with BPF
+The extensible scheduler class
+Users and Python packaging
+Fedora packages versus upstream Flatpaks
+Object-oriented design patterns in the kernel, part 2
+The Linux SVSM project
+Fedora security update to rust-resctl-demo
+FreeBSD Status Report - Fourth Quarter 2022 January 25
+Python packaging, visions, and unification
+A survey of the Python packaging landscape
+Täht: Flaws and features in the Flent network testing tool
+  OCaml Weekly News January 10  
+Rust bandwagon
+Rust bandwagon
+Welcome to 2023
+Welcome to 2023
+Wrapping up 2022
+So layering is no longer a thing?
+Wrapping up 2022
+Losing the magic
+KernelCI now testing Linux Rust code (Collabora blog)
+To all the "why bother" rustaceans
+Rust support coming to GCC
+Rust support coming to GCC
+Losing the magic
+Losing the magic
+ Memory Safe Languages in Android 13 (Google security blog)
+Development quote of the week
+Development quote of the week
+Juggling software interrupts and realtime tasks
+Development quote of the week
+Development quote of the week
+Open source community split over offer of 'corporate' welfare for criticaldev tools (Register)
+Open source community split over offer of 'corporate' welfare for criticaldev tools (Register)
+Lina: Tales of the M1 GPU
+Development quote of the week
+Lina: Tales of the M1 GPU
+SUSE security update to binutils
+Lina: Tales of the M1 GPU
+Lina: Tales of the M1 GPU
+Lina: Tales of the M1 GPU
+SUSE security update to binutils
+Rust in the 6.2 kernel
+Rust in the 6.2 kernel
+Rust in the 6.2 kernel
+Rust in the 6.2 kernel
+Rust in the 6.2 kernel
+  Ubuntu Weekly Newsletter November 12  
+  OCaml Weekly News November 15  
+A new crop of malicious modules found on PyPI
+Rust 1.65.0 released
+Welcome to the LWN.net Weekly Edition for November 3, 2022
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Packaging Rust for Fedora
+Would you like signs with those chars?
+  FreeBSD Quarterly Status Report third quarter  
+Google launches KataOS
+Gentoo security update to rust
+A first look at Rust in the 6.1 kernel
+A first look at Rust in the 6.1 kernel
+A first look at Rust in the 6.1 kernel
+A first look at Rust in the 6.1 kernel
+A first look at Rust in the 6.1 kernel
+A first look at Rust in the 6.1 kernel
+A first look at Rust in the 6.1 kernel
+Compiling Rust for Linux with rustc_codegen_gcc
+A deeper look into the GCC Rust front-end
+The first half of the 6.1 merge window
+Some 6.0 development statistics
+Compiling Rust with GCC: an update
+  openSUSE Release Engineering minutes September 28  
+BPF as a safer kernel programming environment
+Safer flexible arrays for the kernel
+Security quote of the week - BYOD
+Welcome to the LWN.net Weekly Edition for September 22, 2022
+Next steps for Rust in the kernel
+The perils of pinning
+The perils of pinning
+Introducing io_uring_spawn
+  Ubuntu Weekly Newsletter September 17  
+The 2022 Linux Kernel Maintainers Summit
+Next steps for Rust in the kernel
+The road to Zettalinux
+How much of this is that a new language displays undefined behavior in a preceeding language?
+The perils of pinning
+The perils of pinning
+The road to Zettalinux
+The perils of pinning
+The perils of pinning
+The perils of pinning
+The perils of pinning
+The perils of pinning
+The perils of pinning
+The perils of pinning
+A pair of Rust kernel modules
+A pair of Rust kernel modules
+A pair of Rust kernel modules
+Welcome to the LWN.net Weekly Edition for September 15, 2022
+A pair of Rust kernel modules
+A pair of Rust kernel modules
+A pair of Rust kernel modules
+A pair of Rust kernel modules
+A pair of Rust kernel modules
+Compiling Rust with GCC: an update
+Compiling Rust with GCC: an update
+s390x vs s390
+Compiling Rust with GCC: an update
+Compiling Rust with GCC: an update
+Compiling Rust with GCC: an update
+Compiling Rust with GCC: an update
+Compiling Rust with GCC: an update
+Ushering out strlcpy()
+Ushering out strlcpy()
+  Ubuntu Weekly Newsletter August 26  
+The ABI status of ELF hash tables
+The ABI status of ELF hash tables
+  OCaml Weekly News August 2  
+Welcome to the LWN.net Weekly Edition for July 28, 2022
+Docker and the OCI container ecosystem
+The trouble with symbolic links
+Long-lived kernel pointers in BPF
+w00t for exception-throwing languages
+The 2022 embedded Linux update
+Rust 1.62.0 released
+A "fireside" chat
+Ojeda: Memory Safety for the World’s Largest Software Project
+Vetting the cargo
+Quotes of the week
+Vetting the cargo
+Vetting the cargo
+Rethinking Fedora's Java packaging
+ioctl() forever?
+The Linux Foundation's "security mobilization plan"
+Adding an in-kernel TLS handshake
+The Clever Audio Plugin
+The Linux Foundation's "security mobilization plan"
+Huang: Rust: A Critical Retrospective
+Rust 1.61.0 released
+LWN is hiring
+Bringing bcachefs to the mainline
+Quotes of the week
+The malicious "rustdecimal" crate
+Red Hat security update to rust-toolset:rhel8
+  openSUSE Release Engineering minutes May 5  
+DeVault: Announcing the Hare programming language
+DeVault: Announcing the Hare programming language
+DeVault: Announcing the Hare programming language
+DeVault: Announcing the Hare programming language
+Fedora project leader Matthew Miller weighs in (TechRepublic)
+Fedora project leader Matthew Miller weighs in (TechRepublic)
+Fedora project leader Matthew Miller weighs in (TechRepublic)
+Yocto Project 4.0 released
+  OCaml Weekly News April 26  
+Clouds and VPSes
+OpenBSD 7.1 released
+Clouds and VPSes
+Ubuntu 22.04 LTS (Jammy Jellyfish) released
+Rustaceans at the border
+Rustaceans at the border
+Rustaceans at the border
+Rustaceans at the border
+Rustaceans at the border
+Rustaceans at the border
+  openSUSE Release Engineering minutes April 13  
+Rustaceans at the border
+Rustaceans at the border
+Rustaceans at the border
+Rustaceans at the border
+Rustaceans at the border
+Rustaceans at the border
+Rustaceans at the border
+Rustaceans at the border
+SUSE security update to firefox
+Rust 1.60.0 released
+  openSUSE Release Engineering minutes April 6  
+  openSUSE Release Engineering minutes March 30  
+  openSUSE Release Engineering minutes March 23  
+Documentation
+SUSE security update to rust, rust1.58, rust1.59
+  FreeBSD Quarterly Status Report fourth quarter  
+The kernel radar: folios, multi-generational LRU, and Rust
+Rust operator overloading
+Moving the kernel to modern C
+  openSUSE Release Engineering minutes February 23  
+SUSE security update to rust
+  OCaml Weekly News February 15  
+Deprecated shouldn't mean removal
+Fedora security update to rust-ripgrep
+Fedora security update to rust-ripgrep
+Goodbye FLoC, hello Topics
+SUSE security update to rust
+Rust 1.58.1 released
+Rust 1.58.1 released
+Rust
+The kernel radar: folios, multi-generational LRU, and Rust
+Rust
+Rust
+The kernel radar: folios, multi-generational LRU, and Rust
+LWN's unreliable predictions for 2022
+LWN's unreliable predictions for 2022
+  Lunar Linux Weekly News December 17  
+Mold (linker) 1.0 released
+Red Hat security update to rust-toolset:rhel8
+Red Hat security update to rust-toolset:rhel8
+Trojan Source: tricks (no treats) with Unicode
+  openSUSE Release Engineering minutes November 3  
+Tor News November 2
+Yocto Project 3.4 (Honister) released
+Recommendations for Rust and read-copy-update
+  OCaml Weekly News October 26  
+  openSUSE Release Engineering minutes October 20  
+Locking one thing while modifying another
+openSUSE security update to firefox
+SUSE security update to firefox, rust-cbindgen
+Red Hat security update to thunderbird
+Red Hat security update to thunderbird
+Red Hat security update to thunderbird
+Red Hat security update to thunderbird
+openSUSE security update to firefox
+Red Hat security update to firefox
+Red Hat security update to firefox
+Red Hat security update to firefox
+Red Hat security update to firefox
+Welcome to the LWN.net Weekly Edition for October 7, 2021
+Rust and GCC, two different ways
+volatile
+volatile
+Rust and GCC, two different ways
+McKenney: So You Want to Rust the Linux Kernel?
+Welcome to the LWN.net Weekly Edition for September 30, 2021
+More Rust concepts for the kernel
+The Rust for Linux project
+Using Rust for kernel development
+The 2021 Kernel Maintainers Summit
+Using Rust for kernel development
+More Rust concepts for the kernel
+An update on Memory Safety in Chrome
+Welcome to the LWN.net Weekly Edition for September 23, 2021
+Key Rust concepts for the kernel
+More Rust concepts for the kernel
+Conill: The long-term consequences of maintainers’ actions
+Conill: The long-term consequences of maintainers’ actions
+Conill: The long-term consequences of maintainers’ actions
+Key Rust concepts for the kernel
+How will cooperation of rust-knowing and not-rust-knowing maintainers look like?
+The Rust for Linux project
+Architecture support
+Architecture support
+The Rust for Linux project
+  OCaml Weekly News September 7  
+  Tor News September 2  
+Oracle security update to rust-toolset:ol8
+Red Hat security update to rust-toolset-1.52 and rust-toolset-1.52-rust
+Linux Kernel Security Done Right (Google Security Blog)
+(non) UTF-8 filenames
+  Tor News July 29  
+SUSE security update to git
+openSUSE security update to git
+Rust for Linux redux
+A look forward to Linux Plumbers 2021
+Rust for Linux redux
+Rust for Linux redux
+Rust for Linux redux
+Rust for Linux redux
+The Sequoia seq_file vulnerability
+Welcome to the LWN.net Weekly Edition for July 22, 2021
+A GPIO driver in Rust
+Rust for Linux redux
+A GPIO driver in Rust
+Rust for Linux redux
+Announcing Arti, a pure-Rust Tor implementation (Tor blog)
+Unstable features
+Unstable features
+Unstable features
+  OCaml Weekly News July 13  
+Ownership and lifetimes
+Footguns
+Footguns
+Rust for Linux redux
+Rust for Linux redux
+Meticulous work
+Unstable features
+Unstable features
+Unstable features
+Meticulous work
+Meticulous work
+Rust for Linux redux
+Rust for Linux redux
+Rust for Linux redux
+Rust noise
+Signal
+Rust for Linux redux
+Signal
+Rust for Linux redux
+Rust for Linux redux
+Welcome to the LWN.net Weekly Edition for July 8, 2021
+Suppressing SIGBUS signals
+Suppressing SIGBUS signals
+Suppressing SIGBUS signals
+Suppressing SIGBUS signals
+Pulling GitHub into the kernel process
+Supporting Miguel Ojeda’s Work on Rust in the Linux Kernel (Prossimo blog)
+  OCaml Weekly News June 15  
+Rewriting the GNU Coreutils in Rust
+Rust lacunae
+Rust lacunae
+Rust lacunae
+Rust lacunae
+Rust lacunae
+Rust lacunae
+Rewriting the GNU Coreutils in Rust
+Rust lacunae
+Rewriting the GNU Coreutils in Rust
+Refreshing
+Rewriting the GNU Coreutils in Rust
+SUSE security update to 389-ds
+Multi-generational LRU: the next generation
+  Ubuntu Weekly Newsletter May 22  
+Red Hat security update to rust-toolset:rhel8
+T2 Linux 21.5 "Because we can" for 18 architectures
+Rustls: memory safety for TLS
+Rust in the Linux kernel (Google security blog)
+Rust heads into the kernel?
+Quote of the week
+SUSE security update to librsvg
+Wuffs
+Rust heads into the kernel?
+Rust heads into the kernel?
+Intentionally buggy commits for fame—and papers
+Rust heads into the kernel?
+Rust heads into the kernel?
+Rust heads into the kernel?
+Rust heads into the kernel?
+Rust heads into the kernel?
+Rust heads into the kernel?
+Rust heads into the kernel?
+Rust heads into the kernel?
+Rust heads into the kernel?
+Rust heads into the kernel?
+  Ubuntu Weekly Newsletter April 17  
+Rust in the Linux kernel (Google security blog)
+C++ Core Guidelines
+C++ Core Guidelines
+C++ Core Guidelines
+Python cryptography, Rust, and Gentoo
+Rust in the Linux kernel (Google security blog)
+Rust in the Linux kernel (Google security blog)
+Rust in the Linux kernel (Google security blog)
+Rust in the Linux kernel (Google security blog)
+Quotes of the week
+  OCaml Weekly News April 13  
+Development quotes of the week
+Rust support hits linux-next
+Rust support hits linux-next
+Rust support hits linux-next
+Rust support hits linux-next
+Woodruff: Weird architectures weren't supported to begin with
+BPF meets io_uring
+Woodruff: Weird architectures weren't supported to begin with
+Woodruff: Weird architectures weren't supported to begin with
+Woodruff: Weird architectures weren't supported to begin with
+So layering is no longer a thing?
+So layering is no longer a thing?
+Woodruff: Weird architectures weren't supported to begin with
+Woodruff: Weird architectures weren't supported to begin with
+So layering is no longer a thing?
+Woodruff: Weird architectures weren't supported to begin with
+Lockless patterns: relaxed access and partial memory barriers
+Go 1.16 released
+Python cryptography, Rust, and Gentoo
+Python cryptography, Rust, and Gentoo
+Python cryptography, Rust, and Gentoo
+"fringe platforms which can't even run a Rust compiler"
+"fringe platforms which can't even run a Rust compiler"
+Development quotes of the week
+LLVM += new architecture
+Development quotes of the week
+Python cryptography, Rust, and Gentoo
+LLVM += new architecture
+Python cryptography, Rust, and Gentoo
+Wayland support (and more) for Emacs
+
+
+Lunar Linux Weekly News (January 22)
+
+
+Corellium: How we ported Linux to the M1
+Rust 1.49.0 released
+Rust 1.49.0 released
+Rust 1.49.0 released
+Rust 1.49.0 released
+t2 Linux 20.10 released
+Eleven Years of Go
+
+
+Lunar Linux Weekly News (November 13)
+
+
+KVM for Android
+Packaging Kubernetes for Debian
+Arch Linux security update to firefox
+Packaging Kubernetes for Debian
+Rust is the future of systems programming, C is the new Assembly (Packt)
+GDB 10.1 released
+Rejuvenating Autoconf
+
+
+OCaml Weekly News (October 20)
+
+
+Zig heading toward a self-hosting compiler
+Zig heading toward a self-hosting compiler
+Zig heading toward a self-hosting compiler
+Oracle security update to thunderbird
+OpenPGP in Rust: the Sequoia project
+Notes from an online free-software conference
+Supporting Linux kernel development in Rust
+Welcome to the LWN.net Weekly Edition for September 3, 2020
+MIR is a wiser choice
+MIR is a wiser choice
+MIR is a wiser choice
+MIR is a wiser choice
+Supporting Linux kernel development in Rust
+Time for a Reckoning
+SUSE security update to rust, rust-cbindgen
+openSUSE security update to rust, rust-cbindgen
+openSUSE security update to rust, rust-cbindgen
+
+
+Lunar Linux Weekly News (July 3)
+
+
+Managing tasks with todo.txt and Taskwarrior
+Development quote of the week
+The 5.7 kernel is out
+
+
+OCaml Weekly News (May 26)
+
+
+
+
+Ubuntu Weekly Newsletter (May 16)
+
+
+Compatibility is King
+systemd 245 released
+Lua and Python
+Better tools for kernel developers
+A tiny Python called Snek
+Szorc: Mercurial's Journey to and Reflections on Python 3
+Szorc: Mercurial's Journey to and Reflections on Python 3
+Szorc: Mercurial's Journey to and Reflections on Python 3
+Szorc: Mercurial's Journey to and Reflections on Python 3
+Szorc: Mercurial's Journey to and Reflections on Python 3
+Szorc: Mercurial's Journey to and Reflections on Python 3
+Szorc: Mercurial's Journey to and Reflections on Python 3
+Szorc: Mercurial's Journey to and Reflections on Python 3
+
+
+Ubuntu Weekly Newsletter (December 14)
+
+
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Development quotes of the fortnight
+Two malicious Python libraries caught stealing SSH and GPG keys (ZDNet)
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Soller: Real hardware breakthroughs, and focusing on rustc
+Rust is the future of systems programming, C is the new Assembly (Packt)
+Fedora's modularity mess
+A recap of KVM Forum 2019
+Rust 1.39.0 released
+SUSE security update to thunderbird
+SUSE security update to rust
+
+
+Lunar Linux Weekly News (October 18)
+
+
+Adding the pidfd abstraction to the kernel
+
+
+Lunar Linux Weekly News (September 27)
+
+
+SUSE security update to rust
+Schedule Up - 26th Annual Tcl/Tk Conference (Tcl'2019)
+tl;dr: Rust is NFG. Try again in 2030.
+Rust is the future of systems programming, C is the new Assembly (Packt)
+Rust is the future of systems programming, C is the new Assembly (Packt)
+Rust is the future of systems programming, C is the new Assembly (Packt)
+Rust is the future of systems programming, C is the new Assembly (Packt)
+Rust is the future of systems programming, C is the new Assembly (Packt)
+Rust is the future of systems programming, C is the new Assembly (Packt)
+Rust is the future of systems programming, C is the new Assembly (Packt)
+Rust is the future of systems programming, C is the new Assembly (Packt)
+Rust is the future of systems programming, C is the new Assembly (Packt)
+Backdoor code found in 11 Ruby libraries (ZDNet)
+Git v2.23.0 released
+Who's afraid of a big bad optimizing compiler?
+3rd Call For Papers - 26th Annual Tcl/Tk Conference (Tcl'2019)
+2nd Call For Papers - 26th Annual Tcl/Tk Conference (Tcl'2019)
+openSUSE security update to thunderbird
+The Linux "copy problem"
+Quotes of the week
+GNU Guix 1.0.0 released
+Quotes of the week
+
+
+OCaml Weekly News (April 30)
+
+
+ClearlyDefined: Putting license information in one place
+openSUSE board meeting minutes (April 2)
+Re: BFQ (The creation of the io.latency block I/O controller)
+
+
+FreeBSD Quarterly Status Report (fourth quarter)
+
+
+Layers and abstractions
+The creation of the io.latency block I/O controller
+Revisiting PEP 394
+
+
+Ubuntu Weekly Newsletter (February 9)
+
+
+Alpine Linux 3.9.0 Released
+Ubuntu Weekly Newsletter (February 2)
+
+
+Free Software Supporter (February)
+
+
+Snowpatch: continuous-integration testing for the kernel
+A set of systemd-journald exploits
+The Firecracker virtual machine monitor
+Gentoo security update to rust
+OCaml Weekly News (December 4)
+Debian, Rust, and librsvg
+Debian, Rust, and librsvg
+Debian, Rust, and librsvg
+Debian, Rust, and librsvg
+Debian, Rust, and librsvg
+Debian, Rust, and librsvg
+Debian, Rust, and librsvg
+Development quotes of the week
+OCaml Weekly News (November 6)
+
+
+Lunar Linux Weekly News (October 26)
+
+
+SUSE security update to rust
+C++ hate
+Development quotes of the week
+The kernel's code of conduct, one week later
+Fedora reawakens the hibernation debate
+Trying to get STACKLEAK into the kernel
+C considered dangerous
+C considered dangerous
+Sharing and archiving data sets with Dat
+Diverse technical topics from OSCON 2018
+Python post-Guido
+Python and the web
+Linux distributions and Python 2
+Stratis: Easy local storage management for Linux
+Free software for whom?
+OpenBSD 6.3 released
+Re: Announcing DNF 3 development 
+Re: Announcing DNF 3 development 
+Re: Announcing DNF 3 development 
+Shrinking the kernel with a hammer
+Shrinking the kernel with a hammer
+Shrinking the kernel with a hammer
+
+
+Debian System Administration team sprint report  (February 7)
+
+
+Too many lords, not enough stewards
+Varlink: a protocol for IPC
+Python 3, ASCII, and UTF-8
+C, still?
+GStreamer: state of the union
+FreeBSD Quarterly Status Report (September 27)
+Security quotes of the week
+C, still?
+
+
+OCaml Weekly News (September 12)
+
+
+SUSE reaffirms support for Btrfs
+The D-Bus Broker project
+The D-Bus Broker project
+Oracle security update to kernel
+Oracle security update to kernel
+
+
+Ubuntu Weekly Newsletter (July 31)
+
+
+[PATCH] mm: mm, mmap: do not blow on PROT_NONE MAP_FIXED holes in the stack 
+Announcing Rust 1.18
+Announcing Rust 1.18
+Announcing Rust 1.18
+Announcing Rust 1.18
+Announcing Rust 1.18
+Announcing Rust 1.18
+Announcing Rust 1.18
+Announcing Rust 1.18
+Announcing Rust 1.18
+Announcing Rust 1.18
+Announcing Rust 1.18
+Announcing Rust 1.18
+Keeping Python competitive
+Appears to be resolved
+Appears to be resolved
+Appears to be resolved
+Appears to be resolved
+Different distributions are not a bless :-)
+The trouble with FreeBSD
+GDB 7.12.1 released
+Package managers all the way down
+Python 2.8?
+Rethinking Fedora multilib support
+SipHash in the kernel
+The long road to getrandom() in glibc
+GStreamer and the state of Linux desktop security
+Fedora 25 released
+Announcing the release of Fedora 25 Beta
+GDB 7.12 released
+GNOME 3.22 released
+Weird
+Mozilla Servo arrives in nightly demo form
+Grover: Why Rust for Low-level Linux programming?
+Grover: Why Rust for Low-level Linux programming?
+April/May 2016 GNU Toolchain Update 
+Klumpp: Adventures in D programming
+OCaml 4.03
+Python looks at paths
+Deciding between Buildroot & Yocto
+Redox: a Rust-based microkernel
+OpenBSD 5.9 released
+How they present it in their website:
+A few new licence misrepresentation tricks, too
+Rust's Redox OS could show Linux a few new tricks (InfoWorld)
+Luu: Files are hard
+A journal for MD/RAID5
+Ubuntu Weekly Newsletter Issue 444 
+Looking at a few recent kernel security holes
+Fuzzing with american fuzzy lop
+Re: Select provider of libav* libraries 
+Parallel page rendering with Mozilla Servo
+Debian Project News - June 15, 2015 
+Systemd and containers
+Great!
+Great!
+Great!
+Great!
+Great!
+Just give it up already
+Rust 1.0 beta released
+XFS:  There and back ... and there again?
+Ubuntu Weekly Newsletter Issue 408 
+Fedora security update to libuv
+New open source dependency manager on the scene (Opensource.com)
+A better fix?
+Fedora security update to libuv
+Fedora security update to libuv
+language-implementation startup times
+The road to Rust 1.0
+OpenSSL speeds up development to avoid being “slow-moving and insular” (Ars Technica)
+Attn: Development Editor, Latest OCaml Weekly News 
+Re: Python "2migr8"
+Attn: Development Editor, Latest OCaml Weekly News 
+"we're able to get it so right so much of the time"?
+Dirty page caching not mostly harmless
+Re: [Lsf-pc] [LSF/MM TOPIC] really large storage sectors - going
+ beyond 4096 bytes 
+Re: [Lsf-pc] [LSF/MM TOPIC] really large storage sectors - going
+ beyond 4096 bytes 
+2013 Linux and free software timeline
+Positions forming in the Debian init system discussion
+2013 Linux and free software timeline - Q4
+2013 Linux and free software timeline - Q3
+The 1970s called
+The 1970s called
+The 1970s called
+Re: Some baseline tests on new hardware (was Re: [PATCH] xfs:
+ optimise CIL insertion during transaction commit [RFC]) 
+Philosophy and "for" loops — more from Go and Rust
+More behind the scenes changes...
+Little things that matter in language design
+Homebrew
+LSFMM: I/O hints
+Rust-lang
+Samsung's F2FS filesystem
+KS2012: The future of kernel regression tracking
+Rigo: Multicore Programming in PyPy and CPython
+32-bit x86 will be relevant for some time yet
+Van Rossum: Python is not too slow (InfoWorld)
+Van Rossum: Python is not too slow (InfoWorld)
+xorg-server 1.10.0
+Kernel prepatch 2.6.36-rc8
+SSD
+Re: [patch] ext2/3: document conditions when reliable operation is possible 
+Bridges, and Code is King
+Bridges, and Code is King
+Is VMware too close to Linux? (The Register)
+ShipIt Deus Ex: Ubuntu, good for Disorder?
+Software announcements by license
+Software announcements by section
+Software announcements by license
+Software announcements by section
