@@ -4,6 +4,8 @@ Run `./draw.sh <path-to-linux>` to generate the corresponing data of *Table 5: T
 
 For example, if your linux store in `/home/someone/linux`, then just run `./draw.sh /home/someone/linux` will be ok.
 
+**We provide a rust-for-linux repo in container and its path is `/workspace/linux`, so you can just run `./draw.sh /workspace/linx`**
+
 `code` directory store some scripts that will execute by `draw.sh`, `data` directory store the output log.
 
 ## Docs%
