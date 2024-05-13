@@ -28,9 +28,18 @@ There are some pictures that show the test about e1000:
 **ping latency, left is Rust and right is C**:
 ![ping_lat_left_rust_right_c](./imgs/ping_lat_left_rust_right_c.png)
 
+> rust e1000 needs to modify code and use the right.
+> Please see the following links: 
+> 1) Modify the code: https://github.com/fujita/rust-e1000/pull/9 https://github.com/fujita/rust-e1000/pull/4
+> 2) Configure tap device: https://github.com/fujita/rust-e1000/pull/7/files
+> 3) arp set manually https://github.com/fujita/rust-e1000/issues/5#issuecomment-1620161851
+> Note: Rust e1000 driver still has bugs, it will break if you try to run perf. Please don't do this.
+> If you want to test e1000 in our mechine, just ssh to our machine[the related info in listed in the AE system] and tell us you need to run e1000 in issus. Because we only have one NIC, you need to run a qemu to ping each other. We did the experiment in the real machine, Thus, the data may differs sightly.
+
+
 ## binder
 
-If you want to test the latency of C binder and Rust binder, just ssh to our machine by running `ssh -p 9301 rros@149.129.120.139`. Note that C binder and rust binder can not live in one kernel together. If you want to test a different binder, you should compile linux with a different config and reboot a new kernel.
+If you want to test the latency of C binder and Rust binder, just ssh to our machine. Note that C binder and rust binder can not live in one kernel together. If you want to test a different binder, you should compile linux with a different config and reboot a new kernel.
 
 In our machine, the directory `/data/linux/` have the `rust-binder-rfc` and `binder-rfc` branch. In `rust-binder-rfc` branch, there is only a rust binder, you can not find C binder in Kconfig. In `binder-rfc` branch, both C and Rust binder can be build. Assume you use `binder-rfc` branch to test Rust binder, you can just do these things:
 1. Make sure current kernel have already build rust binder. You can check it by 

@@ -28,7 +28,7 @@ Here is an example of the directory structure.
         figureM.pdf/tableM_data  
     |---- README.md  
         give instuctions about how to run the code and indicate which figures/table/text this repo corresponds to  
-    |---- bash.sh  
+    |---- bash.sh/draw.sh/print.sh [The name does not matter, it is a collection of script to run/plot the data]
         the bash is organized as follows:  
         1) cd /path/to/rfl-path/rq1  
         2) call scripts  
