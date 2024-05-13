@@ -13,13 +13,15 @@ For example, if your linux store in `/home/someone/linux`, then just run `./draw
 Column `Docs%` data is shown at the end of the log file `doc_cov.log` like these contexts:
 
 ```plain-text
-io_uring: 0.200 [doc/(exported+included)]=[2/(5+5)]
+io_uring: 0.313 [doc/(exported+included)]=[5/16]
 ebpf: 0.141 [doc/(exported+included)]=[12/(49+36)]
 ```
 
-`io_uring: 0.200 [doc/(exported+included)]=[2/(5+5)]` means document coverage in io_uring is 20.0% and the number of documented function is `2`, the number of functions with `EXPORT_SYMBOL` or `EXPORT_SYMBOL_GPL` is `5`, the number of functions included in header files is `5`. Line about ebpf is similar.
+`io_uring: 0.313 [doc/(exported+included)]=[5/16]` means document coverage in io_uring is 33.3% and the number of documented function is `5`.
+The number of functions with `EXPORT_SYMBOL` or `EXPORT_SYMBOL_GPL`, and the number of public functions included in header files is `16`. 
+Line about ebpf is similar.
 
-> Note: We don't need to compute the document coverage of RFL, because the compile will not pass if there is a function without kernel-doc comment.
+> Note: The document coverage of RFL is 100%, because the compile will not pass if there is a function without kernel-doc comment.
 
 ## CI errors/10K LoC
 
