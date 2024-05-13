@@ -14,6 +14,20 @@ If you want to test the latency by your self, you should do these things:
 3. Use `insmod` or `modprobe` to load e1000 driver. Use `ifconfig` or `ip` tools to set up the nic ip address.
 4. do these things in other machine, then ping each other within same net area.
 
+There are some pictures that show the test about e1000:
+
+**e1000_ifconfig**:
+![e1000_ifconfig](imgs/e1000_ifconfig.png "e1000_ifconfig")
+
+**e1000_running**:
+![insmod_e1000](imgs/insmod_e1000.png)
+
+**lspci_e1000**:
+![lspci_e1000](./imgs/lspci_e1000.png)
+
+**ping latency, left is Rust and right is C**:
+![ping_lat_left_rust_right_c](./imgs/ping_lat_left_rust_right_c.png)
+
 ## binder
 
 If you want to test the latency of C binder and Rust binder, just ssh to our machine by running `ssh -p 9301 rros@149.129.120.139`. Note that C binder and rust binder can not live in one kernel together. If you want to test a different binder, you should compile linux with a different config and reboot a new kernel.
