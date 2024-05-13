@@ -5,21 +5,21 @@ driver = ['e1000', 'binder']
 x = np.arange(len(driver))
 # avg 数据 第一个是e1000 第二个是binder
 data = {
-    'C' : [0.672, 30.919],
-    'Rust' : [8.061, 27.623],
+    'C' : [0.672, 13.174],
+    'Rust' : [8.061, 12.404],
 }
 # 柱宽
 width = 0.2
 multiplier = 0
 # 定义 errorbar 的长度 (max-min)/2
 errors = {
-    'C' : [(0.915 - 0.458)/2, (-30.919+31.823)/2],
-    'Rust' : [(-1.091+15.082)/2, (-26.844+28.911)/2]
+    'C' : [(0.915 - 0.458)/2, (-13.157+13.190)/2],
+    'Rust' : [(-1.091+15.082)/2, (-12.396+12.422)/2]
 }
 # errorbar 的纵坐标位置 (max+min)/2
 errors_loc = {
-    'C' : [(0.458+0.915)/2, (30.919+31.823)/2],
-    'Rust' : [(1.091+15.082)/2, (26.844+28.911)/2]
+    'C' : [(0.458+0.915)/2, (13.157+13.190)/2],
+    'Rust' : [(1.091+15.082)/2, (12.396+12.422)/2]
 }
 # 定义柱子的颜色
 color = {
@@ -38,11 +38,6 @@ for name, per in data.items():
     offset = width * multiplier
     rects = ax.bar(x + offset, per, width, label=name, color=color[name], hatch=hatch[name], linewidth=1, edgecolor='black')
     ax.tick_params(labelcolor='black', axis='x')
-    # rects = ax.bar(x, per, width, label=name, color=color[name], hatch=hatch[name], linewidth=1, edgecolor='black')
-    # 数据显示在柱顶
-    # for j, bar in enumerate(ax.patches):
-    #     height = bar.get_height()
-    #     ax.text(bar.get_x() * 0.8 + bar.get_width() / 2, height, f'{height:.2f}', ha='center', va='bottom')
     errorbar1 = ax.errorbar(x[0] + offset, errors_loc[name][0], yerr=errors[name][0], ecolor='black', capsize=5)
     errorbar2 = ax.errorbar(x[1] + offset, errors_loc[name][1], yerr=errors[name][1], ecolor='black', capsize=5)
     multiplier += 1
