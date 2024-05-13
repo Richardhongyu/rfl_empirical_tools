@@ -44,4 +44,6 @@ fio --name=prep --rw=write --filename=/dev/nullb0 --bs=4k --direct=1
 
 ## NVME
 
-The data of `nvme` driver are produced in our physical machine. You can ssh this machine by `ssh -p 9301 rros@149.129.120.139` and you will see corresponding data stored in `/data/nvme*`
+The data of `nvme` driver are produced in our physical machine.
+You can check by using ssh to connect our mechina environemnt. The details is listed in the `Artifact Location` section.
+You will see corresponding data stored in `/data/nvme*`

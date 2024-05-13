@@ -6,8 +6,7 @@ Considering the complexity of the environment setup, we provide a docker contain
 This repo is already cloned in '/workspace/rfl_empirical_tools'.
 
 ```bash
-ssh -p 9101 ae@149.129.120.139
-# The password is `rfl_ae_docker`.
+# ssh to our docekr environemnt. The details is listed in the `Artifact Location`  section of the ATC AE system.
 
 docker attach rfl_ae
 ```
