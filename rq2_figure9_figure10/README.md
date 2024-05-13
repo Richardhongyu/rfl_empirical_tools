@@ -45,5 +45,5 @@ fio --name=prep --rw=write --filename=/dev/nullb0 --bs=4k --direct=1
 ## NVME
 
 The data of `nvme` driver are produced in our physical machine.
-You can check by using ssh to connect our mechina environemnt. The details is listed in the `Artifact Location` section.
+You can check by using ssh to connect our mechina environemnt. The details is listed in the `Artifact Location` section of the ATC AE system.
 You will see corresponding data stored in `/data/nvme*`

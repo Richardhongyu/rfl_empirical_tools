@@ -1,0 +1,22 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+      85 text files.
+classified 85 files      85 unique files.                              
+      28 files ignored.
+
+github.com/AlDanial/cloc v 1.90  T=0.07 s (873.4 files/s, 265792.8 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+C                               26           2299           1401          12396
+C/C++ Header                    29            280            117           1145
+make                             1              1              3              7
+DOS Batch                        2              0              0              2
+-------------------------------------------------------------------------------
+SUM:                            58           2580           1521          13550
+-------------------------------------------------------------------------------

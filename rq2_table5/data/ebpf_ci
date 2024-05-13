@@ -1,0 +1,28 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+     100 files     200 files     300 files     374 text files.
+classified 373 filesDuplicate file check 373 files (368 known unique)Unique:      100 files                                          Unique:      200 files                                          Unique:      300 files                                               373 unique files.                              
+Counting:  100Counting:  200Counting:  300      62 files ignored.
+
+1 error:
+Unable to read:  networking/filter
+
+github.com/AlDanial/cloc v 1.90  T=0.53 s (592.2 files/s, 321212.5 lines/s)
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+C                              181          16791          15524         105968
+C/C++ Header                    53           1845           7059          10807
+reStructuredText                52           2495           1518           6772
+Bourne Shell                    11            202             96           1478
+make                            14             79             66            494
+Assembly                         1             15             16            171
+DOS Batch                        4              0              0              4
+-------------------------------------------------------------------------------
+SUM:                           316          21427          24279         125694
+-------------------------------------------------------------------------------

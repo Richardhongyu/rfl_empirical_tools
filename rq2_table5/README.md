@@ -4,7 +4,7 @@ Run `./draw.sh <path-to-linux>` to generate the corresponing data of *Table 5: T
 
 For example, if your linux store in `/home/someone/linux`, then just run `./draw.sh /home/someone/linux` will be ok.
 
-**We provide a rust-for-linux repo in container and its path is `/workspace/linux`, so you can just run `./draw.sh /workspace/linx`**
+**We provide a rust-for-linux repo in container and its path is `/workspace/linux`, so you can just run `./draw.sh /workspace/linux`**
 
 `code` directory store some scripts that will execute by `draw.sh`, `data` directory store the output log.
 
@@ -25,6 +25,5 @@ Line about ebpf is similar.
 
 ## CI errors/10K LoC
 
-After the excution of `draw.sh`, there will be three json file generated in `data` directory.
-
-`ebpf_loc.json` store the information that `cloc` tool reported the loc of files in ebpf subsystem. `io_uring_loc.json` and `rfl-loc.json` are similar.
+After the excution of `draw.sh`, it will print DOC coverage and CI erros/number of 10K LOC.
+The data may diff from the paper due to the kernel version can influence LOC.

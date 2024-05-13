@@ -74,7 +74,7 @@ io_uring/uring_cmd.c:EXPORT_SYMBOL_GPL(io_uring_cmd_import_fixed);
 
 4/5
 
-11/16=31.3%
+1-11/16=31.3%
 
 ## ci errors
 
