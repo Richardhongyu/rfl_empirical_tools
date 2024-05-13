@@ -42,12 +42,11 @@ All the code we introduce in the paper is in the `code` directory.
 To simplify the reproduction process, we provide a remote docker container.
 
 
-<!-- ## special cases
+## special cases
 
 Most of the RQs can be reproduced in the docker container. 
 However, some measurement experiments may not be able to run in the docker container because they need specific hardware, such as the `NVME` disk and `e1000` NIC.
 We will provide a PC equipped with them.
-The specific steps to reproduce the results will be provided in the README.md in the corresponding directory. -->
+The specific steps to reproduce the results will be provided in the README.md in the corresponding directory.
 
-
-<!-- In these experiments, it may need to reboot the PC to change the kernel version for supporting the driver. You can send an issue to We will provide the detailed steps in the README.md in the corresponding directory. -->
+In these experiments, it may need to reboot the PC to change the kernel version to support the driver. If you don't have nvme/e1000 device, you can send an issue to let reboot and select right kernel. We will provide the detailed steps in the README.md in the corresponding directory.
