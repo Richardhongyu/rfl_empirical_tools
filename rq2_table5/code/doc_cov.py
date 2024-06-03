@@ -178,7 +178,6 @@ def main(subsystem_list: list):
 
 
 if __name__ == '__main__':
-    io_uring_list = 'io_uring include/linux/io_uring/ include/linux/io_uring.h include/linux/io_uring_types.h include/trace/events/io_uring.h include/uapi/linux/io_uring.h io_uring/'.split()
     ebpf_list = """ebpf Documentation/bpf/ networking/filter Documentation/userspace-api/ebpf/ arch/*/net/* include/linux/bpf* include/linux/btf* include/linux/filter.h include/trace/events/xdp.h include/uapi/linux/bpf* include/uapi/linux/btf* include/uapi/linux/filter.h kernel/bpf/ kernel/trace/bpf_trace.c lib/test_bpf.c net/bpf/ net/core/filter.c net/sched/act_bpf.c net/sched/cls_bpf.c samples/bpf/ scripts/bpf_doc.py scripts/Makefile.btf scripts/pahole-version.sh tools/bpf/ tools/lib/bpf/ tools/testing/selftests/bpf/""".split()
-    subsystem_list = [io_uring_list, ebpf_list]
+    subsystem_list = [ebpf_list]
     main(subsystem_list)

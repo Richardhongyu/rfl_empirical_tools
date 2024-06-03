@@ -1,0 +1,6 @@
+Total time: 143.294045623
+Total time: 124.222969595
+Total time: 123.967246418
+Total time: 123.980043744
+Total time: 124.079563552
+Total time: 124.006371084

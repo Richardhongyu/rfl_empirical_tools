@@ -1,7 +1,6 @@
-with open('my_file_2022-07.txt', 'r') as f:
+with open('mid_value1', 'r') as f:
     a = f.read()
 middle_values = []
-
 res = a.split("-----------------------------------------------------------")
 for i in range(1,len(res)-1):
 #    print(res[i])
@@ -236,9 +235,3 @@ for i in range(1,len(res)-1):
 # op5 = []
 
 # for i in range(0,7):
-
-## python read file as a string and recognise - symbol
-# with open('mid_value2', 'r') as f:
-#     a = f.read()
-# res = a.split("-----------------------------------------------------------")
-# for i in range(1,len(res)):

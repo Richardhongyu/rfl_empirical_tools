@@ -8,26 +8,47 @@ i = 0
 async def fetch_email_time(session, mid):
     url = f"https://lore.kernel.org/rust-for-linux/{mid}/"
 
-    async with session.get(url) as response:
-        content = await response.text()
-        soup = BeautifulSoup(content, "html.parser")
-        time_element = soup.find(id='t')
-        time_element_real = soup.find_all("b")[2]
+    try:
+        async with session.get(url) as response:
+            content = await response.text()
+            soup = BeautifulSoup(content, "html.parser")
+            time_element = soup.find(id='t')
+            time_element_real = soup.find_all("b")[2]
+            if time_element:
+                global i
+                i+=1
+                print(i)
+                print(time_element.text+"\n"+time_element_real.text.strip().split("`")[0].split(" ")[0][:7]+"\n")
+                # print(time_element_real.text.strip().split("`")[0].split(" ")[0][:7])
+                # return time_element.text.strip().split("`")[0].split(" ")[0][:7]
+                return time_element.text+"\n"+time_element_real.text.strip().split("`")[0].split(" ")[0][:7]+"\n"
+                # if time_element_real.text.strip().split("`")[0].split(" ")[0][:7] < "2022-07":
+                #     return time_element.text+"\n"
+                # else:
+                #     return None
+            else:
+                return None
+    except:
+        async with session.get(url) as response:
+            content = await response.text()
+            soup = BeautifulSoup(content, "html.parser")
+            time_element = soup.find(id='t')
+            time_element_real = soup.find_all("b")[2]
 
-        if time_element:
-            global i
-            i+=1
-            print(i)
-            print(time_element.text+"\n"+time_element_real.text.strip().split("`")[0].split(" ")[0][:7]+"\n")
-            # print(time_element_real.text.strip().split("`")[0].split(" ")[0][:7])
-            # return time_element.text.strip().split("`")[0].split(" ")[0][:7]
-            return time_element.text+"\n"+time_element_real.text.strip().split("`")[0].split(" ")[0][:7]+"\n"
-            # if time_element_real.text.strip().split("`")[0].split(" ")[0][:7] < "2022-07":
-            #     return time_element.text+"\n"
-            # else:
-            #     return None
-        else:
-            return None
+            if time_element:
+                # global i
+                i+=1
+                print(i)
+                print(time_element.text+"\n"+time_element_real.text.strip().split("`")[0].split(" ")[0][:7]+"\n")
+                # print(time_element_real.text.strip().split("`")[0].split(" ")[0][:7])
+                # return time_element.text.strip().split("`")[0].split(" ")[0][:7]
+                return time_element.text+"\n"+time_element_real.text.strip().split("`")[0].split(" ")[0][:7]+"\n"
+                # if time_element_real.text.strip().split("`")[0].split(" ")[0][:7] < "2022-07":
+                #     return time_element.text+"\n"
+                # else:
+                #     return None
+            else:
+                return None
 
 async def retrieve_email_times_and_plot_counts():
     # Connect to the SQLite database
@@ -47,13 +68,17 @@ async def retrieve_email_times_and_plot_counts():
         tasks = []
 
         # Create a list of tasks for each message ID
+        number  = 0
         for row in rows:
             mid = row[0]
             taskss = asyncio.ensure_future(fetch_email_time(session, mid))
+            number+=1
+            if number > 3000:
+                break
             # print(taskss)
             # task = taskss[0]
             # time = taskss[1]
-            # if time < "2022-07":
+            # if time < "2023-07":
             tasks.append(taskss)
 
         # Gather results from the tasks

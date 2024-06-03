@@ -1,13 +1,8 @@
 # Figure4 AE
 
-## environment
+## Instructions to reproduce
 
-You can use the following command to enter the docker container to run the code.
-```bash
-ssh -p tongchuan_port ae@panda_ip
-# The password is `rfl_ae_docker`.
+run `./bash.sh` to generate `figure4.pdf` in directory `./imgs/` and data files named `mid_values*` in directory `./data`
 
-docker attach rfl_ae
-```
-
-## instructions to reproduce
+Directory `code` store helper scripts that fetch, and classify the rfl emails.
+The `plot.py` script helps draw the figures.

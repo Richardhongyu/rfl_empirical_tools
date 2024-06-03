@@ -1,0 +1,722 @@
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:48767:pub struct amba_device {
+rust_wrapped_structers_info.txt:19:rust/bindings/bindings_generated.rs:48767:pub struct amba_device {
+rust_wrapped_structers_info.txt:20:include/linux/amba/bus.h:64:struct amba_device {
+include/linux/amba/bus.h:64:struct amba_device {
+
+rust/bindings/bindings_generated.rs:48786:pub struct amba_driver {
+rust_wrapped_structers_info.txt:22:rust/bindings/bindings_generated.rs:48786:pub struct amba_driver {
+rust_wrapped_structers_info.txt:23:include/linux/amba/bus.h:81:struct amba_driver {
+include/linux/amba/bus.h:81:struct amba_driver {
+
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:35006:pub struct amba_id {
+rust_wrapped_structers_info.txt:28:rust/bindings/bindings_generated.rs:35006:pub struct amba_id {
+rust_wrapped_structers_info.txt:29:include/linux/mod_devicetable.h:649:struct amba_id {
+include/linux/mod_devicetable.h:649:struct amba_id {
+
+ERROR: 
+rust/bindings/bindings_generated.rs:10087:pub struct atomic_t {
+rust_wrapped_structers_info.txt:32:rust/bindings/bindings_generated.rs:10087:pub struct atomic_t {
+
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:48839:pub struct cdev {
+rust_wrapped_structers_info.txt:36:rust/bindings/bindings_generated.rs:48839:pub struct cdev {
+rust_wrapped_structers_info.txt:37:include/linux/cdev.h:14:struct cdev {
+include/linux/cdev.h:14:struct cdev {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:31615:pub struct clk {
+drivers/clk/clk.c:97:struct clk {
+rust_wrapped_structers_info.txt:45:rust/bindings/bindings_generated.rs:31615:pub struct clk {
+rust_wrapped_structers_info.txt:46:drivers/clk/clk.c:97:struct clk {
+rust_wrapped_structers_info.txt:47:include/linux/sh_clk.h:38:struct clk {
+rust_wrapped_structers_info.txt:48:arch/m68k/include/asm/mcfclk.h:17:struct clk {
+rust_wrapped_structers_info.txt:49:arch/mips/bcm63xx/clk.c:21:struct clk {
+rust_wrapped_structers_info.txt:50:arch/mips/lantiq/clk.h:58:struct clk {
+include/linux/sh_clk.h:38:struct clk {
+arch/m68k/include/asm/mcfclk.h:17:struct clk {
+arch/mips/bcm63xx/clk.c:21:struct clk {
+arch/mips/lantiq/clk.h:58:struct clk {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+Documentation/translations/zh_CN/scheduler/completion.rst:54:	struct completion {
+Documentation/scheduler/completion.rst:52:	struct completion {
+rust/bindings/bindings_generated.rs:18473:pub struct completion {
+tools/testing/selftests/rcutorture/formal/srcu-cbmc/src/locks.h:176:struct completion {
+rust_wrapped_structers_info.txt:58:Documentation/translations/zh_CN/scheduler/completion.rst:54:	struct completion {
+rust_wrapped_structers_info.txt:59:Documentation/scheduler/completion.rst:52:	struct completion {
+rust_wrapped_structers_info.txt:60:rust/bindings/bindings_generated.rs:18473:pub struct completion {
+rust_wrapped_structers_info.txt:61:tools/testing/selftests/rcutorture/formal/srcu-cbmc/src/locks.h:176:struct completion {
+rust_wrapped_structers_info.txt:62:include/linux/completion.h:26:struct completion {
+include/linux/completion.h:26:struct completion {
+
+ERROR: 
+Documentation/filesystems/mount_api.rst:745:	struct constant_table {
+rust/bindings/bindings_generated.rs:50742:pub struct constant_table {
+rust_wrapped_structers_info.txt:65:Documentation/filesystems/mount_api.rst:745:	struct constant_table {
+rust_wrapped_structers_info.txt:66:rust/bindings/bindings_generated.rs:50742:pub struct constant_table {
+rust_wrapped_structers_info.txt:67:include/linux/fs_parser.h:15:struct constant_table {
+include/linux/fs_parser.h:15:struct constant_table {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:37322:pub struct cred {
+tools/testing/selftests/bpf/progs/test_deny_namespace.c:10:struct cred {
+rust_wrapped_structers_info.txt:73:rust/bindings/bindings_generated.rs:37322:pub struct cred {
+rust_wrapped_structers_info.txt:74:tools/testing/selftests/bpf/progs/test_deny_namespace.c:10:struct cred {
+rust_wrapped_structers_info.txt:75:include/linux/cred.h:110:struct cred {
+include/linux/cred.h:110:struct cred {
+
+rust/bindings/bindings_generated.rs:25009:pub struct ctl_table {
+rust_wrapped_structers_info.txt:77:rust/bindings/bindings_generated.rs:25009:pub struct ctl_table {
+rust_wrapped_structers_info.txt:78:include/linux/sysctl.h:135:struct ctl_table {
+include/linux/sysctl.h:135:struct ctl_table {
+
+rust/bindings/bindings_generated.rs:25038:pub struct ctl_table_header {
+rust_wrapped_structers_info.txt:80:rust/bindings/bindings_generated.rs:25038:pub struct ctl_table_header {
+rust_wrapped_structers_info.txt:81:include/linux/sysctl.h:154:struct ctl_table_header {
+include/linux/sysctl.h:154:struct ctl_table_header {
+
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:35488:pub struct dentry {
+rust_wrapped_structers_info.txt:85:rust/bindings/bindings_generated.rs:35488:pub struct dentry {
+rust_wrapped_structers_info.txt:86:include/linux/dcache.h:82:struct dentry {
+include/linux/dcache.h:82:struct dentry {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+Documentation/power/runtime_pm.rst:45:  struct dev_pm_ops {
+rust/bindings/bindings_generated.rs:32281:pub struct dev_pm_ops {
+rust_wrapped_structers_info.txt:93:Documentation/power/runtime_pm.rst:45:  struct dev_pm_ops {
+rust_wrapped_structers_info.txt:94:rust/bindings/bindings_generated.rs:32281:pub struct dev_pm_ops {
+rust_wrapped_structers_info.txt:95:include/linux/pm.h:286:struct dev_pm_ops {
+include/linux/pm.h:286:struct dev_pm_ops {
+
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:34007:pub struct device {
+tools/virtio/linux/virtio.h:8:struct device {
+rust_wrapped_structers_info.txt:99:rust/bindings/bindings_generated.rs:34007:pub struct device {
+rust_wrapped_structers_info.txt:100:tools/virtio/linux/virtio.h:8:struct device {
+rust_wrapped_structers_info.txt:101:include/linux/device.h:555:struct device {
+include/linux/device.h:555:struct device {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:39277:pub struct file {
+tools/io_uring/io_uring-bench.c:65:struct file {
+tools/perf/trace/beauty/beauty.h:40:struct file {
+rust_wrapped_structers_info.txt:111:rust/bindings/bindings_generated.rs:39277:pub struct file {
+rust_wrapped_structers_info.txt:112:tools/io_uring/io_uring-bench.c:65:struct file {
+rust_wrapped_structers_info.txt:113:tools/perf/trace/beauty/beauty.h:40:struct file {
+rust_wrapped_structers_info.txt:114:include/linux/fs.h:942:struct file {
+rust_wrapped_structers_info.txt:115:scripts/kconfig/expr.h:20:struct file {
+include/linux/fs.h:942:struct file {
+scripts/kconfig/expr.h:20:struct file {
+
+Documentation/filesystems/vfs.rst:1002:	struct file_operations {
+rust/bindings/bindings_generated.rs:10586:pub struct file_operations {
+rust_wrapped_structers_info.txt:117:Documentation/filesystems/vfs.rst:1002:	struct file_operations {
+rust_wrapped_structers_info.txt:118:rust/bindings/bindings_generated.rs:10586:pub struct file_operations {
+rust_wrapped_structers_info.txt:119:include/linux/fs.h:1754:struct file_operations {
+include/linux/fs.h:1754:struct file_operations {
+
+Documentation/filesystems/vfs.rst:115:	struct file_system_type {
+rust/bindings/bindings_generated.rs:10217:pub struct file_system_type {
+rust_wrapped_structers_info.txt:121:Documentation/filesystems/vfs.rst:115:	struct file_system_type {
+rust_wrapped_structers_info.txt:122:rust/bindings/bindings_generated.rs:10217:pub struct file_system_type {
+rust_wrapped_structers_info.txt:123:include/linux/fs.h:2189:struct file_system_type {
+include/linux/fs.h:2189:struct file_system_type {
+
+rust/bindings/bindings_generated.rs:40208:pub struct filename {
+rust_wrapped_structers_info.txt:125:rust/bindings/bindings_generated.rs:40208:pub struct filename {
+rust_wrapped_structers_info.txt:126:include/linux/fs.h:2291:struct filename {
+include/linux/fs.h:2291:struct filename {
+
+ERROR: 
+ERROR: 
+ERROR: 
+Documentation/filesystems/mount_api.rst:67:	struct fs_context {
+rust/bindings/bindings_generated.rs:50478:pub struct fs_context {
+rust_wrapped_structers_info.txt:131:Documentation/filesystems/mount_api.rst:67:	struct fs_context {
+rust_wrapped_structers_info.txt:132:rust/bindings/bindings_generated.rs:50478:pub struct fs_context {
+rust_wrapped_structers_info.txt:133:include/linux/fs_context.h:90:struct fs_context {
+include/linux/fs_context.h:90:struct fs_context {
+
+Documentation/filesystems/mount_api.rst:212:	struct fs_context_operations {
+rust/bindings/bindings_generated.rs:50595:pub struct fs_context_operations {
+rust_wrapped_structers_info.txt:135:Documentation/filesystems/mount_api.rst:212:	struct fs_context_operations {
+rust_wrapped_structers_info.txt:136:rust/bindings/bindings_generated.rs:50595:pub struct fs_context_operations {
+rust_wrapped_structers_info.txt:137:include/linux/fs_context.h:115:struct fs_context_operations {
+include/linux/fs_context.h:115:struct fs_context_operations {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:50416:pub struct fs_parameter {
+rust_wrapped_structers_info.txt:146:rust/bindings/bindings_generated.rs:50416:pub struct fs_parameter {
+rust_wrapped_structers_info.txt:147:include/linux/fs_context.h:63:struct fs_parameter {
+include/linux/fs_context.h:63:struct fs_parameter {
+
+Documentation/filesystems/mount_api.rst:619:	struct fs_parameter_spec {
+rust/bindings/bindings_generated.rs:50841:pub struct fs_parameter_spec {
+rust_wrapped_structers_info.txt:149:Documentation/filesystems/mount_api.rst:619:	struct fs_parameter_spec {
+rust_wrapped_structers_info.txt:150:rust/bindings/bindings_generated.rs:50841:pub struct fs_parameter_spec {
+rust_wrapped_structers_info.txt:151:include/linux/fs_parser.h:39:struct fs_parameter_spec {
+include/linux/fs_parser.h:39:struct fs_parameter_spec {
+
+ERROR: 
+rust/bindings/bindings_generated.rs:50855:pub struct fs_parse_result {
+rust_wrapped_structers_info.txt:154:rust/bindings/bindings_generated.rs:50855:pub struct fs_parse_result {
+rust_wrapped_structers_info.txt:155:include/linux/fs_parser.h:53:struct fs_parse_result {
+include/linux/fs_parser.h:53:struct fs_parse_result {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:54821:pub struct gpio_chip {
+rust_wrapped_structers_info.txt:177:rust/bindings/bindings_generated.rs:54821:pub struct gpio_chip {
+rust_wrapped_structers_info.txt:178:include/linux/gpio/driver.h:407:struct gpio_chip {
+include/linux/gpio/driver.h:407:struct gpio_chip {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:55095:pub struct hwrng {
+rust_wrapped_structers_info.txt:188:rust/bindings/bindings_generated.rs:55095:pub struct hwrng {
+rust_wrapped_structers_info.txt:189:include/linux/hw_random.h:39:struct hwrng {
+include/linux/hw_random.h:39:struct hwrng {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:61089:pub struct in_addr {
+tools/include/uapi/linux/in.h:92:struct in_addr {
+rust_wrapped_structers_info.txt:195:rust/bindings/bindings_generated.rs:61089:pub struct in_addr {
+rust_wrapped_structers_info.txt:196:tools/include/uapi/linux/in.h:92:struct in_addr {
+rust_wrapped_structers_info.txt:197:include/uapi/linux/in.h:92:struct in_addr {
+include/uapi/linux/in.h:92:struct in_addr {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:39120:pub struct inode {
+rust_wrapped_structers_info.txt:203:rust/bindings/bindings_generated.rs:39120:pub struct inode {
+rust_wrapped_structers_info.txt:204:include/linux/fs.h:595:struct inode {
+include/linux/fs.h:595:struct inode {
+
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:55204:pub struct iov_iter {
+rust_wrapped_structers_info.txt:208:rust/bindings/bindings_generated.rs:55204:pub struct iov_iter {
+rust_wrapped_structers_info.txt:209:include/linux/uio.h:43:struct iov_iter {
+include/linux/uio.h:43:struct iov_iter {
+
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:51901:pub struct irq_chip {
+rust_wrapped_structers_info.txt:213:rust/bindings/bindings_generated.rs:51901:pub struct irq_chip {
+rust_wrapped_structers_info.txt:214:include/linux/irq.h:506:struct irq_chip {
+include/linux/irq.h:506:struct irq_chip {
+
+rust/bindings/bindings_generated.rs:51859:pub struct irq_data {
+rust_wrapped_structers_info.txt:216:rust/bindings/bindings_generated.rs:51859:pub struct irq_data {
+rust_wrapped_structers_info.txt:217:include/linux/irq.h:179:struct irq_data {
+include/linux/irq.h:179:struct irq_data {
+
+ERROR: 
+rust/bindings/bindings_generated.rs:51998:pub struct irq_desc {
+rust_wrapped_structers_info.txt:220:rust/bindings/bindings_generated.rs:51998:pub struct irq_desc {
+rust_wrapped_structers_info.txt:221:include/linux/irqdesc.h:55:struct irq_desc {
+include/linux/irqdesc.h:55:struct irq_desc {
+
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:53534:pub struct irq_domain {
+rust_wrapped_structers_info.txt:225:rust/bindings/bindings_generated.rs:53534:pub struct irq_domain {
+rust_wrapped_structers_info.txt:226:include/linux/irqdomain.h:150:struct irq_domain {
+include/linux/irqdomain.h:150:struct irq_domain {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:30474:pub struct kernel_param {
+rust_wrapped_structers_info.txt:240:rust/bindings/bindings_generated.rs:30474:pub struct kernel_param {
+rust_wrapped_structers_info.txt:241:include/linux/moduleparam.h:69:struct kernel_param {
+include/linux/moduleparam.h:69:struct kernel_param {
+
+ERROR: 
+rust/bindings/bindings_generated.rs:30453:pub struct kernel_param_ops {
+rust_wrapped_structers_info.txt:244:rust/bindings/bindings_generated.rs:30453:pub struct kernel_param_ops {
+rust_wrapped_structers_info.txt:245:include/linux/moduleparam.h:47:struct kernel_param_ops {
+include/linux/moduleparam.h:47:struct kernel_param_ops {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+grep: .git/objects/pack/pack-3932e97ace599a3487117712d7dc22ca9c3f447b.pack: binary file matches
+rust/bindings/bindings_generated.rs:38984:pub struct kiocb {
+rust_wrapped_structers_info.txt:255:rust/bindings/bindings_generated.rs:38984:pub struct kiocb {
+rust_wrapped_structers_info.txt:256:include/linux/fs.h:343:struct kiocb {
+include/linux/fs.h:343:struct kiocb {
+
+tools/perf/util/maps.h:45:struct kmap {
+rust_wrapped_structers_info.txt:258:tools/perf/util/maps.h:45:struct kmap {
+
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:10839:pub struct kunit_assert {}
+rust_wrapped_structers_info.txt:262:rust/bindings/bindings_generated.rs:10839:pub struct kunit_assert {}
+rust_wrapped_structers_info.txt:263:include/kunit/assert.h:49:struct kunit_assert {};
+include/kunit/assert.h:49:struct kunit_assert {};
+
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:10828:pub struct kunit_loc {
+rust_wrapped_structers_info.txt:267:rust/bindings/bindings_generated.rs:10828:pub struct kunit_loc {
+rust_wrapped_structers_info.txt:268:include/kunit/assert.h:36:struct kunit_loc {
+include/kunit/assert.h:36:struct kunit_loc {
+
+rust/bindings/bindings_generated.rs:10868:pub struct kunit_unary_assert {
+rust_wrapped_structers_info.txt:270:rust/bindings/bindings_generated.rs:10868:pub struct kunit_unary_assert {
+rust_wrapped_structers_info.txt:271:include/kunit/assert.h:83:struct kunit_unary_assert {
+include/kunit/assert.h:83:struct kunit_unary_assert {
+
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:55178:pub struct kvec {
+rust_wrapped_structers_info.txt:275:rust/bindings/bindings_generated.rs:55178:pub struct kvec {
+rust_wrapped_structers_info.txt:276:include/linux/uio.h:18:struct kvec {
+include/linux/uio.h:18:struct kvec {
+
+rust/bindings/bindings_generated.rs:10425:pub struct lock_class_key {}
+tools/testing/radix-tree/linux/lockdep.h:6:struct lock_class_key {
+rust_wrapped_structers_info.txt:278:rust/bindings/bindings_generated.rs:10425:pub struct lock_class_key {}
+rust_wrapped_structers_info.txt:279:tools/testing/radix-tree/linux/lockdep.h:6:struct lock_class_key {
+rust_wrapped_structers_info.txt:280:include/linux/lockdep_types.h:74:struct lock_class_key {
+rust_wrapped_structers_info.txt:281:include/linux/lockdep_types.h:197:struct lock_class_key { };
+include/linux/lockdep_types.h:74:struct lock_class_key {
+include/linux/lockdep_types.h:197:struct lock_class_key { };
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:55142:pub struct miscdevice {
+rust_wrapped_structers_info.txt:290:rust/bindings/bindings_generated.rs:55142:pub struct miscdevice {
+
+rust/bindings/bindings_generated.rs:10267:pub struct module {
+rust_wrapped_structers_info.txt:292:rust/bindings/bindings_generated.rs:10267:pub struct module {
+rust_wrapped_structers_info.txt:293:include/linux/module.h:371:struct module {
+rust_wrapped_structers_info.txt:294:scripts/mod/modpost.h:115:struct module {
+include/linux/module.h:371:struct module {
+scripts/mod/modpost.h:115:struct module {
+
+rust/bindings/bindings_generated.rs:55607:pub struct msghdr {
+tools/perf/trace/beauty/include/linux/socket.h:55:struct msghdr {
+rust_wrapped_structers_info.txt:296:rust/bindings/bindings_generated.rs:55607:pub struct msghdr {
+rust_wrapped_structers_info.txt:297:tools/perf/trace/beauty/include/linux/socket.h:55:struct msghdr {
+rust_wrapped_structers_info.txt:298:include/linux/socket.h:55:struct msghdr {
+include/linux/socket.h:55:struct msghdr {
+
+ERROR: 
+rust/bindings/bindings_generated.rs:18578:pub struct mutex {
+rust_wrapped_structers_info.txt:301:rust/bindings/bindings_generated.rs:18578:pub struct mutex {
+rust_wrapped_structers_info.txt:302:include/linux/mutex.h:63:struct mutex {
+rust_wrapped_structers_info.txt:303:include/linux/mutex.h:135:struct mutex {
+include/linux/mutex.h:63:struct mutex {
+include/linux/mutex.h:135:struct mutex {
+
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:63580:pub struct net {
+rust_wrapped_structers_info.txt:307:rust/bindings/bindings_generated.rs:63580:pub struct net {
+rust_wrapped_structers_info.txt:308:include/net/net_namespace.h:60:struct net {
+include/net/net_namespace.h:60:struct net {
+
+grep: .git/objects/pack/pack-3932e97ace599a3487117712d7dc22ca9c3f447b.pack: binary file matches
+rust/bindings/bindings_generated.rs:68367:pub struct net_device {
+tools/testing/selftests/bpf/progs/test_xdp_bpf2bpf.c:8:struct net_device {
+rust_wrapped_structers_info.txt:311:rust/bindings/bindings_generated.rs:68367:pub struct net_device {
+rust_wrapped_structers_info.txt:312:tools/testing/selftests/bpf/progs/test_xdp_bpf2bpf.c:8:struct net_device {
+rust_wrapped_structers_info.txt:313:include/linux/netdevice.h:2033:struct net_device {
+include/linux/netdevice.h:2033:struct net_device {
+
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:70190:pub struct nf_hook_ops {
+rust_wrapped_structers_info.txt:318:rust/bindings/bindings_generated.rs:70190:pub struct nf_hook_ops {
+rust_wrapped_structers_info.txt:319:include/linux/netfilter.h:85:struct nf_hook_ops {
+include/linux/netfilter.h:85:struct nf_hook_ops {
+
+ERROR: 
+rust/bindings/bindings_generated.rs:70158:pub struct nf_hook_state {
+rust_wrapped_structers_info.txt:322:rust/bindings/bindings_generated.rs:70158:pub struct nf_hook_state {
+rust_wrapped_structers_info.txt:323:include/linux/netfilter.h:67:struct nf_hook_state {
+include/linux/netfilter.h:67:struct nf_hook_state {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:34715:pub struct of_device_id {
+rust_wrapped_structers_info.txt:348:rust/bindings/bindings_generated.rs:34715:pub struct of_device_id {
+rust_wrapped_structers_info.txt:349:include/linux/mod_devicetable.h:268:struct of_device_id {
+include/linux/mod_devicetable.h:268:struct of_device_id {
+
+ERROR: 
+Documentation/dev-tools/kmsan.rst:375:  struct page {
+rust/bindings/bindings_generated.rs:20162:pub struct page {
+tools/virtio/linux/kernel.h:37:struct page {
+tools/testing/radix-tree/regression1.c:48:struct page {
+tools/testing/radix-tree/regression2.c:63:struct page {
+tools/testing/memblock/internal.h:16:struct page {};
+rust_wrapped_structers_info.txt:352:Documentation/dev-tools/kmsan.rst:375:  struct page {
+rust_wrapped_structers_info.txt:353:rust/bindings/bindings_generated.rs:20162:pub struct page {
+rust_wrapped_structers_info.txt:354:tools/virtio/linux/kernel.h:37:struct page {
+rust_wrapped_structers_info.txt:355:tools/testing/radix-tree/regression1.c:48:struct page {
+rust_wrapped_structers_info.txt:356:tools/testing/radix-tree/regression2.c:63:struct page {
+rust_wrapped_structers_info.txt:357:tools/testing/memblock/internal.h:16:struct page {};
+rust_wrapped_structers_info.txt:358:include/linux/mm_types.h:74:struct page {
+rust_wrapped_structers_info.txt:359:arch/microblaze/include/asm/io.h:14:#include <linux/mm.h>          /* Get struct page {...} */
+include/linux/mm_types.h:74:struct page {
+arch/microblaze/include/asm/io.h:14:#include <linux/mm.h>          /* Get struct page {...} */
+
+ERROR: 
+Documentation/driver-api/driver-model/platform.rst:26:  struct platform_device {
+rust/bindings/bindings_generated.rs:93888:pub struct platform_device {
+rust_wrapped_structers_info.txt:362:Documentation/driver-api/driver-model/platform.rst:26:  struct platform_device {
+rust_wrapped_structers_info.txt:363:rust/bindings/bindings_generated.rs:93888:pub struct platform_device {
+rust_wrapped_structers_info.txt:364:include/linux/platform_device.h:23:struct platform_device {
+include/linux/platform_device.h:23:struct platform_device {
+
+Documentation/driver-api/driver-model/platform.rst:42:  struct platform_driver {
+rust/bindings/bindings_generated.rs:94062:pub struct platform_driver {
+rust_wrapped_structers_info.txt:366:Documentation/driver-api/driver-model/platform.rst:42:  struct platform_driver {
+rust_wrapped_structers_info.txt:367:rust/bindings/bindings_generated.rs:94062:pub struct platform_driver {
+rust_wrapped_structers_info.txt:368:include/linux/platform_device.h:208:struct platform_driver {
+include/linux/platform_device.h:208:struct platform_driver {
+
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:70654:pub struct poll_table_struct {
+rust_wrapped_structers_info.txt:373:rust/bindings/bindings_generated.rs:70654:pub struct poll_table_struct {
+rust_wrapped_structers_info.txt:374:include/linux/poll.h:41:typedef struct poll_table_struct {
+include/linux/poll.h:41:typedef struct poll_table_struct {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:10434:pub struct raw_spinlock {
+rust_wrapped_structers_info.txt:387:rust/bindings/bindings_generated.rs:10434:pub struct raw_spinlock {
+rust_wrapped_structers_info.txt:388:include/linux/spinlock_types_raw.h:14:typedef struct raw_spinlock {
+include/linux/spinlock_types_raw.h:14:typedef struct raw_spinlock {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:17502:pub struct rb_node {
+tools/include/linux/rbtree.h:23:struct rb_node {
+rust_wrapped_structers_info.txt:397:rust/bindings/bindings_generated.rs:17502:pub struct rb_node {
+rust_wrapped_structers_info.txt:398:tools/include/linux/rbtree.h:23:struct rb_node {
+rust_wrapped_structers_info.txt:399:include/linux/rbtree_types.h:5:struct rb_node {
+include/linux/rbtree_types.h:5:struct rb_node {
+
+ERROR: 
+rust/bindings/bindings_generated.rs:17514:pub struct rb_root {
+tools/include/linux/rbtree.h:30:struct rb_root {
+rust_wrapped_structers_info.txt:402:rust/bindings/bindings_generated.rs:17514:pub struct rb_root {
+rust_wrapped_structers_info.txt:403:tools/include/linux/rbtree.h:30:struct rb_root {
+rust_wrapped_structers_info.txt:404:include/linux/rbtree_types.h:12:struct rb_root {
+include/linux/rbtree_types.h:12:struct rb_root {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:16968:pub struct refcount_struct {
+tools/testing/selftests/bpf/progs/kfree_skb.c:35:typedef struct refcount_struct {
+tools/include/linux/refcount.h:52:typedef struct refcount_struct {
+rust_wrapped_structers_info.txt:412:rust/bindings/bindings_generated.rs:16968:pub struct refcount_struct {
+rust_wrapped_structers_info.txt:413:tools/testing/selftests/bpf/progs/kfree_skb.c:35:typedef struct refcount_struct {
+rust_wrapped_structers_info.txt:414:tools/include/linux/refcount.h:52:typedef struct refcount_struct {
+rust_wrapped_structers_info.txt:415:include/linux/refcount.h:111:typedef struct refcount_struct {
+include/linux/refcount.h:111:typedef struct refcount_struct {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+Documentation/translations/ko_KR/memory-barriers.txt:2335:	struct rw_semaphore {
+Documentation/translations/sp_SP/memory-barriers.txt:2480:	struct rw_semaphore {
+Documentation/memory-barriers.txt:2372:	struct rw_semaphore {
+rust/bindings/bindings_generated.rs:18181:pub struct rw_semaphore {
+tools/perf/util/rwsem.h:6:struct rw_semaphore {
+rust_wrapped_structers_info.txt:424:Documentation/translations/ko_KR/memory-barriers.txt:2335:	struct rw_semaphore {
+rust_wrapped_structers_info.txt:425:Documentation/translations/sp_SP/memory-barriers.txt:2480:	struct rw_semaphore {
+rust_wrapped_structers_info.txt:426:Documentation/memory-barriers.txt:2372:	struct rw_semaphore {
+rust_wrapped_structers_info.txt:427:rust/bindings/bindings_generated.rs:18181:pub struct rw_semaphore {
+rust_wrapped_structers_info.txt:428:tools/perf/util/rwsem.h:6:struct rw_semaphore {
+rust_wrapped_structers_info.txt:429:include/linux/rwsem.h:47:struct rw_semaphore {
+rust_wrapped_structers_info.txt:430:include/linux/rwsem.h:128:struct rw_semaphore {
+include/linux/rwsem.h:47:struct rw_semaphore {
+include/linux/rwsem.h:128:struct rw_semaphore {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:19929:pub struct seqcount {
+rust_wrapped_structers_info.txt:437:rust/bindings/bindings_generated.rs:19929:pub struct seqcount {
+rust_wrapped_structers_info.txt:438:include/linux/seqlock.h:64:typedef struct seqcount {
+include/linux/seqlock.h:64:typedef struct seqcount {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+grep: .git/objects/pack/pack-3932e97ace599a3487117712d7dc22ca9c3f447b.pack: binary file matches
+rust/bindings/bindings_generated.rs:58168:pub struct sk_buff {
+tools/testing/selftests/bpf/progs/fexit_bpf2bpf.c:12:struct sk_buff {
+tools/testing/selftests/bpf/progs/fexit_bpf2bpf_simple.c:7:struct sk_buff {
+tools/testing/selftests/bpf/progs/kfree_skb.c:39:struct sk_buff {
+rust_wrapped_structers_info.txt:445:rust/bindings/bindings_generated.rs:58168:pub struct sk_buff {
+rust_wrapped_structers_info.txt:446:tools/testing/selftests/bpf/progs/fexit_bpf2bpf.c:12:struct sk_buff {
+rust_wrapped_structers_info.txt:447:tools/testing/selftests/bpf/progs/fexit_bpf2bpf_simple.c:7:struct sk_buff {
+rust_wrapped_structers_info.txt:448:tools/testing/selftests/bpf/progs/kfree_skb.c:39:struct sk_buff {
+rust_wrapped_structers_info.txt:449:include/linux/skbuff.h:851:struct sk_buff {
+include/linux/skbuff.h:851:struct sk_buff {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:61224:pub struct sockaddr_in {
+tools/include/uapi/linux/in.h:254:struct sockaddr_in {
+rust_wrapped_structers_info.txt:458:rust/bindings/bindings_generated.rs:61224:pub struct sockaddr_in {
+rust_wrapped_structers_info.txt:459:tools/include/uapi/linux/in.h:254:struct sockaddr_in {
+rust_wrapped_structers_info.txt:460:include/uapi/linux/in.h:255:struct sockaddr_in {
+include/uapi/linux/in.h:255:struct sockaddr_in {
+
+rust/bindings/bindings_generated.rs:60448:pub struct socket {
+rust_wrapped_structers_info.txt:462:rust/bindings/bindings_generated.rs:60448:pub struct socket {
+rust_wrapped_structers_info.txt:463:include/linux/net.h:116:struct socket {
+include/linux/net.h:116:struct socket {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:16733:pub struct spinlock {
+tools/testing/selftests/kvm/include/aarch64/spinlock.h:6:struct spinlock {
+rust_wrapped_structers_info.txt:469:rust/bindings/bindings_generated.rs:16733:pub struct spinlock {
+rust_wrapped_structers_info.txt:470:tools/testing/selftests/kvm/include/aarch64/spinlock.h:6:struct spinlock {
+rust_wrapped_structers_info.txt:471:include/linux/spinlock_types.h:17:typedef struct spinlock {
+rust_wrapped_structers_info.txt:472:include/linux/spinlock_types.h:50:typedef struct spinlock {
+include/linux/spinlock_types.h:17:typedef struct spinlock {
+include/linux/spinlock_types.h:50:typedef struct spinlock {
+
+ERROR: 
+rust/bindings/bindings_generated.rs:39420:pub struct super_block {
+rust_wrapped_structers_info.txt:475:rust/bindings/bindings_generated.rs:39420:pub struct super_block {
+rust_wrapped_structers_info.txt:476:include/linux/fs.h:1136:struct super_block {
+include/linux/fs.h:1136:struct super_block {
+
+Documentation/filesystems/vfs.rst:229:	struct super_operations {
+rust/bindings/bindings_generated.rs:39920:pub struct super_operations {
+rust_wrapped_structers_info.txt:478:Documentation/filesystems/vfs.rst:229:	struct super_operations {
+rust_wrapped_structers_info.txt:479:rust/bindings/bindings_generated.rs:39920:pub struct super_operations {
+rust_wrapped_structers_info.txt:480:include/linux/fs.h:1886:struct super_operations {
+include/linux/fs.h:1886:struct super_operations {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+Documentation/dev-tools/kmsan.rst:350:  struct task_struct {
+rust/bindings/bindings_generated.rs:27870:pub struct task_struct {
+tools/testing/selftests/bpf/progs/test_core_retro.c:7:struct task_struct {
+tools/testing/selftests/bpf/progs/test_core_reloc_kernel.c:27:struct task_struct {
+tools/testing/selftests/bpf/progs/strobemeta.h:14:struct task_struct {};
+rust_wrapped_structers_info.txt:490:Documentation/dev-tools/kmsan.rst:350:  struct task_struct {
+rust_wrapped_structers_info.txt:491:rust/bindings/bindings_generated.rs:27870:pub struct task_struct {
+rust_wrapped_structers_info.txt:492:tools/testing/selftests/bpf/progs/test_core_retro.c:7:struct task_struct {
+rust_wrapped_structers_info.txt:493:tools/testing/selftests/bpf/progs/test_core_reloc_kernel.c:27:struct task_struct {
+rust_wrapped_structers_info.txt:494:tools/testing/selftests/bpf/progs/strobemeta.h:14:struct task_struct {};
+rust_wrapped_structers_info.txt:495:include/linux/sched.h:737:struct task_struct {
+include/linux/sched.h:737:struct task_struct {
+
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+ERROR: 
+Documentation/bpf/prog_lsm.rst:34:	struct vm_area_struct {
+rust/bindings/bindings_generated.rs:20523:pub struct vm_area_struct {
+rust_wrapped_structers_info.txt:503:Documentation/bpf/prog_lsm.rst:34:	struct vm_area_struct {
+rust_wrapped_structers_info.txt:504:rust/bindings/bindings_generated.rs:20523:pub struct vm_area_struct {
+rust_wrapped_structers_info.txt:505:include/linux/mm_types.h:480:struct vm_area_struct {
+include/linux/mm_types.h:480:struct vm_area_struct {
+
+ERROR: 
+ERROR: 
+ERROR: 
+rust/bindings/bindings_generated.rs:18249:pub struct wait_queue_entry {
+rust_wrapped_structers_info.txt:510:rust/bindings/bindings_generated.rs:18249:pub struct wait_queue_entry {
+rust_wrapped_structers_info.txt:511:include/linux/wait.h:30:struct wait_queue_entry {
+include/linux/wait.h:30:struct wait_queue_entry {
+
+rust/bindings/bindings_generated.rs:18262:pub struct wait_queue_head {
+rust_wrapped_structers_info.txt:513:rust/bindings/bindings_generated.rs:18262:pub struct wait_queue_head {
+rust_wrapped_structers_info.txt:514:include/linux/wait.h:37:struct wait_queue_head {
+include/linux/wait.h:37:struct wait_queue_head {
+
+ERROR: 
+rust/bindings/bindings_generated.rs:19031:pub struct work_struct {
+tools/testing/selftests/rcutorture/formal/srcu-cbmc/src/workqueues.h:19:struct work_struct {
+rust_wrapped_structers_info.txt:517:rust/bindings/bindings_generated.rs:19031:pub struct work_struct {
+rust_wrapped_structers_info.txt:518:tools/testing/selftests/rcutorture/formal/srcu-cbmc/src/workqueues.h:19:struct work_struct {
+rust_wrapped_structers_info.txt:519:include/linux/workqueue.h:97:struct work_struct {
+include/linux/workqueue.h:97:struct work_struct {
+
+rust/bindings/bindings_generated.rs:18993:pub struct workqueue_struct {
+kernel/workqueue.c:260:struct workqueue_struct {
+rust_wrapped_structers_info.txt:521:rust/bindings/bindings_generated.rs:18993:pub struct workqueue_struct {
+rust_wrapped_structers_info.txt:522:kernel/workqueue.c:260:struct workqueue_struct {
+
+ERROR: 
+ERROR: 

@@ -33,9 +33,6 @@ io_uring:
 root@795ba347cefe:/data/bupt-rtos/linux# git log
 commit 223236274784958004bd5a5a2f1f7f830a2b359e (HEAD -> ci_errors_io-uring)
 
-## code coverage
-
-
 
 ## docs coverage
 
@@ -77,7 +74,7 @@ io_uring/uring_cmd.c:EXPORT_SYMBOL_GPL(io_uring_cmd_import_fixed);
 
 4/5
 
-11/16=31.3%
+1-11/16=31.3%
 
 ## ci errors
 
