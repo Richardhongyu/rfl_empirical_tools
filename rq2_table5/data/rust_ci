@@ -1,15 +1,8 @@
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to the standard locale ("C").
      100 files     129 text files.
 classified 129 filesDuplicate file check 129 files (129 known unique)Unique:      100 files                                               129 unique files.                              
 Counting:  100      14 files ignored.
 
-github.com/AlDanial/cloc v 1.90  T=0.25 s (466.7 files/s, 353814.5 lines/s)
+github.com/AlDanial/cloc v 1.90  T=0.80 s (145.4 files/s, 110201.0 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -22,18 +15,11 @@ Markdown                         1              8              0             25
 -------------------------------------------------------------------------------
 SUM:                           116           3373          15971          68591
 -------------------------------------------------------------------------------
-perl: warning: Setting locale failed.
-perl: warning: Please check that your locale settings:
-	LANGUAGE = (unset),
-	LC_ALL = (unset),
-	LANG = "en_US.UTF-8"
-    are supported and installed on your system.
-perl: warning: Falling back to the standard locale ("C").
        6 text files.
 classified 6 files       6 unique files.                              
        0 files ignored.
 
-github.com/AlDanial/cloc v 1.90  T=0.14 s (43.7 files/s, 342391.9 lines/s)
+github.com/AlDanial/cloc v 1.90  T=0.14 s (43.5 files/s, 340557.1 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
