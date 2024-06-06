@@ -73,8 +73,8 @@ async def retrieve_email_times_and_plot_counts():
             mid = row[0]
             taskss = asyncio.ensure_future(fetch_email_time(session, mid))
             number+=1
-            if number > 3000:
-                break
+            # if number > 3000:
+                # break
             # print(taskss)
             # task = taskss[0]
             # time = taskss[1]

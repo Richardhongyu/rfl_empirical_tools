@@ -16,10 +16,10 @@ for i,j in enumerate(liness):
 
 #print(elines[0], olines[0])
 
-year = [2022, 2022, 2022, 2022, 2023, 2023, 2023,]
-month = [1, 4, 7, 10, 1, 4, 7]
+year = [2022, 2022, 2022, 2022, 2023, 2023, 2023, 2023, 2024, 2024]
+month = [1, 4, 7, 10, 1, 4, 7, 10, 1, 4]
 
-for w in range(0,7):
+for w in range(0,10):
     lines = []
     for i in range(len(elines)):
         if "Reply" not in olines[i]:
