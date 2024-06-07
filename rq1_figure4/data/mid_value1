@@ -65,13 +65,46 @@ questions length is  48
 others length is  644
 -----------------------------------------------------------
 -----------------------------------------------------------
-safety_abstraction length is  1092
-drivers length is  234
-build length is  533
-bugs length is  31
-docs length is  117
-rust length is  179
-linux length is  14
+safety_abstraction length is  1686
+drivers length is  425
+build length is  637
+bugs length is  35
+docs length is  146
+rust length is  237
+linux length is  16
 questions length is  48
-others length is  653
+others length is  698
+-----------------------------------------------------------
+-----------------------------------------------------------
+safety_abstraction length is  2130
+drivers length is  905
+build length is  698
+bugs length is  35
+docs length is  174
+rust length is  264
+linux length is  26
+questions length is  48
+others length is  792
+-----------------------------------------------------------
+-----------------------------------------------------------
+safety_abstraction length is  2653
+drivers length is  1066
+build length is  764
+bugs length is  35
+docs length is  243
+rust length is  295
+linux length is  28
+questions length is  57
+others length is  930
+-----------------------------------------------------------
+-----------------------------------------------------------
+safety_abstraction length is  3426
+drivers length is  1170
+build length is  806
+bugs length is  35
+docs length is  305
+rust length is  393
+linux length is  32
+questions length is  57
+others length is  1131
 -----------------------------------------------------------

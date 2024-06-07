@@ -47,7 +47,7 @@ labels_1 = ['r', 'bugs', 'build', 'd', 'a']
 labels_1 = ['rust', 'bugs', 'build', 'd', 'abstraction']
 labels_2 = ['RFL', 'Review', 'Linux']
 # 日期数据
-dates = ['23/7', '23/4', '23/1', '22/10', '22/7', '22/4', '22/1']
+dates = ['24/4', '24/1', '23/10', '23/7', '23/4', '23/1', '22/10', '22/7', '22/4', '22/1']
 dates.reverse()
 # 对应的百分比数据
 percentages = blocks
