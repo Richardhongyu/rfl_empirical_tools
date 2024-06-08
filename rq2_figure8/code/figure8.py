@@ -3,7 +3,9 @@ import numpy as np
 import matplotlib
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
-
+import matplotlib
+matplotlib.rcParams['pdf.fonttype'] = 42
+matplotlib.rcParams['ps.fonttype'] = 42
 driver = ['e1000', 'binder']
 x = np.arange(len(driver))
 # avg 数据 第一个是e1000 第二个是binder

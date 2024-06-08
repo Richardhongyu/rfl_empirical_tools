@@ -3,6 +3,9 @@ import matplotlib.pylab as plt
 import matplotlib.dates as mdates
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.rcParams['pdf.fonttype'] = 42
+matplotlib.rcParams['ps.fonttype'] = 42
 
 jsonfile  = '''{
     "params": {
@@ -392,7 +395,7 @@ ax.xaxis.set_minor_locator(mdates.MonthLocator(interval=3))
 ax.tick_params(labelsize=20, size=10)
 ax.tick_params(axis='x', rotation=45)
 ax.set_xlabel("Time", **label_conf)
-ax.set_ylabel("Hours", **label_conf)
+ax.set_ylabel("Reviewing time(h)", **label_conf)
 ax.grid(axis='x', alpha=0.3)
 # ax.legend(ncol=3, frameon=False, bbox_to_anchor=(0,1), loc='lower left',fontsize=18)
 fig.savefig('../imgs/figure5_the_trend_of_RFL.pdf', bbox_inches='tight')
