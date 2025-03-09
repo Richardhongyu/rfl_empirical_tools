@@ -24,4 +24,9 @@ cd code
 
 # `draw.py` use the `data.txt` stored in `data` directory.
 # We had already produced `data.txt`, If you want to reproduce, uncomment the line 22
+
+# Draw a vertical picture
 python3 draw.py
+
+# Draw a horizontal picture
+python3 draw_horizontal.py
