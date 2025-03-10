@@ -74,13 +74,14 @@ if __name__ == '__main__':
     y1 = [y[2] for y in data]
     y2 = [y[1] + y[2] for y in data]
     fig, ax = plt.subplots()
-    ax.plot(x, y1)
-    ax.plot(x, y2)
+    ax.plot(x, y1, color='darkblue', label='staged')
+    ax.plot(x, y2, color='red', label='under review')
     ax.fill_between(x, y1, y2, color='grey', alpha=0.3)
-    ax.set_ylabel("Number of Commits")
+    ax.set_ylabel("Number of Commits", fontsize=16)
+    ax.legend(frameon=False, fontsize=16)
     date_format = DateFormatter('%y/%m')  # 设置时间格式
     ax.xaxis.set_major_formatter(date_format)
     ax.xaxis.set_major_locator(mdates.MonthLocator(interval=6))  
     ax.xaxis.set_minor_locator(mdates.MonthLocator(interval=3))  
-    plt.tick_params(rotation=45)
+    plt.tick_params(rotation=0, labelsize=16)
     plt.savefig('../imgs/figure5_the_trend_of_RFL.pdf', bbox_inches='tight')
