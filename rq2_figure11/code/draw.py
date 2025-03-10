@@ -51,19 +51,19 @@ fig1, ax = plt.subplots(figsize=(10, 6))  # 独立画布
 
 # 绘制经验累积分布
 for j, time_data in enumerate(dup_time_line):
-    ax.ecdf(time_data, label=labels[j], lw=2.5)
+    ax.ecdf(time_data, label=labels[j], lw=3.5)
 
 # 坐标轴设置
-ax.set_xlabel('Experience (month)', size=16)
-ax.set_ylabel('CDF', size=16)
-ax.tick_params(labelsize=14)
+ax.set_xlabel('Experience (month)', size=23)
+ax.set_ylabel('CDF', size=23)
+ax.tick_params(labelsize=20)
 ax.yaxis.set_major_locator(MultipleLocator(0.2))
 ax.yaxis.set_minor_locator(MultipleLocator(0.05))
 ax.xaxis.set_major_locator(MultipleLocator(50))
 ax.xaxis.set_minor_locator(MultipleLocator(25))
-ax.grid(alpha=0.3)
-ax.legend(ncol=2, frameon=False, fontsize=12, 
-          loc='upper center', bbox_to_anchor=(0.2, 1))
+ax.grid(alpha=0.5, linestyle='--')
+ax.legend(ncol=4, frameon=False, fontsize=20, 
+          bbox_to_anchor=(0.5, 1.05), loc='center')
 
 # 保存CDF图
 fig1.savefig('figure11_cdf.pdf', dpi=300, bbox_inches='tight')
@@ -86,14 +86,14 @@ def survey(results, category_names, ax):
     
     # 颜色与样式设置
     category_colors = plt.cm.gray(np.linspace(0.2, 0.8, 3))
-    hatchs = ['', '////', '....']
+    hatchs = ['', '', '//']
     
     ax.invert_yaxis()
-    ax.set_xlabel('Percentage (%)', size=16)
+    ax.set_xlabel('Percentage (%)', size=23)
     ax.xaxis.set_major_locator(MultipleLocator(25))
     ax.xaxis.set_minor_locator(MultipleLocator(5))
     ax.set_xlim(0, 100)
-    ax.tick_params(labelsize=12)
+    ax.tick_params(labelsize=20)
     
     # 绘制堆叠条
     for i, (colname, color, hatch) in enumerate(zip(category_names, category_colors, hatchs)):
@@ -103,10 +103,9 @@ def survey(results, category_names, ax):
                         label=colname, color=color, hatch=hatch, edgecolor='black', linewidth=1)
         r,g,b,_ = color
         text_color = ['white', 'white', 'black'] 
-        ax.bar_label(rects, label_type='center', color=text_color[i], size=15)
-    ax.legend(ncols=3, bbox_to_anchor=(0.1, 1),
-              loc='lower left', fontsize=18, frameon=False)
-    ax.tick_params(labelsize=20)
+        ax.bar_label(rects, label_type='center', color=text_color[i], size=20)
+    ax.legend(ncols=3, bbox_to_anchor=(0.5, 1.05),
+              loc='center', fontsize=22, frameon=False)
 
 # 调用绘图函数
 survey(result, category_names, ax1)
