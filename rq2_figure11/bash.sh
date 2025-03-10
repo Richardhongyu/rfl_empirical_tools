@@ -30,7 +30,12 @@ pushd /workspace/rq2_experience
 # cp iouring_count /workspace/rfl_empirical_tools/rq2_figure11/data
 # popd
 
+# Draw a vertical picture
 python3 plot.py
+
+# Draw a horizontal picture
+python3 draw.py
+
 cp figure11.pdf /workspace/rfl_empirical_tools/rq2_figure11/imgs
 popd
 
