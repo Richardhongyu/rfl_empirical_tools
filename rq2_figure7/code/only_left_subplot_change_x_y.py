@@ -20,8 +20,9 @@ data = "43540/72566+33753         &  0/8604+757    &   40/84+15    &    290991/2
   4579/29646                &  16/1956       &   10/279      &    107126/80078                     &    199426/45836             &    32992/0                     &    116277/0        &    5.420/7.056 &\
  19914/104721              &  0/2564        &   16/64       &    233886/358613                    &    303755/96936             &    22288/0                     &    204045/0        &    7.798/46.948 &\
   123976/84286               &  138/2675        &   126/20318    &    751885/126699+43296+47551        &    838475/47377+26141+31432 &    188850/0                     &    310961/0        &    9.002/9.418 &\
+  4804/1984 & 0/448 & 200/0 &    15689/9370       &    75320/11755 &    0/0                     &    0/0        &    0/0 &\
   10170/4020                &  0/200         &   16/0        &    179053/36617                     &    277211/38302             &    17446/0                     &    191690/0        &    8.251/7.378 &\
-4447/2285                 &  0/16          &   11/10       &    179053/36617                     &    238587/25303             &    178360/0                    &    8704/0          &    18.496/19.496"
+  4447/2285                 &  0/16          &   11/10       &    179053/36617                     &    238587/25303             &    178360/0                    &    8704/0          &    18.496/19.496"
 data = data.split('&')
 rust = []
 c = []
@@ -30,8 +31,8 @@ for d in data:
     rust.append(eval(d[0]))
     c.append(eval(d[1]))
 
-rust = np.array(rust).reshape(6,8)[:,:5]
-c = np.array(c).reshape(6,8)[:,:5]
+rust = np.array(rust).reshape(7,8)[:,:5]
+c = np.array(c).reshape(7,8)[:,:5]
 rust_column = np.sum(rust[:,3:5], axis=1)
 c_column = np.sum(c[:,3:5], axis=1)
 rust = np.column_stack((rust[:,:3], rust_column))
@@ -39,12 +40,12 @@ c = np.column_stack((c[:,:3], c_column))
 print(f'rust: {rust[-3:]}')
 print(f'c: {c[-3:]}')
 
-driver_name = ['*NVME', '*nblk', '*e1000', 'binder', 'gpio', 'sem']
+driver_name = ['*NVME', '*nblk', '*e1000', 'binder', 'cpufreq-dt', 'gpio', 'sem']
 binary_size = ['text', 'data', 'bss', 'debug']
 color = ['black', 'silver', 'white', 'white']
 hatch = ['', '', '', '//']
 
-fig, axs = plt.subplots(1, 6, dpi=100, figsize=(12, 4))  # 减小整体宽度从20改为16
+fig, axs = plt.subplots(1, 7, dpi=100, figsize=(14, 4))  # 增加子图数量并调整整体宽度
 fig.subplots_adjust(wspace=0.6, hspace=0.2)  # 减小水平间距
 labels = ['C','Rust']
 y_pos = np.array([0, 1])  # 减小两个柱子之间的距离
@@ -53,7 +54,7 @@ d = .5  # proportion of vertical to horizontal extent of the slanted line
 kwargs = dict(marker=[(-1, -d), (1, d)], markersize=12,
               linestyle="none", color='k', mec='k', mew=1, clip_on=False)
 
-for i in range(6):
+for i in range(7):
     # 计算当前子图中C和Rust数据三段之和
     total_c = np.sum(c[i][:3])
     total_rust = np.sum(rust[i][:3])

@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 import numpy as np
-import sys
+import os
 
 bar_conf = dict(edgecolor='black', linewidth=1)
 
@@ -26,8 +26,8 @@ for d in data:
     rust.append(eval(d[0]))
     c.append(eval(d[1]))
 
-rust = np.array(rust).reshape(6,8)[:,:5]
-c = np.array(c).reshape(6,8)[:,:5]
+rust = np.array(rust).reshape(7,8)[:,:5]
+c = np.array(c).reshape(7,8)[:,:5]
 rust_column = np.sum(rust[:,3:5], axis=1)
 c_column = np.sum(c[:,3:5], axis=1)
 rust = np.column_stack((rust[:,:3], rust_column))
@@ -35,12 +35,12 @@ c = np.column_stack((c[:,:3], c_column))
 print(f'rust: {rust[-3:]}')
 print(f'c: {c[-3:]}')
 
-driver_name = ['*NVME', '*nblk', '*e1000', 'binder', 'gpio', 'sem']
+driver_name = ['*NVME', '*nblk', '*e1000', 'binder', 'cpufreq-dt', 'gpio', 'sem']
 binary_size = ['text', 'data', 'bss', 'debug']
 color = ['black', 'silver', 'white', 'white']
 hatch = ['', '', '', '//']
 
-fig, axs = plt.subplots(6,2,dpi=100, sharey=True, figsize=(10,10))
+fig, axs = plt.subplots(7,2,dpi=100, sharey=True, figsize=(10,12))
 fig.subplots_adjust(wspace=0.2, hspace=0.5)
 labels = ['C','Rust']
 y_pos = np.arange(len(labels))
@@ -54,7 +54,7 @@ x_lim_end = max(x_lim_end_c, x_lim_end_rust)
 x_lim_c = max((i[0] for i in c))
 x_lim_rust = max((i[0] for i in rust))
 x_lim = max(x_lim_c, x_lim_rust)
-for i in range(6):
+for i in range(7):
     sum_c = np.sum(c[i][:3])
     sum_rust = np.sum(rust[i][:3])
     axs[i,0].set_xlim(0, x_lim * 1.1)
@@ -89,5 +89,5 @@ for i in range(6):
             ax.label_outer()
 
 fig.legend( ncol=4, frameon=False, loc="lower left", bbox_to_anchor=(0.1, 0.9), fontsize=20, columnspacing=3, handletextpad=0.5)
-script_name = sys.argv[0].split('.')[0]
+script_name = os.path.basename(__file__).split('.')[0]
 fig.savefig(f'../imgs/{script_name}.pdf', bbox_inches="tight")
